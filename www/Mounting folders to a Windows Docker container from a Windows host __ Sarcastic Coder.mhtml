@@ -1,0 +1,897 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://sarcasticcoder.com/docker/mounting-folders-to-a-windows-docker-container-from-a-windows-host/
+Subject: Mounting folders to a Windows Docker container from a Windows host :: Sarcastic Coder
+Date: Sat, 11 Feb 2023 07:04:50 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--1WpygAoeBgJ8yzTBnekhZzfvBxTVjTGNwn2QHFlFA6----"
+
+
+------MultipartBoundary--1WpygAoeBgJ8yzTBnekhZzfvBxTVjTGNwn2QHFlFA6----
+Content-Type: text/html
+Content-ID: <frame-6A7C4624A145F6B975E4A0D2872C3D55@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://sarcasticcoder.com/docker/mounting-folders-to-a-windows-docker-container-from-a-windows-host/
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+<title>
+Mounting folders to a Windows Docker container from a Windows host ::
+Sarcastic Coder
+</title>
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1">
+<meta name=3D"description" content=3D"Mounting a folder to a Docker contain=
+er allows you to share data back and forth on your host system. It&amp;rsqu=
+o;s a great feature to have especially on Windows where command line editor=
+s are not as native to the OS as they are with Unix/Linux.
+Docker environment Your mileage may vary with the information cited in this=
+ article depending on the version of Docker you are using. My setup at the =
+time of this writing is&amp;hellip;">
+<meta name=3D"keywords" content=3D"">
+<meta name=3D"robots" content=3D"noodp">
+<link rel=3D"canonical" href=3D"https://sarcasticcoder.com/docker/mounting-=
+folders-to-a-windows-docker-container-from-a-windows-host/">
+<link rel=3D"stylesheet" href=3D"https://sarcasticcoder.com/assets/style.cs=
+s">
+<link rel=3D"stylesheet" href=3D"https://sarcasticcoder.com/style.css">
+<link rel=3D"apple-touch-icon-precomposed" sizes=3D"144x144" href=3D"https:=
+//sarcasticcoder.com/img/apple-touch-icon-144-precomposed.png">
+<link rel=3D"shortcut icon" href=3D"https://sarcasticcoder.com/img/favicon.=
+png">
+<link href=3D"https://sarcasticcoder.com/assets/fonts/Inter-Italic.woff2" r=
+el=3D"preload" type=3D"font/woff2" as=3D"font" crossorigin=3D"">
+<link href=3D"https://sarcasticcoder.com/assets/fonts/Inter-Regular.woff2" =
+rel=3D"preload" type=3D"font/woff2" as=3D"font" crossorigin=3D"">
+<link href=3D"https://sarcasticcoder.com/assets/fonts/Inter-Medium.woff2" r=
+el=3D"preload" type=3D"font/woff2" as=3D"font" crossorigin=3D"">
+<link href=3D"https://sarcasticcoder.com/assets/fonts/Inter-MediumItalic.wo=
+ff2" rel=3D"preload" type=3D"font/woff2" as=3D"font" crossorigin=3D"">
+<link href=3D"https://sarcasticcoder.com/assets/fonts/Inter-Bold.woff2" rel=
+=3D"preload" type=3D"font/woff2" as=3D"font" crossorigin=3D"">
+<link href=3D"https://sarcasticcoder.com/assets/fonts/Inter-BoldItalic.woff=
+2" rel=3D"preload" type=3D"font/woff2" as=3D"font" crossorigin=3D"">
+<meta name=3D"twitter:card" content=3D"summary">
+<meta name=3D"twitter:title" content=3D"Mounting folders to a Windows Docke=
+r container from a Windows host">
+<meta name=3D"twitter:description" content=3D"Mounting a folder to a Docker=
+ container allows you to share data back and forth on your host system. It=
+=E2=80=99s a great feature to have especially on Windows where command line=
+ editors are not as native to the OS as they are with Unix/Linux.
+Docker environment Your mileage may vary with the information cited in this=
+ article depending on the version of Docker you are using. My setup at the =
+time of this writing is=E2=80=A6">
+<meta property=3D"og:title" content=3D"Mounting folders to a Windows Docker=
+ container from a Windows host">
+<meta property=3D"og:description" content=3D"Mounting a folder to a Docker =
+container allows you to share data back and forth on your host system. It=
+=E2=80=99s a great feature to have especially on Windows where command line=
+ editors are not as native to the OS as they are with Unix/Linux.
+Docker environment Your mileage may vary with the information cited in this=
+ article depending on the version of Docker you are using. My setup at the =
+time of this writing is=E2=80=A6">
+<meta property=3D"og:type" content=3D"article">
+<meta property=3D"og:url" content=3D"https://sarcasticcoder.com/docker/moun=
+ting-folders-to-a-windows-docker-container-from-a-windows-host/"><meta prop=
+erty=3D"article:section" content=3D"posts">
+<meta property=3D"article:published_time" content=3D"2021-01-22T05:35:19+00=
+:00">
+<meta property=3D"article:modified_time" content=3D"2022-06-03T10:38:39-04:=
+00"><meta property=3D"og:site_name" content=3D"Sarcastic Coder">
+
+</head>
+<body class=3D"dark-theme">
+<div class=3D"container">
+<header class=3D"header">
+<span class=3D"header__inner">
+<a href=3D"https://sarcasticcoder.com/" class=3D"logo" style=3D"text-decora=
+tion:none">
+<span class=3D"logo__mark"><svg xmlns=3D"http://www.w3.org/2000/svg" class=
+=3D"greater-icon" viewBox=3D"0 0 44 44"><path fill=3D"none" d=3D"M15 8l14.7=
+29 14.382L15 35.367"></path></svg>
+</span>
+<span class=3D"logo__text">Sarcastic Coder</span>
+<span class=3D"logo__cursor"></span>
+</a>
+<span class=3D"header__right">
+<nav class=3D"menu">
+<ul class=3D"menu__inner menu__inner--desktop">
+<li><a href=3D"https://sarcasticcoder.com/about">About</a></li>
+<li><a href=3D"https://sarcasticcoder.com/labs">Labs</a></li>
+<ul class=3D"menu__sub-inner">
+<li class=3D"menu__sub-inner-more-trigger">
+Show more
+<span class=3D"menu__sub-inner-more-trigger-icon"><svg xmlns=3D"http://www.=
+w3.org/2000/svg" class=3D"greater-icon" viewBox=3D"0 0 44 44"><path fill=3D=
+"none" d=3D"M15 8l14.729 14.382L15 35.367"></path></svg>
+</span>
+</li>
+<ul class=3D"menu__sub-inner-more hidden">
+<li><a href=3D"https://sarcasticcoder.com/search">Search</a></li>
+</ul>
+</ul>
+</ul>
+<ul class=3D"menu__inner menu__inner--mobile">
+<li><a href=3D"https://sarcasticcoder.com/about">About</a></li>
+<li><a href=3D"https://sarcasticcoder.com/labs">Labs</a></li>
+<li><a href=3D"https://sarcasticcoder.com/search">Search</a></li>
+</ul>
+</nav>
+<span class=3D"menu-trigger hidden"><svg xmlns=3D"http://www.w3.org/2000/sv=
+g" viewBox=3D"0 0 24 24"><path d=3D"M0 0h24v24H0z" fill=3D"none"></path><pa=
+th d=3D"M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+</span>
+<span class=3D"theme-toggle"><svg class=3D"theme-toggler" width=3D"24" heig=
+ht=3D"24" viewBox=3D"0 0 48 48" fill=3D"none" xmlns=3D"http://www.w3.org/20=
+00/svg"><path d=3D"M22 41c10.4934.0 19-8.5066 19-19C41 11.5066 32.4934 3 22=
+ 3 11.5066 3 3 11.5066 3 22s8.5066 19 19 19zM7 22C7 13.7157 13.7157 7 22 7V=
+37C13.7157 37 7 30.2843 7 22z"></path></svg>
+</span>
+</span>
+</span>
+</header>
+<div class=3D"content">
+<div class=3D"post">
+<h1 class=3D"post-title">Mounting folders to a Windows Docker container fro=
+m a Windows host</h1>
+<div class=3D"post-meta">
+<span class=3D"post-date">
+2021-01-22
+</span>
+<span class=3D"post-author">=E2=80=94 Written by Robert Segal</span>
+</div>
+<div class=3D"post-content">
+<p>Mounting a folder to a Docker container allows you to share data back an=
+d forth on your host system. It=E2=80=99s a great feature to have especiall=
+y on Windows where command line editors are not as native to the OS as they=
+ are with Unix/Linux.</p>
+<h3 id=3D"docker-environment">Docker environment</h3>
+<p>Your mileage may vary with the information cited in this article dependi=
+ng on the version of Docker you are using. My setup at the time of this wri=
+ting is=E2=80=A6</p>
+<ul>
+<li><a href=3D"https://www.docker.com/products/docker-desktop">Docker Deskt=
+op</a> v3.0.4 (51218)</li>
+<li>Engine v20.10.2</li>
+</ul>
+<h3 id=3D"mounting-windows-file-paths">Mounting Windows file paths</h3>
+<p>There are numerous articles available on how to mount folders inside of =
+Docker images.</p>
+<p>On Windows=E2=80=A6</p>
+<ul>
+<li><a href=3D"https://stackoverflow.com/questions/54613360/unable-to-share=
+-a-local-windows-path-with-a-container-in-docker">Unable to share a local w=
+indows path with a container in Docker</a></li>
+<li><a href=3D"https://medium.com/@kale.miller96/how-to-mount-your-current-=
+working-directory-to-your-docker-container-in-windows-74e47fa104d7">How To =
+Mount Your Current Working Directory To Your Docker Container In Windows</a=
+></li>
+</ul>
+<p>And mounting in general=E2=80=A6</p>
+<ul>
+<li><a href=3D"https://stackoverflow.com/questions/23439126/how-to-mount-a-=
+host-directory-in-a-docker-container">How to mount a host directory in a Do=
+cker container</a></li>
+<li><a href=3D"https://docs.docker.com/storage/bind-mounts/">Docker documen=
+tation =E2=80=93 Use bind mounts</a></li>
+</ul>
+<p>Though many articles cite different methods for referencing paths.</p>
+<h3 id=3D"referencing-windows-paths">Referencing Windows paths</h3>
+<p>It=E2=80=99s likely that the way to reference Windows paths has changed =
+over time and for different versions of Docker. I=E2=80=99m not entirely ce=
+rtain and have not researched it in depth but here is a capture of the diff=
+erent folder path formats I=E2=80=99ve encountered</p>
+<pre tabindex=3D"0"><code>//c/myFolder
+/c/myFolder
+c:\myFolder
+</code></pre><p>Of all the pathing styles the last one is the format that w=
+orked for me=E2=80=A6</p>
+<p><code>docker run -it --name myDockerContainer1 --mount src=3DC:\myFolder=
+,dst=3Dc:\myDockerMount,type=3Dbind aDockerImage:latest</code></p>
+<p>If a path has spaces you can use quotes to contain it=E2=80=A6</p>
+<p><code>docker run -it --name myDockerContainer1 --mount src=3D"C:\myFolde=
+r\sub folder",dst=3Dc:\myDockerMount,type=3Dbind aDockerImage:latest</code>=
+</p>
+<h2 id=3D"conclusions">Conclusions</h2>
+<ul>
+<li>An absolute path must be used when specifying folders</li>
+<li>Use quotes around a path if it contains spaces</li>
+</ul>
+</div>
+<div class=3D"pagination">
+<div class=3D"pagination__title">
+<span class=3D"pagination__title-h">Read other posts</span>
+<hr>
+</div>
+<div class=3D"pagination__buttons">
+<span class=3D"button previous">
+<a href=3D"https://sarcasticcoder.com/github/searching-github-starred-proje=
+cts/">
+<span class=3D"button__icon">=E2=86=90</span>
+<span class=3D"button__text">Searching Github starred projects</span>
+</a>
+</span>
+<span class=3D"button next">
+<a href=3D"https://sarcasticcoder.com/docker/modifying-image-storage-locati=
+on-with-window-subsystem-for-linux-and-docker-desktop-for-windows/">
+<span class=3D"button__text">Modifying image storage location with Window S=
+ubsystem for Linux (WSL) and Docker Desktop for Windows</span>
+<span class=3D"button__icon">=E2=86=92</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<footer class=3D"footer">
+<div class=3D"footer__inner">
+<a href=3D"https://sarcasticcoder.com/" class=3D"logo" style=3D"text-decora=
+tion:none">
+<span class=3D"logo__mark"><svg xmlns=3D"http://www.w3.org/2000/svg" class=
+=3D"greater-icon" viewBox=3D"0 0 44 44"><path fill=3D"none" d=3D"M15 8l14.7=
+29 14.382L15 35.367"></path></svg>
+</span>
+<span class=3D"logo__text">Sarcastic Coder</span>
+<span class=3D"logo__cursor"></span>
+</a>
+<div class=3D"copyright">
+<span>=C2=A9 2023 Powered by
+<a href=3D"https://gohugo.io/" target=3D"_blank" rel=3D"noopener">Hugo</a><=
+/span>
+<span>Theme created by
+<a href=3D"https://twitter.com/panr" target=3D"_blank" rel=3D"noopener">pan=
+r</a></span>
+</div>
+</div>
+</footer>
+
+
+</div>
+
+
+</body></html>
+------MultipartBoundary--1WpygAoeBgJ8yzTBnekhZzfvBxTVjTGNwn2QHFlFA6----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://sarcasticcoder.com/assets/style.css
+
+@charset "utf-8";
+
+:root { --background:#fff; --background-secondary:#eaeaea; --header:#fafafa=
+; --color:#222; --color-secondary:#999; --border-color:#dcdcdc; --phoneWidt=
+h:(max-width:684px); --tabletWidth:(max-width:900px); }
+
+body.dark-theme { --background:#292a2d; --background-secondary:#3b3d42; --h=
+eader:#252627; --color:#a9a9b3; --color-secondary:#73747b; --border-color:#=
+4a4b50; }
+
+@font-face { font-feature-settings: "liga", "tnum", "case", "calt", "zero",=
+ "ss01", "locl"; font-display: swap; font-family: Inter; font-style: normal=
+; font-weight: 400; src: url("fonts/Inter-Regular.woff2") format("woff2"); =
+}
+
+@font-face { font-feature-settings: "liga", "tnum", "case", "calt", "zero",=
+ "ss01", "locl"; font-display: swap; font-family: Inter; font-style: italic=
+; font-weight: 400; src: url("fonts/Inter-Italic.woff2") format("woff2"); }
+
+@font-face { font-feature-settings: "liga", "tnum", "case", "calt", "zero",=
+ "ss01", "locl"; font-display: swap; font-family: Inter; font-style: normal=
+; font-weight: 600; src: url("fonts/Inter-Medium.woff2") format("woff2"); }
+
+@font-face { font-feature-settings: "liga", "tnum", "case", "calt", "zero",=
+ "ss01", "locl"; font-display: swap; font-family: Inter; font-style: italic=
+; font-weight: 600; src: url("fonts/Inter-MediumItalic.woff2") format("woff=
+2"); }
+
+@font-face { font-feature-settings: "liga", "tnum", "case", "calt", "zero",=
+ "ss01", "locl"; font-display: swap; font-family: Inter; font-style: normal=
+; font-weight: 800; src: url("fonts/Inter-Bold.woff2") format("woff2"); }
+
+@font-face { font-feature-settings: "liga", "tnum", "case", "calt", "zero",=
+ "ss01", "locl"; font-display: swap; font-family: Inter; font-style: italic=
+; font-weight: 800; src: url("fonts/Inter-BoldItalic.woff2") format("woff2"=
+); }
+
+.button-container { display: table; margin-left: auto; margin-right: auto; =
+}
+
+.button, a.button, button { align-items: center; appearance: none; backgrou=
+nd: var(--background-secondary); border: 1px solid transparent; border-radi=
+us: 8px; cursor: pointer; display: flex; font-weight: 500; justify-content:=
+ center; margin-bottom: 5px; outline: none; padding: 8px 18px; position: re=
+lative; text-align: center; text-decoration: none; }
+
+.button.outline, a.button.outline, button.outline { background: transparent=
+; border-color: var(--background-secondary); box-shadow: none; padding: 8px=
+ 18px; }
+
+.button.outline :hover, a.button.outline :hover, button.outline :hover { bo=
+x-shadow: none; transform: none; }
+
+.button.primary, a.button.primary, button.primary { box-shadow: rgba(50, 50=
+, 93, 0.11) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px; }
+
+.button.primary:hover, a.button.primary:hover, button.primary:hover { box-s=
+hadow: rgba(50, 50, 93, 0.21) 0px 2px 6px, rgba(0, 0, 0, 0.08) 0px 1px 3px;=
+ }
+
+.button.link, a.button.link, button.link { background: none; font-size: 1re=
+m; }
+
+.button.small, a.button.small, button.small { font-size: 0.8rem; }
+
+.button.wide, a.button.wide, button.wide { min-width: 200px; padding: 14px =
+24px; }
+
+a.read-more, a.read-more:active, a.read-more:hover { background: none; box-=
+shadow: none; display: inline-flex; font-weight: 700; margin: 20px 0px; pad=
+ding: 0px; }
+
+.code-toolbar { margin-bottom: 20px; }
+
+.code-toolbar .toolbar-item a { appearance: none; background: var(--backgro=
+und-secondary); border: 1px solid transparent; border-radius: 8px; cursor: =
+pointer; display: inline-flex; font-size: 13px; font-weight: 500; margin-bo=
+ttom: 5px; outline: none; padding: 3px 8px; text-align: center; text-decora=
+tion: none; }
+
+.code-toolbar .toolbar-item a, .header { align-items: center; justify-conte=
+nt: center; position: relative; }
+
+.header { background: var(--header); display: flex; padding: 20px; }
+
+.header__right { align-items: center; display: flex; flex-direction: row; }
+
+@media (max-width: 683px) {
+  .header__right { flex-direction: row-reverse; }
+}
+
+.header__inner { justify-content: space-between; margin: 0px auto; max-widt=
+h: 100%; width: 760px; }
+
+.header__inner, .theme-toggle { align-items: center; display: flex; }
+
+.theme-toggle { cursor: pointer; justify-content: center; line-height: 1; }
+
+.theme-toggler { fill: currentcolor; }
+
+.logo { align-items: center; display: flex; flex: 0 0 auto; font-weight: 70=
+0; text-decoration: none; }
+
+.logo img { height: 44px; }
+
+.logo__mark { align-items: center; display: inline-flex; margin-right: 5px;=
+ }
+
+.logo__mark .greater-icon { height: 100%; width: 0.95rem; }
+
+.logo__mark .greater-icon path { stroke: currentcolor; stroke-width: 8px; }
+
+.logo__text { font-size: 1.125rem; }
+
+.logo__cursor { animation: 1s ease 0s infinite normal none running cursor; =
+background: rgb(254, 81, 134); border-radius: 1px; display: inline-block; h=
+eight: 1rem; margin-left: 5px; width: 10px; }
+
+@-webkit-keyframes cursor {=20
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes cursor {=20
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.menu { --color:rgba(0,0,0,0.12); --shadow:0 8px 20px var(--color); border-=
+right: 1px solid; font-weight: 500; margin-right: 18px; padding-right: 24px=
+; }
+
+@media (max-width: 683px) {
+  .menu { background: var(--header); border: none; border-radius: 5px; box-=
+shadow: var(--shadow); list-style: none; margin: 0px; padding: 5px; positio=
+n: absolute; right: 10px; top: 50px; z-index: 99; }
+}
+
+.menu a { text-decoration: none; }
+
+.menu__inner { align-items: center; display: flex; flex-wrap: wrap; justify=
+-content: flex-end; list-style: none; margin: 0px; padding: 0px; }
+
+@media (max-width: 683px) {
+  .menu__inner--desktop { display: none; }
+}
+
+.menu__inner--mobile { display: none; }
+
+@media (max-width: 683px) {
+  .menu__inner--mobile { display: block; }
+}
+
+.menu__inner li { flex: 0 0 auto; text-align: left; }
+
+.menu__inner li:not(:first-of-type) { margin-left: 20px; }
+
+@media (max-width: 683px) {
+  .menu__inner { align-items: flex-start; flex-direction: column; padding: =
+0px; }
+  .menu__inner li { padding: 10px; margin-left: 0px !important; }
+}
+
+.menu__sub-inner { list-style: none; margin: 0px; padding: 0px; position: r=
+elative; }
+
+.menu__sub-inner:not(:only-child) { margin-left: 20px; }
+
+.menu__sub-inner-more { background: var(--header); border-radius: 5px; box-=
+shadow: var(--shadow); left: 0px; list-style: none; margin: 0px; padding: 5=
+px; position: absolute; top: 35px; z-index: 99; }
+
+.menu__sub-inner-more-trigger { align-items: center; cursor: pointer; displ=
+ay: inline-flex; user-select: none; }
+
+.menu__sub-inner-more-trigger-icon { align-items: center; display: inline-f=
+lex; line-height: 1; margin-left: 3px; transform: rotate(90deg); }
+
+.menu__sub-inner-more-trigger-icon .greater-icon { height: 100%; width: 0.9=
+5rem; }
+
+.menu__sub-inner-more-trigger-icon .greater-icon path { stroke: currentcolo=
+r; stroke-width: 5px; }
+
+.menu__inner .menu__sub-inner-more li { margin-left: 0px; white-space: nowr=
+ap; }
+
+.menu__inner .menu__sub-inner-more li:hover { background: rgba(0, 0, 0, 0.0=
+5); border-radius: 3px; cursor: pointer; }
+
+.menu__sub-inner-more li a { display: inline-block; padding: 10px; width: 1=
+00%; }
+
+.menu-trigger { fill: currentcolor; cursor: pointer; height: 24px; margin-l=
+eft: 10px; width: 24px; }
+
+html { box-sizing: border-box; }
+
+*, ::after, ::before { box-sizing: inherit; }
+
+body { font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01=
+", "locl"; text-rendering: optimizelegibility; -webkit-font-smoothing: anti=
+aliased; text-size-adjust: 100%; background-color: var(--background); color=
+: var(--color); font-family: Inter, -apple-system, BlinkMacSystemFont, Robo=
+to, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 1rem; font-weight:=
+ 500; line-height: 1.54; margin: 0px; padding: 0px; }
+
+@media (max-width: 683px) {
+  body { font-size: 1rem; }
+}
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.3; }
+
+h1 { font-size: 2.625rem; }
+
+h2 { font-size: 1.625rem; }
+
+h3 { font-size: 1.375rem; }
+
+h4 { font-size: 1.125rem; }
+
+@media (max-width: 683px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.15rem; }
+  h4 { font-size: 1.125rem; }
+}
+
+a { color: inherit; }
+
+img { display: block; max-width: 100%; }
+
+img.center, img.left { margin-right: auto; }
+
+img.center, img.right { margin-left: auto; }
+
+figure { display: table; margin: 25px 0px; max-width: 100%; }
+
+figure.center, figure.left { margin-right: auto; }
+
+figure.center, figure.right { margin-left: auto; }
+
+figure figcaption { font-size: 0.9rem; margin-top: 5px; opacity: 0.8; }
+
+figure figcaption.left { text-align: left; }
+
+figure figcaption.center { text-align: center; }
+
+figure figcaption.right { text-align: right; }
+
+code, kbd { font-feature-settings: normal; background: var(--background-sec=
+ondary); border-radius: 5px; font-family: Consolas, Monaco, "Andale Mono", =
+"Ubuntu Mono", monospace; font-size: 0.9rem; font-weight: 400; margin: 0px =
+2px; padding: 1px 6px; }
+
+code code, code kbd, kbd code, kbd kbd { background: transparent; margin: 0=
+px; padding: 0px; }
+
+pre { font-feature-settings: normal; background: rgb(33, 32, 32); border-ra=
+dius: 8px; font-size: 0.9rem; overflow: auto; padding: 20px; }
+
+@media (max-width: 683px) {
+  pre { overflow-wrap: break-word; white-space: pre-wrap; }
+}
+
+pre code { font-feature-settings: normal; color: rgb(204, 204, 204); font-s=
+ize: inherit; margin: 0px; padding: 0px; background: none !important; }
+
+blockquote { border-left: 2px solid; margin: 40px; padding: 10px 20px; }
+
+@media (max-width: 683px) {
+  blockquote { margin: 10px; padding: 10px; }
+}
+
+blockquote::before { content: "=E2=80=9D"; font-family: Georgia, serif; fon=
+t-size: 3.875rem; left: -40px; position: absolute; top: -20px; }
+
+blockquote p:first-of-type { margin-top: 0px; }
+
+blockquote p:last-of-type { margin-bottom: 0px; }
+
+table:not(.js-file-line-container) { border-collapse: collapse; border-radi=
+us: 5px; margin: 40px 0px; table-layout: fixed; width: 100%; }
+
+table, td:not(.js-line-number), th { border: 1px solid; padding: 10px; }
+
+th { background: var(--background-secondary); }
+
+ol, ul { margin-left: 40px; padding: 0px; }
+
+@media (max-width: 683px) {
+  ol, ul { margin-left: 20px; }
+}
+
+ol ol { list-style-type: lower-alpha; }
+
+.container { text-align: center; }
+
+.container, .content { display: flex; flex-direction: column; justify-conte=
+nt: center; }
+
+.content { align-items: center; flex: 1 1 auto; margin: 50px 0px; }
+
+@media (max-width: 683px) {
+  .content { margin-top: 0px; }
+}
+
+hr { background: var(--border-color); border: none; height: 1px; width: 100=
+%; }
+
+.hidden { display: none; }
+
+.framed { border: 1px solid var(--border-color); border-radius: 10px; max-w=
+idth: 800px; padding: 20px; }
+
+blockquote.twitter-tweet { background: rgba(44, 124, 186, 0.1); border: non=
+e; border-radius: 8px; color: inherit; font-size: inherit; line-height: inh=
+erit; padding: 30px; }
+
+.post { margin: 20px auto; max-width: 800px; padding: 20px; text-align: lef=
+t; width: 100%; }
+
+@media (max-width: 899px) {
+  .post { max-width: 660px; }
+}
+
+.post:not(:last-of-type) { border-bottom: 1px solid var(--border-color); }
+
+.post-meta { font-size: 1rem; margin-bottom: 10px; }
+
+@media (max-width: 683px) {
+  .post-meta { font-size: 0.85rem; }
+}
+
+.post-title { font-size: 2.625rem; margin: 0px 0px 20px; }
+
+@media (max-width: 683px) {
+  .post-title { font-size: 2rem; }
+}
+
+.post-title a { text-decoration: none; }
+
+.post-tags { display: block; font-size: 1rem; margin-bottom: 20px; opacity:=
+ 0.5; }
+
+.post-tags a { text-decoration: none; }
+
+.post-content { margin-top: 30px; }
+
+.post-cover { margin: 40px -50px; max-width: 860px; width: 860px; }
+
+.post-cover img { border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.15) 0px 1=
+2px 40px; margin: 0px auto; }
+
+@media (max-width: 899px) {
+  .post-cover { margin: 20px 0px; width: 100%; }
+}
+
+.post--regulation h1, .post--regulation h2 { justify-content: center; }
+
+.post--regulation h2 { margin-bottom: 10px; }
+
+.post--regulation h2 + h2 { margin-bottom: 20px; margin-top: -10px; }
+
+.pagination { margin-top: 50px; }
+
+.pagination__title { display: flex; margin: 100px 0px 20px; position: relat=
+ive; text-align: center; }
+
+.pagination__title-h { background: var(--background); color: var(--color-se=
+condary); font-size: 0.8rem; letter-spacing: 0.1em; margin: 0px auto; paddi=
+ng: 5px 10px; text-align: center; text-decoration: none; text-transform: up=
+percase; z-index: 1; }
+
+.pagination__title hr { left: 0px; margin-top: 15px; position: absolute; ri=
+ght: 0px; width: 100%; z-index: 0; }
+
+.pagination__buttons { align-items: center; display: flex; justify-content:=
+ center; }
+
+.pagination__buttons a { font-weight: 700; text-decoration: none; }
+
+.button { align-items: center; appearance: none; background: var(--backgrou=
+nd-secondary); border-radius: 8px; cursor: pointer; display: inline-flex; f=
+ont-size: 1rem; font-weight: 500; justify-content: center; max-width: 40%; =
+padding: 0px; position: relative; }
+
+.button + .button { margin-left: 10px; }
+
+.button a { display: flex; padding: 8px 16px; text-decoration: none; }
+
+.button__text, .button a { overflow: hidden; text-overflow: ellipsis; white=
+-space: nowrap; }
+
+.button.next .button__icon { margin-left: 8px; }
+
+.button.previous .button__icon { margin-right: 8px; }
+
+.footer { color: var(--color-secondary); flex-grow: 0; padding: 40px 20px; =
+}
+
+.footer__inner { align-items: center; display: flex; justify-content: space=
+-between; margin: 0px auto; max-width: 100%; width: 760px; }
+
+@media (max-width: 899px) {
+  .footer__inner { flex-direction: column; }
+}
+
+.footer a { color: inherit; }
+
+.footer .copyright { align-items: center; display: flex; flex-direction: ro=
+w; font-size: 1rem; }
+
+.footer .copyright--user { margin: auto; text-align: center; }
+
+.footer .copyright > :first-child:not(:only-child) { border-right: 1px soli=
+d; margin-right: 10px; padding-right: 10px; }
+
+@media (max-width: 899px) {
+  .footer .copyright > :first-child:not(:only-child) { border: none; margin=
+: 0px; padding: 0px; }
+  .footer .copyright { flex-direction: column; margin-top: 10px; }
+}
+
+.terms { margin: 0px auto; max-width: 800px; padding: 20px; text-align: lef=
+t; width: 100%; }
+
+.terms__list { margin: 0px; padding: 0px 0px 0px 20px; }
+
+.terms__list a { text-decoration: none; }
+
+.terms__term { margin-bottom: 15px; }
+
+.terms__term-count { background: var(--background-secondary); border-radius=
+: 5px; font-size: 12px; margin-left: 5px; padding: 2px 10px; text-decoratio=
+n: none; }
+
+.archive { margin: 0px auto; max-width: 800px; padding: 20px; text-align: l=
+eft; width: 100%; }
+
+.archive__group-month { align-items: flex-start; display: flex; padding: 10=
+px 0px; }
+
+@media (max-width: 683px) {
+  .archive__group-month { flex-direction: column; }
+}
+
+.archive__group-month:not(:last-of-type) { border-bottom: 1px solid var(--b=
+order-color); }
+
+.archive__group-year { margin-top: 40px; }
+
+@media (max-width: 683px) {
+  .archive__group-year { margin-top: 20px; }
+}
+
+.archive__group-year:not(:last-of-type) { border-bottom: 1px solid var(--bo=
+rder-color); }
+
+.archive__group-year-header { margin: 10px 0px; }
+
+.archive__group-month-header { margin: 25px 0px; opacity: 0.5; width: 200px=
+; }
+
+@media (max-width: 683px) {
+  .archive__group-month-header { margin: 10px 0px 0px; }
+}
+
+.archive__group-posts { width: 100%; }
+
+.archive__post { padding: 20px 0px; }
+
+.archive__post:not(:last-of-type) { border-bottom: 1px solid var(--border-c=
+olor); }
+
+.archive__post-title { margin: 5px 0px; }
+
+.archive__post-title a { display: block; text-decoration: none; }
+
+code[class*=3D"language-"], pre[class*=3D"language-"] { overflow-wrap: norm=
+al; background: none; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu=
+ Mono", monospace; hyphens: none; tab-size: 4; text-align: left; white-spac=
+e: pre; word-break: normal; word-spacing: normal; }
+
+pre[class*=3D"language-"] { margin: 0.5em 0px; overflow: auto; padding: 1em=
+; }
+
+:not(pre) > code[class*=3D"language-"], pre[class*=3D"language-"] { border-=
+radius: 8px; background: rgb(33, 32, 32) !important; color: inherit !import=
+ant; }
+
+:not(pre) > code[class*=3D"language-"] { border-radius: 0.3em; padding: 0.1=
+em; white-space: normal; }
+
+.token.block-comment, .token.cdata, .token.comment, .token.doctype, .token.=
+prolog { color: rgba(255, 255, 255, 0.4); }
+
+.token.punctuation { color: rgb(169, 169, 179); }
+
+.token.attr-name, .token.deleted, .token.namespace, .token.tag { color: rgb=
+(226, 119, 122); }
+
+.token.function-name { color: rgb(97, 150, 204); }
+
+.token.boolean, .token.function, .token.number { color: rgb(240, 141, 73); =
+}
+
+.token.class-name, .token.constant, .token.property, .token.symbol { color:=
+ rgb(248, 197, 85); }
+
+.token.atrule, .token.builtin, .token.important, .token.keyword, .token.sel=
+ector { color: rgb(204, 153, 205); }
+
+.token.attr-value, .token.char, .token.regex, .token.string, .token.variabl=
+e { color: rgb(126, 198, 153); }
+
+.token.entity, .token.operator, .token.url { color: rgb(103, 205, 204); }
+
+.token.bold, .token.important { font-weight: 700; }
+
+.token.italic { font-style: italic; }
+
+.token.entity { cursor: help; }
+
+.token.inserted { color: green; }
+
+pre[class*=3D"language-"].line-numbers { counter-reset: linenumber 0; paddi=
+ng-left: 3.8em; position: relative; }
+
+pre[class*=3D"language-"].line-numbers > code { position: relative; white-s=
+pace: inherit; }
+
+.line-numbers .line-numbers-rows { border-right: 1px solid rgb(153, 153, 15=
+3); font-size: 100%; left: -3.8em; letter-spacing: -1px; pointer-events: no=
+ne; position: absolute; top: 0px; user-select: none; width: 3em; }
+
+.line-numbers-rows > span { counter-increment: linenumber 1; display: block=
+; pointer-events: none; }
+
+.line-numbers-rows > span::before { color: rgb(153, 153, 153); content: cou=
+nter(linenumber); display: block; padding-right: 0.8em; text-align: right; =
+}
+
+div.code-toolbar { position: relative; }
+
+div.code-toolbar > .toolbar { opacity: 0; position: absolute; right: 0.2em;=
+ top: 0.3em; transition: opacity 0.3s ease-in-out 0s; }
+
+div.code-toolbar:hover > .toolbar { opacity: 1; }
+
+div.code-toolbar > .toolbar .toolbar-item { display: inline-block; }
+
+div.code-toolbar > .toolbar a { cursor: pointer; }
+
+div.code-toolbar > .toolbar button { background: none; border: 0px; color: =
+inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; =
+font-stretch: inherit; font-size: inherit; font-family: inherit; line-heigh=
+t: normal; overflow: visible; padding: 0px; user-select: none; }
+
+div.code-toolbar > .toolbar a, div.code-toolbar > .toolbar button, div.code=
+-toolbar > .toolbar span { background: rgba(224, 224, 224, 0.2); border-rad=
+ius: 0.5em; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 0px 0px; color: rgb(187,=
+ 187, 187); font-size: 0.8em; padding: 0px 0.5em; }
+
+div.code-toolbar > .toolbar a:focus, div.code-toolbar > .toolbar a:hover, d=
+iv.code-toolbar > .toolbar button:focus, div.code-toolbar > .toolbar button=
+:hover, div.code-toolbar > .toolbar span:focus, div.code-toolbar > .toolbar=
+ span:hover { color: inherit; text-decoration: none; }
+
+.command-line-prompt { border-right: 1px solid rgb(153, 153, 153); display:=
+ block; float: left; font-size: 100%; letter-spacing: -1px; margin-right: 1=
+em; pointer-events: none; user-select: none; }
+
+.command-line-prompt > span::before { color: rgb(153, 153, 153); content: "=
+ "; display: block; padding-right: 0.8em; }
+
+.command-line-prompt > span[data-user]::before { content: "[" attr(data-use=
+r) "@" attr(data-host) "] $"; }
+
+.command-line-prompt > span[data-user=3D"root"]::before { content: "[" attr=
+(data-user) "@" attr(data-host) "] #"; }
+
+.command-line-prompt > span[data-prompt]::before { content: attr(data-promp=
+t); }
+
+.collapsable-code { margin: 40px 0px; position: relative; width: 100%; }
+
+.collapsable-code input[type=3D"checkbox"] { position: absolute; visibility=
+: hidden; }
+
+.collapsable-code input[type=3D"checkbox"]:checked ~ .code-toolbar pre, .co=
+llapsable-code input[type=3D"checkbox"]:checked ~ pre { border-top: none; h=
+eight: 0px; padding: 0px; }
+
+.collapsable-code input[type=3D"checkbox"]:checked ~ .code-toolbar { border=
+-top: none; padding: 0px; }
+
+.collapsable-code input[type=3D"checkbox"]:checked ~ .code-toolbar .toolbar=
+ { display: none; }
+
+.collapsable-code input[type=3D"checkbox"]:checked ~ label { border-radius:=
+ 10px; }
+
+.collapsable-code input[type=3D"checkbox"]:checked ~ label .collapsable-cod=
+e__toggle::after { content: attr(data-label-expand); }
+
+.collapsable-code label { background: var(--background-secondary); border-t=
+op-left-radius: 10px; border-top-right-radius: 10px; cursor: pointer; displ=
+ay: flex; justify-content: space-between; margin: 0px; min-height: 30px; mi=
+n-width: 30px; padding: 10px; position: relative; }
+
+.collapsable-code__title { color: var(--color); flex: 1 1 0%; overflow: hid=
+den; padding: 3px 10px; text-overflow: ellipsis; white-space: nowrap; }
+
+.collapsable-code__language { background: var(--background); border-radius:=
+ 10px; color: var(--color); padding: 3px 10px; }
+
+.collapsable-code__toggle { color: var(--color); font-size: 16px; padding: =
+3px 10px; }
+
+.collapsable-code__toggle::after { content: attr(data-label-collapse); }
+
+.collapsable-code pre { border-top-left-radius: 0px; border-top-right-radiu=
+s: 0px; margin-top: 0px; }
+
+.collapsable-code code::first-line, .collapsable-code pre::first-line { lin=
+e-height: 0; }
+
+.collapsable-code .code-toolbar { margin: 0px; }
+------MultipartBoundary--1WpygAoeBgJ8yzTBnekhZzfvBxTVjTGNwn2QHFlFA6----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://sarcasticcoder.com/style.css
+
+@charset "utf-8";
+=0A
+------MultipartBoundary--1WpygAoeBgJ8yzTBnekhZzfvBxTVjTGNwn2QHFlFA6------
