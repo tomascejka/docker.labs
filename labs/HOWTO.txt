@@ -1,0 +1,12 @@
+Jak vytvorit testovaci laborator pro tvuj cil
+
+Zalozeni adresare 
+- via skript, spust init.bat, 
+- rucne, pak spust tyto kroky:
+	1. Vytvor si nekde adresar s tvym cilem, napr. 'studijni_cil'
+	2. vezmi obsah slozky __template a nakopiruj je do slozky 'studijni_cil'
+	3. presun se do slozky 'studijni_cil'
+
+Zalozeni laboratore - vlastniho pokusu
+- doporucuji spustit ve slozce 'studijni_cil/cl.bat' a nech se provest pruvodcem
+--

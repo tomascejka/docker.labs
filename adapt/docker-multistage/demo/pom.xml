@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>cz.toce.temp</groupId>
+  <artifactId>app</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <properties>
+    <!-- 
+      26.0.0(jakarta9.1), 25.0.1, 24.0.1, 23.0.2(jakarta9), 22.0.1, 21.0.2, 20.0.1(-), 19.1.0(-), 
+      18.0.1(-), 17.0.1(-), 16.0.0, 15.0.1, 14.0.1, 13.0.0, 12.0.0, 11.0.0,
+      10.1.0,  9.0.2,  8.2.1(x) 
+      -->
+    <version.wildfly>26.0.1.Final</version.wildfly> <!-- https://www.wildfly.org/news/2021/12/16/WildFly26-Final-Released/ -->
+    <version.jakarta>9.0.0</version.jakarta>
+    <plugin.fork.embedded>true</plugin.fork.embedded>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+    </dependency>
+    <!-- 
+      @see https://jakarta.ee/specifications/platform/9/
+    -->
+    <dependency>
+      <groupId>jakarta.platform</groupId>
+      <artifactId>jakarta.jakartaee-api</artifactId>
+      <version>${version.jakarta}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+      <!-- 
+            @see https://docs.wildfly.org/bootablejar/
+            @see https://docs.wildfly.org/26/Bootable_Guide.html
+            @see https://github.com/wildfly-extras/wildfly-jar-maven-plugin
+          -->
+      <plugin>
+        <groupId>org.wildfly.plugins</groupId>
+        <artifactId>wildfly-jar-maven-plugin</artifactId>
+        <version>7.0.0.Final</version>
+        <configuration>
+          <feature-pack-location>wildfly@maven(org.jboss.universe:community-universe)#${version.wildfly}</feature-pack-location>
+          <layers>
+            <layer>jaxrs</layer>
+            <layer>management</layer>
+            <layer>ejb</layer>
+          </layers>
+          <excluded-layers>
+            <layer>deployment-scanner</layer>
+          </excluded-layers>
+          <jvmArguments>
+            <arg>-agentlib:jdwp=transport=dt_socket,address=8787,server=y,suspend=n</arg>
+          </jvmArguments>
+          <plugin-options>
+            <jboss-fork-embedded>${plugin.fork.embedded}</jboss-fork-embedded>
+          </plugin-options>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>package</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

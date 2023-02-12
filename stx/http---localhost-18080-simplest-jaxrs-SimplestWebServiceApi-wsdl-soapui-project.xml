@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2919e21b-898e-4c88-93fc-574b5e25f1e9" activeEnvironment="Default" name="http://localhost:18080/simplest.jaxrs/SimplestWebServiceApi?wsdl" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

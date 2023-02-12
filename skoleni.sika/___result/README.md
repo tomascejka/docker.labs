@@ -1,0 +1,1 @@
+# Skoleni výstup
