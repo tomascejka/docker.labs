@@ -1,3 +1,9 @@
+**/target
+**/.idea
+**/.vscode
+**/console_V1.bat
+**/ide_V1.bat
+
 # Compiled class file
 *.class
 
@@ -21,8 +27,3 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-001-lab-alpine/.idea/001-lab-alpine.iml
-001-lab-alpine/.idea/misc.xml
-001-lab-alpine/.idea/modules.xml
-001-lab-alpine/.idea/vcs.xml
-/dockering/demo/target
