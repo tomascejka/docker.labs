@@ -1,0 +1,8 @@
+# Napady pro docker studium
+
+## Vyvoj pomoci docker
++ https://code.visualstudio.com/docs/devcontainers/containers
+
+## GUI aplikace
++ https://mybyways.com/blog/running-linux-gui-applications-in-a-docker-container-using-xpra
++ https://hub.docker.com/r/jlesage/baseimage-gui
