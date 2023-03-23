@@ -2,6 +2,77 @@
 
 Zde shromažďovat nápady a připomínky, z kterých vzejde školení pro Docker.
 
+Postup uceni
+	- skeleton_V1:
+		- docker-cli (client)
+			- docker run
+				1. with output (and then stop)
+					- echo hello-world,
+						- ```docker run busybox echo hello world```
+					- show host
+						- ```docker run -it alpine cat /etc/hosts```
+					- show hostname
+						- ```docker run -it alpine cat /etc/hostname```
+				2. why container has stoped,
+					- But containers don’t run an entire operating system. They only run (contain) a specific process. When this process finishes, the container exits.
+					- https://www.tutorialworks.com/why-containers-stop/
+				2.1 ping
+					- ```docker run -d busybox ping google.com```
+					- ```docker ps```
+					- ` ``docker logs <container> -f```
+				3. various types: 
+					- named (--rm --name %name%)
+						- ```docker run --rm --name %appName% %imgName%```
+						- https://www.digitalocean.com/community/tutorials/3-tips-for-naming-docker-containers
+					- detached (-d),
+						- ```docker run -d --rm --name %appName% %imgName%```
+					- interactive (-it)
+						- ```docker run -it --entrypoint /bin/bash <image>```
+						- parameter '-it' stands for ```docker run --interactive --tty```
+			- docker build (basic)
+				- apline:latest
+					- usecases:
+						```
+						FROM alpine:latest
+						CMD ["echo", "Hello world"]
+						```
+					- ping
+						```
+						FROM alpine:latest
+						ENTRYPOINT ["ping"]
+						CMD ["-c", "4", "google.com"]						
+						```
+						- eg. https://hub.docker.com/r/tomascejka/hello-world
+				- ENTRYPOINT vs. CMD
+					- CMD, overriable (vhodne pro pro setovani defautlnich hodnot/prikazu)
+						- https://docs.docker.com/engine/reference/builder/#cmd
+					- ENTRYPOINT, not-overiaable part
+						- https://docs.docker.com/engine/reference/builder/#entrypoint
+					- cooperation:
+						- ENTRYPOINT pro prikaz
+						- CMD pro default prikaz, kt. lze prekryt z docker run
+					- usecases:
+						```
+						FROM alpine:latest
+						RUN apk --no-cache add curl
+						ENTRYPOINT ["curl"]   # fixed part
+						CMD ["--silent", "https://httpbin.org/get"]  # replacable part						
+						```
+
+						```
+						FROM alpine:latest
+						RUN apk add --update htop && rm -rf /var/cache/apk/*
+						CMD ["htop"]
+						```
+						- hello-world (ukazka overrideable CMD)
+							- use https://hub.docker.com/r/tomascejka/hello-world
+							- ```docker run tomascejka/hello-world```
+							- ```docker run tomascejka/hello-world echo hello tomas```
+				- WORKDIR
+					- napis dockerfile s workdir
+					- ```docker run -it alpine pwd```
+	- dalsi postupy:
+		+ https://www.freecodecamp.org/news/the-docker-handbook/
 OBECNE
 	- Introducion to containers
 		- tipy pro pojmenovani, https://www.digitalocean.com/community/tutorials/3-tips-for-naming-docker-containers

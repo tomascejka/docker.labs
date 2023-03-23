@@ -1,0 +1,27 @@
+Ruzne poznamky ze sveta kontejneru
+
+## jak hledat redhat image
+- https://catalog.redhat.com/software/containers/explore
+- https://crunchtools.com/ubi-build/
+- https://docs.pagure.org/koji/image_build/
+- https://koji.build/
+
+## Evolution of Containers
+	zdroj - https://techiescamp.com/lessons/evolution-of-containers/
+	Containerization is not a new technology, despite what some may think. In fact, Google has been utilizing container technology in its infrastructure for years.
+
+	The concept of containers actually dates back to the 1970s with the introduction of chroot, a concept that allowed for the changing of a process’s root directory.
+
+	Since then, many container-based projects have been developed, with some starting as early as 2000. Here is a list of such project
+
+	Year	Technology
+	2000	FreeBSD jails introduced the container concept.
+	2003	Linux-V server project released with the concept of OS-level virtualization
+	2005	Solaris Zones– OS-level virtualization project introduced
+	2007	Google released a paper on Generic Process Containers
+	2008	The initial release of LXC containers
+	2011	cloudfoundry announced warden
+	2013	lcmcty– Open-sourced by Google
+	2013	Docker project was announced by DotCloud
+	2014	Rocket. (rkt) announced by CoreOS
+	2016	Windows container preview as released as part of Windows server 2016

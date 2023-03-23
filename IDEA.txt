@@ -1,0 +1,64 @@
+# Napady pro docker studium
+
+## Vyvoj pomoci docker
++ https://code.visualstudio.com/docs/devcontainers/containers
+
+## GUI aplikace
++ https://mybyways.com/blog/running-linux-gui-applications-in-a-docker-container-using-xpra
++ https://hub.docker.com/r/jlesage/baseimage-gui
++ https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde
+
+# Mazani docker cache
+zdroj - https://docker.practicetestgeeks.com/docker-software/
+Removing unused containers
+
+get the IDs of the containers with status exited or dead
+docker ps –filter status=exited –filter status=dead -q
+
+reuse the above command to delete these containers
+docker rm $(docker ps –filter=status=exited –filter=status=dead -q)
+
+one-liner alternative to remove all stopped containers
+docker container prune
+
+Removing all containers
+
+stop all running containers and get the IDs of the running containers
+docker ps -q
+
+stop all the containers with
+docker stop $(docker ps -q)
+
+delete all containers
+docker rm $(docker ps -a -q)
+
+Removing dangling images
+
+get the image ID for such images
+docker images –filter dangling=true -q
+
+delete those images with the following command
+docker rmi $(docker images –filter dangling=true -q)
+
+one-liner alternative to remove all dangling images
+docker image prune
+
+Removing all images
+need the IDs of all the images
+docker images -a -q
+
+combine it with docker rmi
+docker rmi $(docker images -a -q)
+
+one-liner alternative to remove all images
+docker image prune -a
+
+Removing volumes
+docker volume prune
+
+Removing networks
+docker network prune
+
+Removing everything
+docker system prune
+--
