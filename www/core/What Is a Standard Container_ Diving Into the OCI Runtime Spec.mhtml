@@ -1,24 +1,24 @@
 From: <Saved by Blink>
 Snapshot-Content-Location: https://iximiuz.com/en/posts/oci-containers/
 Subject: What Is a Standard Container: Diving Into the OCI Runtime Spec
-Date: Mon, 6 Mar 2023 17:09:01 -0000
+Date: Sat, 25 Mar 2023 12:51:28 -0000
 MIME-Version: 1.0
 Content-Type: multipart/related;
 	type="text/html";
-	boundary="----MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----"
+	boundary="----MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----"
 
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/html
-Content-ID: <frame-2A778C82B9019623C28EA00ABB4E47A1@mhtml.blink>
+Content-ID: <frame-6931CBEFE8B4AC4AA502BC31D3E5F3E4@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://iximiuz.com/en/posts/oci-containers/
 
 <!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
 ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
-css" href=3D"cid:css-f61c474d-3e03-44eb-aff9-d20ba2a8a5b1@mhtml.blink" /><l=
-ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-8b930071-731f-4e69=
--a499-15d8441bf9db@mhtml.blink" /><meta name=3D"viewport" content=3D"width=
+css" href=3D"cid:css-53c31dd7-1906-4b39-94e4-c5a867d0e065@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-45217101-245d-45f8=
+-ad99-a0492b666b25@mhtml.blink" /><meta name=3D"viewport" content=3D"width=
 =3Ddevice-width, initial-scale=3D1, maximum-scale=3D1"><link rel=3D"icon" h=
 ref=3D"https://iximiuz.com/img/favicon.ico"><link rel=3D"shortcut icon" hre=
 f=3D"https://iximiuz.com/img/favicon-32x32.png"><link rel=3D"apple-touch-ic=
@@ -51,7 +51,7 @@ tyles.css?v=3D2"><link rel=3D"stylesheet" href=3D"https://iximiuz.com/webfo=
 nts/ptserif/main.css"><link rel=3D"prefetch" as=3D"style" href=3D"https://c=
 .disquscdn.com/next/embed/styles/lounge.2330dfe9833fc6fa82fa0ffee36e8c21.cs=
 s"><link rel=3D"prefetch" as=3D"script" href=3D"https://c.disquscdn.com/nex=
-t/embed/common.bundle.4ba4d839a8c58443b0a3c9c44262d3b7.js"><link rel=3D"pre=
+t/embed/common.bundle.c11615d75a9d8a7ebcb6b388206979fc.js"><link rel=3D"pre=
 fetch" as=3D"script" href=3D"https://c.disquscdn.com/next/embed/lounge.bund=
 le.944405f46b741461538725b083516e4d.js"><link rel=3D"prefetch" as=3D"script=
 " href=3D"https://disqus.com/next/config.js"></head><body><div id=3D"contai=
@@ -429,7 +429,7 @@ van Velichko"></div><div class=3D"share-holder right"><iframe id=3D"twitter=
 lowfullscreen=3D"true" class=3D"twitter-share-button twitter-share-button-r=
 endered twitter-tweet-button" style=3D"position: static; visibility: visibl=
 e; width: 81px; height: 28px;" title=3D"Twitter Tweet Button" src=3D"cid:fr=
-ame-3161ABEE81C52D668A3278B6E16D795F@mhtml.blink"></iframe></div></footer><=
+ame-7A868F9E126198421E22A2E871A72691@mhtml.blink"></iframe></div></footer><=
 div class=3D"article-entry markdown-body"><div class=3D"learning-series-box=
 "><div class=3D"learning-series-box__header"><a href=3D"https://iximiuz.com=
 /en/series/debunking-container-myths/">Debunking Container Myths</a></div><=
@@ -465,11 +465,11 @@ nvertkit.com/features/forms?utm_campaign=3Dpoweredby&amp;utm_content=3Dform=
 d-by" class=3D"formkit-powered-by-convertkit" data-variant=3D"dark" target=
 =3D"_blank" rel=3D"noopener noreferrer">Built with ConvertKit</a></div></di=
 v></form></div></div></div></div></article></div><section id=3D"comments"><=
-div id=3D"disqus_thread"><iframe id=3D"dsq-app3753" name=3D"dsq-app3753" al=
+div id=3D"disqus_thread"><iframe id=3D"dsq-app7560" name=3D"dsq-app7560" al=
 lowtransparency=3D"true" frameborder=3D"0" scrolling=3D"no" tabindex=3D"0" =
-title=3D"Disqus" width=3D"100%" src=3D"cid:frame-7323F24A262C58575035108329=
-1CDF38@mhtml.blink" style=3D"width: 1px !important; min-width: 100% !import=
-ant; border: none !important; overflow: hidden !important; height: 1432px !=
+title=3D"Disqus" width=3D"100%" src=3D"cid:frame-0635CBA81D87B39601514B5158=
+ABADBB@mhtml.blink" style=3D"width: 1px !important; min-width: 100% !import=
+ant; border: none !important; overflow: hidden !important; height: 1270px !=
 important;" horizontalscrolling=3D"no" verticalscrolling=3D"no"></iframe></=
 div></section><div class=3D"article article-type-post" style=3D"border-bott=
 om: none"><div class=3D"article-inner"><div class=3D"article-entry markdown=
@@ -542,16 +542,16 @@ eed.atom">Atom</a><span>&nbsp;</span><a class=3D"feed-footer" href=3D"https=
 ://iximiuz.com/feed.rss">RSS</a><a rel=3D"me" href=3D"https://hachyderm.io/=
 @iximiuz"></a></div></div></footer></div><iframe style=3D"display: none;"><=
 /iframe><iframe scrolling=3D"no" frameborder=3D"0" allowtransparency=3D"tru=
-e" src=3D"cid:frame-4F69987CCFE87BE5FEC3B47D72FD6340@mhtml.blink" title=3D"=
+e" src=3D"cid:frame-7639B16C0E99981F23F3A3F39660CA7F@mhtml.blink" title=3D"=
 Twitter settings iframe" style=3D"display: none;"></iframe><iframe id=3D"ru=
 fous-sandbox" scrolling=3D"no" frameborder=3D"0" allowtransparency=3D"true"=
  allowfullscreen=3D"true" style=3D"position: absolute; visibility: hidden; =
 display: none; width: 0px; height: 0px; padding: 0px; border: none;" title=
 =3D"Twitter analytics iframe"></iframe></body></html>
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-f61c474d-3e03-44eb-aff9-d20ba2a8a5b1@mhtml.blink
+Content-Location: cid:css-53c31dd7-1906-4b39-94e4-c5a867d0e065@mhtml.blink
 
 @charset "utf-8";
 
@@ -1073,10 +1073,10 @@ eld { flex: 100 1 auto; }
 data-stacked=3D"false"] .formkit-submit, .formkit-form[data-uid=3D"67e42332=
 67"][min-width~=3D"800"] .formkit-fields[data-stacked=3D"false"] .formkit-s=
 ubmit { flex: 1 1 auto; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-8b930071-731f-4e69-a499-15d8441bf9db@mhtml.blink
+Content-Location: cid:css-45217101-245d-45f8-ad99-a0492b666b25@mhtml.blink
 
 @charset "utf-8";
 
@@ -1598,7 +1598,7 @@ eld { flex: 100 1 auto; }
 data-stacked=3D"false"] .formkit-submit, .formkit-form[data-uid=3D"84375339=
 98"][min-width~=3D"800"] .formkit-fields[data-stacked=3D"false"] .formkit-s=
 ubmit { flex: 1 1 auto; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://iximiuz.com/css/styles.css?v=2
@@ -2531,7 +2531,7 @@ kdown-body .hljs-title { color: rgb(97, 174, 238); }
 .markdown-body .hljs-strong { font-weight: bold; }
 
 .markdown-body .hljs-link { text-decoration: underline; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://iximiuz.com/img/header-background.png
@@ -2738,7 +2738,7 @@ IhxkwXiiZCE7Rfzw6wS6NPuHXyfQpTnInd9I80EPkqiBX8Q1hvEbJFEDv4hrDOM3SKIGBzni8sMs
 pDfaJvDbdPwbft5om8Bv0/Fv+HmjbYKDvOkc3ljIA5pE8BOMQ4nfAU0i+AnGocTvgCaR/wBt0V3c
 o/Cc1gAAAABJRU5ErkJggg==
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://iximiuz.com/webfonts/ptserif/main.css
@@ -2808,7 +2808,7 @@ F; }
 fFF3H6ngCgAlQzPk_vArhqVIZ0nv9q090hN8.woff2") format("woff2"); unicode-range=
 : U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20A=
 C, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://iximiuz.com/oci-containers/container-2000-opt.png
@@ -4013,7 +4013,7 @@ SM/yh14Rmp7lvyUQ8qvVTdcqq83K0AfWLCfQQ18r+DlzoJxMADCS60eHQ9bP1RGqQa5Fnxrbixw7
 inymOdSHXVdb6B9dZW1e3abGbgZ6NgK1GQONrkABAG8s0UO+mz7kH5fN5TTeeDNY52F1sMo/XFuV
 9eNV3g12nYnLQA/vCtTHBRrPAwUAAAAAAAB29AFURcIYEvmxBwAAAABJRU5ErkJggg==
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://iximiuz.com/oci-containers/config.json-2000-opt.png
@@ -5847,7 +5847,7 @@ zGkXuonBbmU40EUUR04oGYGcOwAAwE4YxlRR4doBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AACAbPgDluoQMHEgeMUAAAAASUVORK5CYII=
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://iximiuz.com/oci-containers/linux-container-vs-vm-container-2000-opt.png
@@ -7512,7 +7512,7 @@ j+D0uVrJk7WY6JZ0Bjo+UxACAAAAgL9d0AEAAAAAgKADAAAAAABBBwAAAAAAgg4AAAAAEHQAAAAA
 ACDoAAAAAABA0AEAAAAAgKADAAAAAAQdAAAAAAAIOgAAAAAAvx3/AXyh8+sXI7WvAAAAAElFTkSu
 QmCC
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/jpeg
 Content-Transfer-Encoding: base64
 Content-Location: https://gravatar.com/avatar/3f6614864d0a2b1c245ebafeaf5404a1?s=280
@@ -7828,18 +7828,18 @@ nP1pjNkcMcDtnFFFBSImJxyxB9uv61CyomSSc+pxRRQMaz5bPUD/AGqmWRS4PlHjncRRRTJexXnl
 jkmeSb7qnaOeuKkhvzMwVBtjHRQMYoooe4LYuWwLn73PUtTG1WOKUw2im4lH3iOlFFAiTzLuTAkc
 Qg9u9FFFIZ//2Q==
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/html
-Content-ID: <frame-E8FB8C2A83AB6168A33519394241A220@mhtml.blink>
+Content-ID: <frame-9614651FBD51FD8C68D53629A2B5AD94@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
 
 <html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
 =3DUTF-8"></head><body></body></html>
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/html
-Content-ID: <frame-7323F24A262C585750351083291CDF38@mhtml.blink>
+Content-ID: <frame-0635CBA81D87B39601514B5158ABADBB@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
-Content-Location: https://disqus.com/embed/comments/?base=default&f=micromind&t_i=%2Fen%2Fposts%2Foci-containers%2F&t_u=https%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&t_e=What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&t_d=What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&t_t=What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&t_c=%2Fposts%2F&s_o=default&l=en#version=94f22ba62af084852428f342c37a2a17
+Content-Location: https://disqus.com/embed/comments/?base=default&f=micromind&t_i=%2Fen%2Fposts%2Foci-containers%2F&t_u=https%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&t_e=What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&t_d=What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&t_t=What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&t_c=%2Fposts%2F&s_o=default&l=en#version=7a4d09afbda9f3c44155fc8f6c0532e0
 
 <!DOCTYPE html><!--[if IE 8]><html lang=3D"en" dir=3D"ltr" class=3D"ie8"><!=
 [endif]--><!--[if IE 9]><html lang=3D"en" dir=3D"ltr" class=3D"ie9"><![endi=
@@ -7848,12 +7848,12 @@ ch localstorage sessionstorage contenteditable use-opacity-transitions embe=
 d-refresh embed-refresh-v2" style=3D"--publisher-color:rgb(17,17,17); --pub=
 lisher-color-safe:rgb(17,17,17);"><!--<![endif]--><head><meta http-equiv=3D=
 "Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=3D"styleshe=
-et" type=3D"text/css" href=3D"cid:css-bbe3959e-b89b-422e-94a4-0d0f97346c7d@=
-mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-6=
-37973e0-b26f-4c26-8294-beeb795b7007@mhtml.blink" /><link rel=3D"stylesheet"=
- type=3D"text/css" href=3D"cid:css-7d499d0e-d84d-4e6d-ae46-5c7dbcc2327c@mht=
-ml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-0814=
-f241-3de1-4791-862d-082e80ca0c49@mhtml.blink" />
+et" type=3D"text/css" href=3D"cid:css-d1107394-342f-46df-acfe-5e8ceb292197@=
+mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-4=
+e6b4580-eda5-4189-8d9f-8944e00bc477@mhtml.blink" /><link rel=3D"stylesheet"=
+ type=3D"text/css" href=3D"cid:css-0cf52e6a-1c12-4f5d-b67b-68663f0a3539@mht=
+ml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-1c50=
+bc3f-3005-43ab-8b16-3f3e5db789d7@mhtml.blink" />
     <title>Disqus Comments</title>
 
    =20
@@ -8260,93 +8260,93 @@ iyanov</a></span> <a data-action=3D"follow" data-user=3D"35763759" class=3D=
 el=3D"Follow" title=3D"Follow"></span></a></span></span>  <span class=3D"po=
 st-meta" style=3D"display: block;"> <a href=3D"https://iximiuz.com/en/posts=
 /oci-containers/#comment-5844801067" data-role=3D"relative-time" class=3D"t=
-ime-ago" title=3D"Monday, May 2, 2022 7:41 AM">10 months ago</a> </span> </=
-header><div class=3D"post-body-inner"><div class=3D"post-message-container"=
- data-role=3D"message-container"><div class=3D"publisher-anchor-color" data=
--role=3D"message-content"><div class=3D"post-message " data-role=3D"message=
-" dir=3D"auto"><div><p>Very interesting research, suggestive for further st=
-udy of the issue. Thanx!</p></div></div><span class=3D"post-media"><ul data=
--role=3D"post-media-list"></ul></span></div></div><a class=3D"see-more hidd=
-en" title=3D"see more" data-action=3D"see-more">see more</a></div><footer c=
-lass=3D"comment__footer"><menu class=3D"comment-footer__menu"><li class=3D"=
-voting" data-role=3D"voting"><div class=3D"post-votes"><a href=3D"https://d=
-isqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%=
-2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fpost=
-s%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20D=
-iving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standar=
-d%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWha=
-t%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%=
-20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-u=
-p  count-1" data-action=3D"upvote" title=3D"" name=3D"Vote up"><span class=
-=3D"control"></span> <span class=3D"updatable count" data-role=3D"likes">1<=
-/span></a><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;=
-f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3=
-A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a=
-%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp=
-;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%=
-20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving=
-%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefaul=
-t&amp;l=3Den#" class=3D"vote-down  count-0" data-action=3D"downvote" title=
-=3D"Vote down" name=3D"Vote down"><span class=3D"control"></span> <span cla=
-ss=3D"updatable count" data-role=3D"dislikes">0</span></a></div></li><li cl=
-ass=3D"reply" data-role=3D"reply-link"><a class=3D"comment-footer__action" =
-href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind=
-&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiu=
-z.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%2=
-0Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%2=
+ime-ago" title=3D"Monday, May 2, 2022 7:41 AM">a year ago</a> </span> </hea=
+der><div class=3D"post-body-inner"><div class=3D"post-message-container" da=
+ta-role=3D"message-container"><div class=3D"publisher-anchor-color" data-ro=
+le=3D"message-content"><div class=3D"post-message " data-role=3D"message" d=
+ir=3D"auto"><div><p>Very interesting research, suggestive for further study=
+ of the issue. Thanx!</p></div></div><span class=3D"post-media"><ul data-ro=
+le=3D"post-media-list"></ul></span></div></div><a class=3D"see-more hidden"=
+ title=3D"see more" data-action=3D"see-more">see more</a></div><footer clas=
+s=3D"comment__footer"><menu class=3D"comment-footer__menu"><li class=3D"vot=
+ing" data-role=3D"voting"><div class=3D"post-votes"><a href=3D"https://disq=
+us.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fp=
+osts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2=
+Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Divi=
+ng%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%2=
+0Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%2=
 0Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20S=
-pec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the=
-%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#=
-" data-action=3D"reply"><span class=3D"text">Reply</span></a></li><li class=
-=3D"bullet" aria-hidden=3D"true">=E2=80=A2</li><li id=3D"comment__share-584=
-4801067" class=3D"comment__share"><a class=3D"toggle" href=3D"https://disqu=
-s.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fpo=
-sts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2F=
-oci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Divin=
-g%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20=
-Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20=
-Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Sp=
-ec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"expa=
-nd-share"><span class=3D"text">Share =E2=80=BA</span></a><ul class=3D"comme=
-nt-share__buttons"><div class=3D"comment-share__social-share-buttons"><li c=
-lass=3D"twitter share__button-container"><button class=3D"share__button ico=
-n icon-twitter" data-action=3D"share:twitter" aria-label=3D"Share comment o=
-n Twitter"></button></li><li class=3D"facebook share__button-container"><bu=
-tton class=3D"share__button icon icon-facebook" data-action=3D"share:facebo=
-ok" aria-label=3D"Share comment on Facebook"></button></li></div><li class=
-=3D"link share__button-container"><button class=3D"share__button icon icon-=
-link" value=3D"http://disq.us/p/2onudd7" name=3D"Link" title=3D"Click to co=
-py post link" data-action=3D"copy-link" aria-label=3D"Copy link to comment"=
-></button><input class=3D"share__button link_url" name=3D"Link" title=3D"Cl=
-ick to copy post link" data-action=3D"copy-link" readonly=3D""></li></ul></=
-li><li class=3D"realtime" data-role=3D"realtime-notification:5844801067"><s=
-pan class=3D"realtime-replies realtime-replies--refresh icon icon-pencil" s=
-tyle=3D"display: none;"></span><a href=3D"https://disqus.com/embed/comments=
-/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers=
-%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&am=
-p;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI=
-%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Divin=
-g%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20=
-Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fpost=
-s%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"realtime-button realtime-butto=
-n--refresh" style=3D"display: none;"></a></li></menu></footer></div><div cl=
-ass=3D"moderate-form blacklist-form" data-role=3D"blacklist-form"></div><di=
-v class=3D"moderate-form flag-form" data-role=3D"flagging-form"></div><div =
-class=3D"badges-form" data-role=3D"badges-form"></div><div class=3D"reply-f=
-orm-container" data-role=3D"reply-form"></div></div><div class=3D"children"=
-><ul data-role=3D"children"><li class=3D"post" id=3D"post-5846493133"><div =
-role=3D"alert"></div><div data-role=3D"post-content" class=3D"post-content"=
- tabindex=3D"0"><div class=3D"indicator"></div><span class=3D"pinned-icon">=
-</span><ul class=3D"post-menu dropdown post-menu--refresh" data-role=3D"men=
-u" data-view-id=3D"post-menu" data-post-id=3D"5846493133"><li class=3D"post=
--menu-item collapse"><a href=3D"https://disqus.com/embed/comments/?base=3Dd=
-efault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_=
-u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWh=
-at%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime=
-%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%2=
-0the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%=
-3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s=
-_o=3Ddefault&amp;l=3Den#" data-action=3D"collapse" title=3D"Collapse" name=
+pec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-up  =
+count-1" data-action=3D"upvote" title=3D"" name=3D"Vote up"><span class=3D"=
+control"></span> <span class=3D"updatable count" data-role=3D"likes">1</spa=
+n></a><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3D=
+micromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F=
+%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20S=
+tandard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=
+=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
+ntime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20I=
+nto%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&am=
+p;l=3Den#" class=3D"vote-down  count-0" data-action=3D"downvote" title=3D"V=
+ote down" name=3D"Vote down"><span class=3D"control"></span> <span class=3D=
+"updatable count" data-role=3D"dislikes">0</span></a></div></li><li class=
+=3D"reply" data-role=3D"reply-link"><a class=3D"comment-footer__action" hre=
+f=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&am=
+p;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.c=
+om%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Co=
+ntainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is=
+%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec=
+&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20=
+OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" d=
+ata-action=3D"reply"><span class=3D"text">Reply</span></a></li><li class=3D=
+"bullet" aria-hidden=3D"true">=E2=80=A2</li><li id=3D"comment__share-584480=
+1067" class=3D"comment__share"><a class=3D"toggle" href=3D"https://disqus.c=
+om/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts=
+%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci=
+-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%2=
+0Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Con=
+tainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%=
+20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&=
+amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"expand-=
+share"><span class=3D"text">Share =E2=80=BA</span></a><ul class=3D"comment-=
+share__buttons"><div class=3D"comment-share__social-share-buttons"><li clas=
+s=3D"twitter share__button-container"><button class=3D"share__button icon i=
+con-twitter" data-action=3D"share:twitter" aria-label=3D"Share comment on T=
+witter"></button></li><li class=3D"facebook share__button-container"><butto=
+n class=3D"share__button icon icon-facebook" data-action=3D"share:facebook"=
+ aria-label=3D"Share comment on Facebook"></button></li></div><li class=3D"=
+link share__button-container"><button class=3D"share__button icon icon-link=
+" value=3D"http://disq.us/p/2onudd7" name=3D"Link" title=3D"Click to copy p=
+ost link" data-action=3D"copy-link" aria-label=3D"Copy link to comment"></b=
+utton><input class=3D"share__button link_url" name=3D"Link" title=3D"Click =
+to copy post link" data-action=3D"copy-link" readonly=3D""></li></ul></li><=
+li class=3D"realtime" data-role=3D"realtime-notification:5844801067"><span =
+class=3D"realtime-replies realtime-replies--refresh icon icon-pencil" style=
+=3D"display: none;"></span><a href=3D"https://disqus.com/embed/comments/?ba=
+se=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&=
+amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_=
+e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20R=
+untime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20=
+Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Cont=
+ainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F=
+&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"realtime-button realtime-button--r=
+efresh" style=3D"display: none;"></a></li></menu></footer></div><div class=
+=3D"moderate-form blacklist-form" data-role=3D"blacklist-form"></div><div c=
+lass=3D"moderate-form flag-form" data-role=3D"flagging-form"></div><div cla=
+ss=3D"badges-form" data-role=3D"badges-form"></div><div class=3D"reply-form=
+-container" data-role=3D"reply-form"></div></div><div class=3D"children"><u=
+l data-role=3D"children"><li class=3D"post" id=3D"post-5846493133"><div rol=
+e=3D"alert"></div><div data-role=3D"post-content" class=3D"post-content" ta=
+bindex=3D"0"><div class=3D"indicator"></div><span class=3D"pinned-icon"></s=
+pan><ul class=3D"post-menu dropdown post-menu--refresh" data-role=3D"menu" =
+data-view-id=3D"post-menu" data-post-id=3D"5846493133"><li class=3D"post-me=
+nu-item collapse"><a href=3D"https://disqus.com/embed/comments/?base=3Ddefa=
+ult&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=
+=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWha=
+t%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%=
+20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20=
+the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3=
+A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_=
+o=3Ddefault&amp;l=3Den#" data-action=3D"collapse" title=3D"Collapse" name=
 =3D"Collapse"><span>=E2=88=92</span></a></li><li class=3D"post-menu-item ex=
 pand"><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3D=
 micromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F=
@@ -8369,254 +8369,130 @@ lag as inappropriate"><i aria-hidden=3D"true" class=3D"icon icon-flag"></i>=
 </a></li></ul><div class=3D"avatar hovercard"><a href=3D"https://disqus.com=
 /by/iximiuz/" data-action=3D"profile" data-tab=3D"" data-username=3D"iximiu=
 z" target=3D"_blank" rel=3D"noopener noreferrer" class=3D"user user--refres=
-h"><img data-role=3D"user-avatar" data-user=3D"115205155" src=3D"https://c.=
-disquscdn.com/uploads/users/11520/5155/avatar92.jpg?1677191483" alt=3D"Avat=
-ar" class=3D"image-refresh"></a></div><div class=3D"post-body"><header clas=
-s=3D"comment__header"><span class=3D"post-byline"><span> <span class=3D"aut=
-hor publisher-anchor-color"><a href=3D"https://disqus.com/by/iximiuz/" data=
--action=3D"profile" data-tab=3D"" data-username=3D"iximiuz" target=3D"_blan=
-k" rel=3D"noopener noreferrer">Ivan Velichko</a></span> <span class=3D"badg=
-e moderator"><span class=3D"badge-content">Mod</span></span><a data-action=
-=3D"follow" data-user=3D"115205155" class=3D"follow-user-container" tabinde=
-x=3D"0"><span class=3D"follow-user" aria-label=3D"Follow" title=3D"Follow">=
-</span></a></span><span class=3D"parent-link-container"> <a href=3D"https:/=
-/iximiuz.com/en/posts/oci-containers/#comment-5844801067" class=3D"parent-l=
-ink" data-role=3D"parent-link"><i aria-label=3D"in reply to" class=3D"icon-=
-forward" title=3D"in reply to"></i> Alexander Kiyanov</a></span></span>  <s=
-pan class=3D"post-meta" style=3D"display: block;"> <a href=3D"https://iximi=
-uz.com/en/posts/oci-containers/#comment-5846493133" data-role=3D"relative-t=
-ime" class=3D"time-ago" title=3D"Tuesday, May 3, 2022 10:06 PM">10 months a=
-go</a> </span> </header><div class=3D"post-body-inner"><div class=3D"post-m=
-essage-container" data-role=3D"message-container"><div class=3D"publisher-a=
-nchor-color" data-role=3D"message-content"><div class=3D"post-message " dat=
-a-role=3D"message" dir=3D"auto"><div><p>You are most welcome!</p></div></di=
-v><span class=3D"post-media"><ul data-role=3D"post-media-list"></ul></span>=
-</div></div><a class=3D"see-more hidden" title=3D"see more" data-action=3D"=
-see-more">see more</a></div><footer class=3D"comment__footer"><menu class=
-=3D"comment-footer__menu"><li class=3D"voting" data-role=3D"voting"><div cl=
-ass=3D"post-votes"><a href=3D"https://disqus.com/embed/comments/?base=3Ddef=
-ault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=
-=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWha=
-t%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%=
-20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20=
-the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3=
-A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_=
-o=3Ddefault&amp;l=3Den#" class=3D"vote-up  count-0" data-action=3D"upvote" =
-title=3D"Vote up" name=3D"Vote up"><span class=3D"control"></span> <span cl=
-ass=3D"updatable count" data-role=3D"likes">0</span></a><a href=3D"https://=
-disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen=
-%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fpos=
-ts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20=
-Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standa=
-rd%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWh=
-at%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime=
-%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-=
-down  count-0" data-action=3D"downvote" title=3D"Vote down" name=3D"Vote do=
-wn"><span class=3D"control"></span> <span class=3D"updatable count" data-ro=
-le=3D"dislikes">0</span></a></div></li><li class=3D"reply" data-role=3D"rep=
-ly-link"><a class=3D"comment-footer__action" href=3D"https://disqus.com/emb=
-ed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci=
--containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-conta=
-iners%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%=
-20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container=
-%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20=
-Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_=
-c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"reply"><span =
-class=3D"text">Reply</span></a></li><li class=3D"bullet" aria-hidden=3D"tru=
-e">=E2=80=A2</li><li id=3D"comment__share-5846493133" class=3D"comment__sha=
-re"><a class=3D"toggle" href=3D"https://disqus.com/embed/comments/?base=3Dd=
-efault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_=
-u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWh=
-at%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime=
-%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%2=
-0the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%=
-3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s=
-_o=3Ddefault&amp;l=3Den#" data-action=3D"expand-share"><span class=3D"text"=
->Share =E2=80=BA</span></a><ul class=3D"comment-share__buttons"><div class=
-=3D"comment-share__social-share-buttons"><li class=3D"twitter share__button=
--container"><button class=3D"share__button icon icon-twitter" data-action=
-=3D"share:twitter" aria-label=3D"Share comment on Twitter"></button></li><l=
-i class=3D"facebook share__button-container"><button class=3D"share__button=
- icon icon-facebook" data-action=3D"share:facebook" aria-label=3D"Share com=
-ment on Facebook"></button></li></div><li class=3D"link share__button-conta=
-iner"><button class=3D"share__button icon icon-link" value=3D"http://disq.u=
-s/p/2ooumz1" name=3D"Link" title=3D"Click to copy post link" data-action=3D=
-"copy-link" aria-label=3D"Copy link to comment"></button><input class=3D"sh=
-are__button link_url" name=3D"Link" title=3D"Click to copy post link" data-=
-action=3D"copy-link" readonly=3D""></li></ul></li><li class=3D"realtime" da=
-ta-role=3D"realtime-notification:5846493133"><span class=3D"realtime-replie=
-s realtime-replies--refresh icon icon-pencil" style=3D"display: none;"></sp=
-an><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmic=
-romind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2F=
-iximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Stan=
-dard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3D=
-What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runti=
-me%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into=
-%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=
-=3Den#" class=3D"realtime-button realtime-button--refresh" style=3D"display=
-: none;"></a></li></menu></footer></div><div class=3D"moderate-form blackli=
-st-form" data-role=3D"blacklist-form"></div><div class=3D"moderate-form fla=
-g-form" data-role=3D"flagging-form"></div><div class=3D"badges-form" data-r=
-ole=3D"badges-form"></div><div class=3D"reply-form-container" data-role=3D"=
-reply-form"></div></div><div class=3D"children"><ul data-role=3D"children">=
-</ul><div class=3D"show-children-wrapper hidden"><a class=3D"show-children"=
- id=3D"post-5846493133-show-children" data-action=3D"show-children" href=3D=
-"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_=
-i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2=
-Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Contai=
-ner%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a=
-%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp=
-;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%=
-20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#">Show =
-more replies</a></div></div></li></ul><div class=3D"show-children-wrapper h=
-idden"><a class=3D"show-children" id=3D"post-5844801067-show-children" data=
--action=3D"show-children" href=3D"https://disqus.com/embed/comments/?base=
-=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&am=
-p;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=
-=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
-ntime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20I=
-nto%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Conta=
-iner%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&=
-amp;s_o=3Ddefault&amp;l=3Den#">Show more replies</a></div></div></li><li cl=
-ass=3D"post" id=3D"post-6050287005"><div role=3D"alert"></div><div data-rol=
-e=3D"post-content" class=3D"post-content" tabindex=3D"0"><div class=3D"indi=
-cator"></div><span class=3D"pinned-icon"></span><ul class=3D"post-menu drop=
-down post-menu--refresh" data-role=3D"menu" data-view-id=3D"post-menu" data=
--post-id=3D"6050287005"><li class=3D"post-menu-item collapse"><a href=3D"ht=
-tps://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=
-=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2F=
-en%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Contain=
-er%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%=
-20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;=
-t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%2=
-0Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-a=
-ction=3D"collapse" title=3D"Collapse" name=3D"Collapse"><span>=E2=88=92</sp=
-an></a></li><li class=3D"post-menu-item expand"><a href=3D"https://disqus.c=
-om/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts=
-%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci=
--containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%2=
-0Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Con=
-tainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%=
-20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&=
-amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"collaps=
-e" title=3D"Expand" name=3D"Collapse"><span>+</span></a></li><li class=3D" =
-post-menu-item" role=3D"menuitem"><a class=3D"dropdown-toggle" href=3D"http=
-s://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%=
-2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2=
-Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3=
-A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20St=
-andard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=
-=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
-ntime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-acti=
-on=3D"flag" data-role=3D"flag" title=3D"Flag as inappropriate"><i aria-hidd=
-en=3D"true" class=3D"icon icon-flag"></i></a></li></ul><div class=3D"avatar=
- hovercard"><a href=3D"https://disqus.com/by/linhngduy/" data-action=3D"pro=
-file" data-tab=3D"" data-username=3D"linhngduy" target=3D"_blank" rel=3D"no=
-opener noreferrer" class=3D"user user--refresh"><img data-role=3D"user-avat=
-ar" data-user=3D"268269577" src=3D"https://c.disquscdn.com/uploads/users/26=
-826/9577/avatar92.jpg?1669516982" alt=3D"Avatar" class=3D"image-refresh"></=
-a></div><div class=3D"post-body"><header class=3D"comment__header"><span cl=
-ass=3D"post-byline"><span> <span class=3D"author publisher-anchor-color"><a=
- href=3D"https://disqus.com/by/linhngduy/" data-action=3D"profile" data-tab=
-=3D"" data-username=3D"linhngduy" target=3D"_blank" rel=3D"noopener norefer=
-rer">Dan</a></span> <a data-action=3D"follow" data-user=3D"268269577" class=
-=3D"follow-user-container" tabindex=3D"0"><span class=3D"follow-user" aria-=
-label=3D"Follow" title=3D"Follow"></span></a></span></span>  <span class=3D=
-"post-meta" style=3D"display: block;"> <a href=3D"https://iximiuz.com/en/po=
-sts/oci-containers/#comment-6050287005" data-role=3D"relative-time" class=
-=3D"time-ago" title=3D"Saturday, November 26, 2022 8:55 AM">3 months ago</a=
-> </span> </header><div class=3D"post-body-inner"><div class=3D"post-messag=
-e-container" data-role=3D"message-container"><div class=3D"publisher-anchor=
--color" data-role=3D"message-content"><div class=3D"post-message " data-rol=
-e=3D"message" dir=3D"auto"><div><p>In this article, you tried to explain th=
-at "a containers is not a process", but at the last section about container=
- security, you wrote that "The Linux containers are so fast because they ar=
-e regular Linux processes". <br>Does the latter contradict with the former?=
- I feel a little bit confused.</p></div></div><span class=3D"post-media"><u=
-l data-role=3D"post-media-list"></ul></span></div></div><a class=3D"see-mor=
-e hidden" title=3D"see more" data-action=3D"see-more">see more</a></div><fo=
-oter class=3D"comment__footer"><menu class=3D"comment-footer__menu"><li cla=
-ss=3D"voting" data-role=3D"voting"><div class=3D"post-votes"><a href=3D"htt=
-ps://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D=
-%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%=
-2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%=
-3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20S=
-tandard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=
-=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
-ntime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"=
-vote-up  count-1" data-action=3D"upvote" title=3D"" name=3D"Vote up"><span =
-class=3D"control"></span> <span class=3D"updatable count" data-role=3D"like=
-s">1</span></a><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault=
-&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dht=
-tps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20I=
-s%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spe=
-c&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%2=
-0OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20D=
-iving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Dd=
-efault&amp;l=3Den#" class=3D"vote-down  count-0" data-action=3D"downvote" t=
-itle=3D"Vote down" name=3D"Vote down"><span class=3D"control"></span> <span=
- class=3D"updatable count" data-role=3D"dislikes">0</span></a></div></li><l=
-i class=3D"reply" data-role=3D"reply-link"><a class=3D"comment-footer__acti=
-on" href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicro=
-mind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fix=
-imiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standa=
-rd%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWh=
-at%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime=
-%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%2=
-0the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=
-=3Den#" data-action=3D"reply"><span class=3D"text">Reply</span></a></li><li=
- class=3D"bullet" aria-hidden=3D"true">=E2=80=A2</li><li id=3D"comment__sha=
-re-6050287005" class=3D"comment__share"><a class=3D"toggle" href=3D"https:/=
-/disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fe=
-n%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fpo=
-sts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%2=
-0Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Stand=
-ard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DW=
-hat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtim=
-e%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=
-=3D"expand-share"><span class=3D"text">Share =E2=80=BA</span></a><ul class=
-=3D"comment-share__buttons"><div class=3D"comment-share__social-share-butto=
-ns"><li class=3D"twitter share__button-container"><button class=3D"share__b=
-utton icon icon-twitter" data-action=3D"share:twitter" aria-label=3D"Share =
-comment on Twitter"></button></li><li class=3D"facebook share__button-conta=
-iner"><button class=3D"share__button icon icon-facebook" data-action=3D"sha=
-re:facebook" aria-label=3D"Share comment on Facebook"></button></li></div><=
-li class=3D"link share__button-container"><button class=3D"share__button ic=
-on icon-link" value=3D"http://disq.us/p/2s26nbx" name=3D"Link" title=3D"Cli=
-ck to copy post link" data-action=3D"copy-link" aria-label=3D"Copy link to =
-comment"></button><input class=3D"share__button link_url" name=3D"Link" tit=
-le=3D"Click to copy post link" data-action=3D"copy-link" readonly=3D""></li=
-></ul></li><li class=3D"realtime" data-role=3D"realtime-notification:605028=
-7005"><span class=3D"realtime-replies realtime-replies--refresh icon icon-p=
-encil" style=3D"display: none;"></span><a href=3D"https://disqus.com/embed/=
-comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-co=
-ntainers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containe=
-rs%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20t=
-he%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A=
-%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Sta=
-ndard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=
-=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"realtime-button real=
-time-button--refresh" style=3D"display: none;"></a></li></menu></footer></d=
-iv><div class=3D"moderate-form blacklist-form" data-role=3D"blacklist-form"=
-></div><div class=3D"moderate-form flag-form" data-role=3D"flagging-form"><=
-/div><div class=3D"badges-form" data-role=3D"badges-form"></div><div class=
-=3D"reply-form-container" data-role=3D"reply-form"></div></div><div class=
-=3D"children"><ul data-role=3D"children"><li class=3D"post" id=3D"post-6050=
-330915"><div role=3D"alert"></div><div data-role=3D"post-content" class=3D"=
-post-content" tabindex=3D"0"><div class=3D"indicator"></div><span class=3D"=
-pinned-icon"></span><ul class=3D"post-menu dropdown post-menu--refresh" dat=
-a-role=3D"menu" data-view-id=3D"post-menu" data-post-id=3D"6050330915"><li =
-class=3D"post-menu-item collapse"><a href=3D"https://disqus.com/embed/comme=
+h"><img data-role=3D"user-avatar" data-user=3D"115205155" src=3D"https://a.=
+disquscdn.com/1671639122/images/noavatar92.png" alt=3D"Avatar" class=3D"ima=
+ge-refresh"></a></div><div class=3D"post-body"><header class=3D"comment__he=
+ader"><span class=3D"post-byline"><span> <span class=3D"author publisher-an=
+chor-color"><a href=3D"https://disqus.com/by/iximiuz/" data-action=3D"profi=
+le" data-tab=3D"" data-username=3D"iximiuz" target=3D"_blank" rel=3D"noopen=
+er noreferrer">Ivan Velichko</a></span> <span class=3D"badge moderator"><sp=
+an class=3D"badge-content">Mod</span></span><a data-action=3D"follow" data-=
+user=3D"115205155" class=3D"follow-user-container" tabindex=3D"0"><span cla=
+ss=3D"follow-user" aria-label=3D"Follow" title=3D"Follow"></span></a></span=
+><span class=3D"parent-link-container"> <a href=3D"https://iximiuz.com/en/p=
+osts/oci-containers/#comment-5844801067" class=3D"parent-link" data-role=3D=
+"parent-link"><i aria-label=3D"in reply to" class=3D"icon-forward" title=3D=
+"in reply to"></i> Alexander Kiyanov</a></span></span>  <span class=3D"post=
+-meta" style=3D"display: block;"> <a href=3D"https://iximiuz.com/en/posts/o=
+ci-containers/#comment-5846493133" data-role=3D"relative-time" class=3D"tim=
+e-ago" title=3D"Tuesday, May 3, 2022 10:06 PM">a year ago</a> </span> </hea=
+der><div class=3D"post-body-inner"><div class=3D"post-message-container" da=
+ta-role=3D"message-container"><div class=3D"publisher-anchor-color" data-ro=
+le=3D"message-content"><div class=3D"post-message " data-role=3D"message" d=
+ir=3D"auto"><div><p>You are most welcome!</p></div></div><span class=3D"pos=
+t-media"><ul data-role=3D"post-media-list"></ul></span></div></div><a class=
+=3D"see-more hidden" title=3D"see more" data-action=3D"see-more">see more</=
+a></div><footer class=3D"comment__footer"><menu class=3D"comment-footer__me=
+nu"><li class=3D"voting" data-role=3D"voting"><div class=3D"post-votes"><a =
+href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind=
+&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiu=
+z.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%2=
+0Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%2=
+0Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20S=
+pec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the=
+%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#=
+" class=3D"vote-up  count-0" data-action=3D"upvote" title=3D"Vote up" name=
+=3D"Vote up"><span class=3D"control"></span> <span class=3D"updatable count=
+" data-role=3D"likes">0</span></a><a href=3D"https://disqus.com/embed/comme=
 nts/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-contain=
 ers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F=
 &amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20=
 OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Di=
 ving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard=
 %20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fp=
-osts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"collapse" title=3D"Co=
-llapse" name=3D"Collapse"><span>=E2=88=92</span></a></li><li class=3D"post-=
-menu-item expand"><a href=3D"https://disqus.com/embed/comments/?base=3Ddefa=
-ult&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=
+osts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-down  count-0" data-ac=
+tion=3D"downvote" title=3D"Vote down" name=3D"Vote down"><span class=3D"con=
+trol"></span> <span class=3D"updatable count" data-role=3D"dislikes">0</spa=
+n></a></div></li><li class=3D"reply" data-role=3D"reply-link"><a class=3D"c=
+omment-footer__action" href=3D"https://disqus.com/embed/comments/?base=3Dde=
+fault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=
+=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWha=
+t%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%=
+20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20=
+the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3=
+A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_=
+o=3Ddefault&amp;l=3Den#" data-action=3D"reply"><span class=3D"text">Reply</=
+span></a></li><li class=3D"bullet" aria-hidden=3D"true">=E2=80=A2</li><li i=
+d=3D"comment__share-5846493133" class=3D"comment__share"><a class=3D"toggle=
+" href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromi=
+nd&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fixim=
+iuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard=
+%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat=
+%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%2=
+0Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20t=
+he%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3De=
+n#" data-action=3D"expand-share"><span class=3D"text">Share =E2=80=BA</span=
+></a><ul class=3D"comment-share__buttons"><div class=3D"comment-share__soci=
+al-share-buttons"><li class=3D"twitter share__button-container"><button cla=
+ss=3D"share__button icon icon-twitter" data-action=3D"share:twitter" aria-l=
+abel=3D"Share comment on Twitter"></button></li><li class=3D"facebook share=
+__button-container"><button class=3D"share__button icon icon-facebook" data=
+-action=3D"share:facebook" aria-label=3D"Share comment on Facebook"></butto=
+n></li></div><li class=3D"link share__button-container"><button class=3D"sh=
+are__button icon icon-link" value=3D"http://disq.us/p/2ooumz1" name=3D"Link=
+" title=3D"Click to copy post link" data-action=3D"copy-link" aria-label=3D=
+"Copy link to comment"></button><input class=3D"share__button link_url" nam=
+e=3D"Link" title=3D"Click to copy post link" data-action=3D"copy-link" read=
+only=3D""></li></ul></li><li class=3D"realtime" data-role=3D"realtime-notif=
+ication:5846493133"><span class=3D"realtime-replies realtime-replies--refre=
+sh icon icon-pencil" style=3D"display: none;"></span><a href=3D"https://dis=
+qus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2F=
+posts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%=
+2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Div=
+ing%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%=
+20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%=
+20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20=
+Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"realtime=
+-button realtime-button--refresh" style=3D"display: none;"></a></li></menu>=
+</footer></div><div class=3D"moderate-form blacklist-form" data-role=3D"bla=
+cklist-form"></div><div class=3D"moderate-form flag-form" data-role=3D"flag=
+ging-form"></div><div class=3D"badges-form" data-role=3D"badges-form"></div=
+><div class=3D"reply-form-container" data-role=3D"reply-form"></div></div><=
+div class=3D"children"><ul data-role=3D"children"></ul><div class=3D"show-c=
+hildren-wrapper hidden"><a class=3D"show-children" id=3D"post-5846493133-sh=
+ow-children" data-action=3D"show-children" href=3D"https://disqus.com/embed=
+/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-c=
+ontainers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-contain=
+ers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20=
+the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3=
+A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20St=
+andard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=
+=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#">Show more replies</a></div></=
+div></li></ul><div class=3D"show-children-wrapper hidden"><a class=3D"show-=
+children" id=3D"post-5844801067-show-children" data-action=3D"show-children=
+" href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromi=
+nd&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fixim=
+iuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard=
+%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat=
+%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%2=
+0Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20t=
+he%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3De=
+n#">Show more replies</a></div></div></li><li class=3D"post" id=3D"post-605=
+0287005"><div role=3D"alert"></div><div data-role=3D"post-content" class=3D=
+"post-content" tabindex=3D"0"><div class=3D"indicator"></div><span class=3D=
+"pinned-icon"></span><ul class=3D"post-menu dropdown post-menu--refresh" da=
+ta-role=3D"menu" data-view-id=3D"post-menu" data-post-id=3D"6050287005"><li=
+ class=3D"post-menu-item collapse"><a href=3D"https://disqus.com/embed/comm=
+ents/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-contai=
+ners%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2=
+F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%2=
+0OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20D=
+iving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standar=
+d%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2F=
+posts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"collapse" title=3D"C=
+ollapse" name=3D"Collapse"><span>=E2=88=92</span></a></li><li class=3D"post=
+-menu-item expand"><a href=3D"https://disqus.com/embed/comments/?base=3Ddef=
+ault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=
 =3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWha=
 t%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%=
 20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20=
@@ -8634,233 +8510,169 @@ ng%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%2=
 ts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"flag" data-role=3D"flag=
 " title=3D"Flag as inappropriate"><i aria-hidden=3D"true" class=3D"icon ico=
 n-flag"></i></a></li></ul><div class=3D"avatar hovercard"><a href=3D"https:=
-//disqus.com/by/iximiuz/" data-action=3D"profile" data-tab=3D"" data-userna=
-me=3D"iximiuz" target=3D"_blank" rel=3D"noopener noreferrer" class=3D"user =
-user--refresh"><img data-role=3D"user-avatar" data-user=3D"115205155" src=
-=3D"https://c.disquscdn.com/uploads/users/11520/5155/avatar92.jpg?167719148=
-3" alt=3D"Avatar" class=3D"image-refresh"></a></div><div class=3D"post-body=
-"><header class=3D"comment__header"><span class=3D"post-byline"><span> <spa=
-n class=3D"author publisher-anchor-color"><a href=3D"https://disqus.com/by/=
-iximiuz/" data-action=3D"profile" data-tab=3D"" data-username=3D"iximiuz" t=
-arget=3D"_blank" rel=3D"noopener noreferrer">Ivan Velichko</a></span> <span=
- class=3D"badge moderator"><span class=3D"badge-content">Mod</span></span><=
-a data-action=3D"follow" data-user=3D"115205155" class=3D"follow-user-conta=
-iner" tabindex=3D"0"><span class=3D"follow-user" aria-label=3D"Follow" titl=
-e=3D"Follow"></span></a></span><span class=3D"parent-link-container"> <a hr=
-ef=3D"https://iximiuz.com/en/posts/oci-containers/#comment-6050287005" clas=
-s=3D"parent-link" data-role=3D"parent-link"><i aria-label=3D"in reply to" c=
-lass=3D"icon-forward" title=3D"in reply to"></i> Dan</a></span></span>  <sp=
-an class=3D"post-meta" style=3D"display: block;"> <a href=3D"https://iximiu=
-z.com/en/posts/oci-containers/#comment-6050330915" data-role=3D"relative-ti=
-me" class=3D"time-ago" title=3D"Saturday, November 26, 2022 10:41 AM">3 mon=
-ths ago</a> </span> </header><div class=3D"post-body-inner"><div class=3D"p=
-ost-message-container" data-role=3D"message-container"><div class=3D"publis=
-her-anchor-color" data-role=3D"message-content"><div class=3D"post-message =
-" data-role=3D"message" dir=3D"auto"><div><p>Excellent question! The emphas=
-is in this sentence is on <i><b>Linux</b></i>. Linux containers are regular=
- processes. But the OCI Runtime Spec doesn't limit you to only Linux contai=
-ners, and alternative implementations of spec-compliant containers exist.</=
-p></div></div><span class=3D"post-media"><ul data-role=3D"post-media-list">=
-</ul></span></div></div><a class=3D"see-more hidden" title=3D"see more" dat=
-a-action=3D"see-more">see more</a></div><footer class=3D"comment__footer"><=
-menu class=3D"comment-footer__menu"><li class=3D"voting" data-role=3D"votin=
-g"><div class=3D"post-votes"><a href=3D"https://disqus.com/embed/comments/?=
-base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2=
-F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;=
-t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%2=
-0Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%=
-20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Co=
-ntainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%=
-2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-up  count-1" data-action=3D=
-"upvote" title=3D"" name=3D"Vote up"><span class=3D"control"></span> <span =
-class=3D"updatable count" data-role=3D"likes">1</span></a><a href=3D"https:=
-//disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2F=
-en%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fp=
-osts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%=
-20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Stan=
-dard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3D=
-What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runti=
-me%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vot=
-e-down  count-0" data-action=3D"downvote" title=3D"Vote down" name=3D"Vote =
-down"><span class=3D"control"></span> <span class=3D"updatable count" data-=
-role=3D"dislikes">0</span></a></div></li><li class=3D"reply" data-role=3D"r=
-eply-link"><a class=3D"comment-footer__action" href=3D"https://disqus.com/e=
-mbed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Fo=
-ci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-con=
-tainers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Int=
-o%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Contain=
-er%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%=
-20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;=
-t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"reply"><spa=
-n class=3D"text">Reply</span></a></li><li class=3D"bullet" aria-hidden=3D"t=
-rue">=E2=80=A2</li><li id=3D"comment__share-6050330915" class=3D"comment__s=
-hare"><a class=3D"toggle" href=3D"https://disqus.com/embed/comments/?base=
-=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&am=
-p;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=
-=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
-ntime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20I=
-nto%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Conta=
-iner%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&=
-amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"expand-share"><span class=3D"=
-text">Share =E2=80=BA</span></a><ul class=3D"comment-share__buttons"><div c=
-lass=3D"comment-share__social-share-buttons"><li class=3D"twitter share__bu=
-tton-container"><button class=3D"share__button icon icon-twitter" data-acti=
-on=3D"share:twitter" aria-label=3D"Share comment on Twitter"></button></li>=
-<li class=3D"facebook share__button-container"><button class=3D"share__butt=
-on icon icon-facebook" data-action=3D"share:facebook" aria-label=3D"Share c=
-omment on Facebook"></button></li></div><li class=3D"link share__button-con=
-tainer"><button class=3D"share__button icon icon-link" value=3D"http://disq=
-.us/p/2s27l7n" name=3D"Link" title=3D"Click to copy post link" data-action=
-=3D"copy-link" aria-label=3D"Copy link to comment"></button><input class=3D=
-"share__button link_url" name=3D"Link" title=3D"Click to copy post link" da=
-ta-action=3D"copy-link" readonly=3D""></li></ul></li><li class=3D"realtime"=
- data-role=3D"realtime-notification:6050330915"><span class=3D"realtime-rep=
-lies realtime-replies--refresh icon icon-pencil" style=3D"display: none;"><=
-/span><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3D=
-micromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F=
-%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20S=
-tandard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=
-=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
-ntime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20I=
-nto%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&am=
-p;l=3Den#" class=3D"realtime-button realtime-button--refresh" style=3D"disp=
-lay: none;"></a></li></menu></footer></div><div class=3D"moderate-form blac=
-klist-form" data-role=3D"blacklist-form"></div><div class=3D"moderate-form =
-flag-form" data-role=3D"flagging-form"></div><div class=3D"badges-form" dat=
-a-role=3D"badges-form"></div><div class=3D"reply-form-container" data-role=
-=3D"reply-form"></div></div><div class=3D"children"><ul data-role=3D"childr=
-en"><li class=3D"post" id=3D"post-6050930609"><div role=3D"alert"></div><di=
-v data-role=3D"post-content" class=3D"post-content" tabindex=3D"0"><div cla=
-ss=3D"indicator"></div><span class=3D"pinned-icon"></span><ul class=3D"post=
--menu dropdown post-menu--refresh" data-role=3D"menu" data-view-id=3D"post-=
-menu" data-post-id=3D"6050930609"><li class=3D"post-menu-item collapse"><a =
-href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind=
-&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiu=
-z.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%2=
-0Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%2=
-0Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20S=
-pec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the=
-%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#=
-" data-action=3D"collapse" title=3D"Collapse" name=3D"Collapse"><span>=E2=
-=88=92</span></a></li><li class=3D"post-menu-item expand"><a href=3D"https:=
-//disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2F=
-en%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fp=
-osts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%=
-20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Stan=
-dard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3D=
-What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runti=
-me%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=
-=3D"collapse" title=3D"Expand" name=3D"Collapse"><span>+</span></a></li><li=
- class=3D" post-menu-item" role=3D"menuitem"><a class=3D"dropdown-toggle" h=
-ref=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&=
-amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz=
-.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20=
-Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20=
+//disqus.com/by/linhngduy/" data-action=3D"profile" data-tab=3D"" data-user=
+name=3D"linhngduy" target=3D"_blank" rel=3D"noopener noreferrer" class=3D"u=
+ser user--refresh"><img data-role=3D"user-avatar" data-user=3D"268269577" s=
+rc=3D"https://a.disquscdn.com/1671639122/images/noavatar92.png" alt=3D"Avat=
+ar" class=3D"image-refresh"></a></div><div class=3D"post-body"><header clas=
+s=3D"comment__header"><span class=3D"post-byline"><span> <span class=3D"aut=
+hor publisher-anchor-color"><a href=3D"https://disqus.com/by/linhngduy/" da=
+ta-action=3D"profile" data-tab=3D"" data-username=3D"linhngduy" target=3D"_=
+blank" rel=3D"noopener noreferrer">Dan</a></span> <a data-action=3D"follow"=
+ data-user=3D"268269577" class=3D"follow-user-container" tabindex=3D"0"><sp=
+an class=3D"follow-user" aria-label=3D"Follow" title=3D"Follow"></span></a>=
+</span></span>  <span class=3D"post-meta" style=3D"display: block;"> <a hre=
+f=3D"https://iximiuz.com/en/posts/oci-containers/#comment-6050287005" data-=
+role=3D"relative-time" class=3D"time-ago" title=3D"Saturday, November 26, 2=
+022 8:55 AM">4 months ago</a> </span> </header><div class=3D"post-body-inne=
+r"><div class=3D"post-message-container" data-role=3D"message-container"><d=
+iv class=3D"publisher-anchor-color" data-role=3D"message-content"><div clas=
+s=3D"post-message " data-role=3D"message" dir=3D"auto"><div><p>In this arti=
+cle, you tried to explain that "a containers is not a process", but at the =
+last section about container security, you wrote that "The Linux containers=
+ are so fast because they are regular Linux processes". <br>Does the latter=
+ contradict with the former? I feel a little bit confused.</p></div></div><=
+span class=3D"post-media"><ul data-role=3D"post-media-list"></ul></span></d=
+iv></div><a class=3D"see-more hidden" title=3D"see more" data-action=3D"see=
+-more">see more</a></div><footer class=3D"comment__footer"><menu class=3D"c=
+omment-footer__menu"><li class=3D"voting" data-role=3D"voting"><div class=
+=3D"post-votes"><a href=3D"https://disqus.com/embed/comments/?base=3Ddefaul=
+t&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dh=
+ttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20=
 Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Sp=
-ec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%=
-20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#"=
- data-action=3D"flag" data-role=3D"flag" title=3D"Flag as inappropriate"><i=
- aria-hidden=3D"true" class=3D"icon icon-flag"></i></a></li></ul><div class=
-=3D"avatar hovercard"><a href=3D"https://disqus.com/by/linhngduy/" data-act=
-ion=3D"profile" data-tab=3D"" data-username=3D"linhngduy" target=3D"_blank"=
- rel=3D"noopener noreferrer" class=3D"user user--refresh"><img data-role=3D=
-"user-avatar" data-user=3D"268269577" src=3D"https://a.disquscdn.com/167163=
-9122/images/noavatar92.png" alt=3D"Avatar" class=3D"image-refresh"></a></di=
-v><div class=3D"post-body"><header class=3D"comment__header"><span class=3D=
-"post-byline"><span> <span class=3D"author publisher-anchor-color"><a href=
-=3D"https://disqus.com/by/linhngduy/" data-action=3D"profile" data-tab=3D""=
- data-username=3D"linhngduy" target=3D"_blank" rel=3D"noopener noreferrer">=
-Dan</a></span> <a data-action=3D"follow" data-user=3D"268269577" class=3D"f=
-ollow-user-container" tabindex=3D"0"><span class=3D"follow-user" aria-label=
-=3D"Follow" title=3D"Follow"></span></a></span><span class=3D"parent-link-c=
-ontainer"> <a href=3D"https://iximiuz.com/en/posts/oci-containers/#comment-=
-6050330915" class=3D"parent-link" data-role=3D"parent-link"><i aria-label=
-=3D"in reply to" class=3D"icon-forward" title=3D"in reply to"></i> Ivan Vel=
-ichko</a></span></span>  <span class=3D"post-meta" style=3D"display: block;=
-"> <a href=3D"https://iximiuz.com/en/posts/oci-containers/#comment-60509306=
-09" data-role=3D"relative-time" class=3D"time-ago" title=3D"Sunday, Novembe=
-r 27, 2022 3:27 AM">3 months ago</a> </span> </header><div class=3D"post-bo=
-dy-inner"><div class=3D"post-message-container" data-role=3D"message-contai=
-ner"><div class=3D"publisher-anchor-color" data-role=3D"message-content"><d=
-iv class=3D"post-message " data-role=3D"message" dir=3D"auto"><div><p><a da=
-ta-dsq-mention=3D"iximiuz:disqus" href=3D"https://disqus.com/by/iximiuz/" r=
-el=3D"nofollow noopener" title=3D"https://disqus.com/by/iximiuz/" data-acti=
-on=3D"profile" data-username=3D"iximiuz" class=3D"mention">Ivan Velichko</a=
-> Got it! Thank you for your efforts! I have leant a lot from your blog!</p=
-></div></div><span class=3D"post-media"><ul data-role=3D"post-media-list"><=
-/ul></span></div></div><a class=3D"see-more hidden" title=3D"see more" data=
--action=3D"see-more">see more</a></div><footer class=3D"comment__footer"><m=
-enu class=3D"comment-footer__menu"><li class=3D"voting" data-role=3D"voting=
-"><div class=3D"post-votes"><a href=3D"https://disqus.com/embed/comments/?b=
-ase=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F=
-&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t=
-_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20=
-Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%2=
-0Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Con=
-tainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2=
-F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-up  count-1" data-action=3D"=
-upvote" title=3D"" name=3D"Vote up"><span class=3D"control"></span> <span c=
-lass=3D"updatable count" data-role=3D"likes">1</span></a><a href=3D"https:/=
+ec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%=
+20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20=
+Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3D=
+default&amp;l=3Den#" class=3D"vote-up  count-1" data-action=3D"upvote" titl=
+e=3D"" name=3D"Vote up"><span class=3D"control"></span> <span class=3D"upda=
+table count" data-role=3D"likes">1</span></a><a href=3D"https://disqus.com/=
+embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2F=
+oci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-co=
+ntainers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20In=
+to%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Contai=
+ner%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a=
+%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp=
+;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-down  count=
+-0" data-action=3D"downvote" title=3D"Vote down" name=3D"Vote down"><span c=
+lass=3D"control"></span> <span class=3D"updatable count" data-role=3D"disli=
+kes">0</span></a></div></li><li class=3D"reply" data-role=3D"reply-link"><a=
+ class=3D"comment-footer__action" href=3D"https://disqus.com/embed/comments=
+/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers=
+%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&am=
+p;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI=
+%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Divin=
+g%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20=
+Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fpost=
+s%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"reply"><span class=3D"te=
+xt">Reply</span></a></li><li class=3D"bullet" aria-hidden=3D"true">=E2=80=
+=A2</li><li id=3D"comment__share-6050287005" class=3D"comment__share"><a cl=
+ass=3D"toggle" href=3D"https://disqus.com/embed/comments/?base=3Ddefault&am=
+p;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps=
+%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%2=
+0a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&a=
+mp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OC=
+I%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Divi=
+ng%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefa=
+ult&amp;l=3Den#" data-action=3D"expand-share"><span class=3D"text">Share =
+=E2=80=BA</span></a><ul class=3D"comment-share__buttons"><div class=3D"comm=
+ent-share__social-share-buttons"><li class=3D"twitter share__button-contain=
+er"><button class=3D"share__button icon icon-twitter" data-action=3D"share:=
+twitter" aria-label=3D"Share comment on Twitter"></button></li><li class=3D=
+"facebook share__button-container"><button class=3D"share__button icon icon=
+-facebook" data-action=3D"share:facebook" aria-label=3D"Share comment on Fa=
+cebook"></button></li></div><li class=3D"link share__button-container"><but=
+ton class=3D"share__button icon icon-link" value=3D"http://disq.us/p/2s26nb=
+x" name=3D"Link" title=3D"Click to copy post link" data-action=3D"copy-link=
+" aria-label=3D"Copy link to comment"></button><input class=3D"share__butto=
+n link_url" name=3D"Link" title=3D"Click to copy post link" data-action=3D"=
+copy-link" readonly=3D""></li></ul></li><li class=3D"realtime" data-role=3D=
+"realtime-notification:6050287005"><span class=3D"realtime-replies realtime=
+-replies--refresh icon icon-pencil" style=3D"display: none;"></span><a href=
+=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp=
+;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.co=
+m%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Con=
+tainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%=
+20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&=
+amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20O=
+CI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" cl=
+ass=3D"realtime-button realtime-button--refresh" style=3D"display: none;"><=
+/a></li></menu></footer></div><div class=3D"moderate-form blacklist-form" d=
+ata-role=3D"blacklist-form"></div><div class=3D"moderate-form flag-form" da=
+ta-role=3D"flagging-form"></div><div class=3D"badges-form" data-role=3D"bad=
+ges-form"></div><div class=3D"reply-form-container" data-role=3D"reply-form=
+"></div></div><div class=3D"children"><ul data-role=3D"children"><li class=
+=3D"post" id=3D"post-6050330915"><div role=3D"alert"></div><div data-role=
+=3D"post-content" class=3D"post-content" tabindex=3D"0"><div class=3D"indic=
+ator"></div><span class=3D"pinned-icon"></span><ul class=3D"post-menu dropd=
+own post-menu--refresh" data-role=3D"menu" data-view-id=3D"post-menu" data-=
+post-id=3D"6050330915"><li class=3D"post-menu-item collapse"><a href=3D"htt=
+ps://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D=
+%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%=
+2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%=
+3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20S=
+tandard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=
+=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
+ntime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-acti=
+on=3D"collapse" title=3D"Collapse" name=3D"Collapse"><span>=E2=88=92</span>=
+</a></li><li class=3D"post-menu-item expand"><a href=3D"https://disqus.com/=
+embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2F=
+oci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-co=
+ntainers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20In=
+to%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Contai=
+ner%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a=
+%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp=
+;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"collapse" =
+title=3D"Expand" name=3D"Collapse"><span>+</span></a></li><li class=3D" pos=
+t-menu-item" role=3D"menuitem"><a class=3D"dropdown-toggle" href=3D"https:/=
 /disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fe=
 n%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fpo=
 sts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%2=
 0Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Stand=
 ard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DW=
 hat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtim=
-e%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote=
--down  count-0" data-action=3D"downvote" title=3D"Vote down" name=3D"Vote d=
-own"><span class=3D"control"></span> <span class=3D"updatable count" data-r=
-ole=3D"dislikes">0</span></a></div></li><li class=3D"reply" data-role=3D"re=
-ply-link"><a class=3D"comment-footer__action" href=3D"https://disqus.com/em=
-bed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foc=
-i-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-cont=
-ainers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into=
-%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Containe=
-r%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%2=
-0Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t=
-_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"reply"><span=
- class=3D"text">Reply</span></a></li><li class=3D"bullet" aria-hidden=3D"tr=
-ue">=E2=80=A2</li><li id=3D"comment__share-6050930609" class=3D"comment__sh=
-are"><a class=3D"toggle" href=3D"https://disqus.com/embed/comments/?base=3D=
-default&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t=
-_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DW=
-hat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtim=
-e%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%=
-20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container=
-%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;=
-s_o=3Ddefault&amp;l=3Den#" data-action=3D"expand-share"><span class=3D"text=
-">Share =E2=80=BA</span></a><ul class=3D"comment-share__buttons"><div class=
-=3D"comment-share__social-share-buttons"><li class=3D"twitter share__button=
--container"><button class=3D"share__button icon icon-twitter" data-action=
-=3D"share:twitter" aria-label=3D"Share comment on Twitter"></button></li><l=
-i class=3D"facebook share__button-container"><button class=3D"share__button=
- icon icon-facebook" data-action=3D"share:facebook" aria-label=3D"Share com=
-ment on Facebook"></button></li></div><li class=3D"link share__button-conta=
-iner"><button class=3D"share__button icon icon-link" value=3D"http://disq.u=
-s/p/2s2kfxt" name=3D"Link" title=3D"Click to copy post link" data-action=3D=
-"copy-link" aria-label=3D"Copy link to comment"></button><input class=3D"sh=
-are__button link_url" name=3D"Link" title=3D"Click to copy post link" data-=
-action=3D"copy-link" readonly=3D""></li></ul></li><li class=3D"realtime" da=
-ta-role=3D"realtime-notification:6050930609"><span class=3D"realtime-replie=
-s realtime-replies--refresh icon icon-pencil" style=3D"display: none;"></sp=
-an><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmic=
-romind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2F=
-iximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Stan=
-dard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3D=
-What%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runti=
-me%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into=
-%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=
-=3Den#" class=3D"realtime-button realtime-button--refresh" style=3D"display=
-: none;"></a></li></menu></footer></div><div class=3D"moderate-form blackli=
-st-form" data-role=3D"blacklist-form"></div><div class=3D"moderate-form fla=
-g-form" data-role=3D"flagging-form"></div><div class=3D"badges-form" data-r=
-ole=3D"badges-form"></div><div class=3D"reply-form-container" data-role=3D"=
-reply-form"></div></div><div class=3D"children"><ul data-role=3D"children">=
-<li class=3D"post" id=3D"post-6051072285"><div role=3D"alert"></div><div da=
-ta-role=3D"post-content" class=3D"post-content" tabindex=3D"0"><div class=
-=3D"indicator"></div><span class=3D"pinned-icon"></span><ul class=3D"post-m=
-enu dropdown post-menu--refresh" data-role=3D"menu" data-view-id=3D"post-me=
-nu" data-post-id=3D"6051072285"><li class=3D"post-menu-item collapse"><a hr=
+e%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=
+=3D"flag" data-role=3D"flag" title=3D"Flag as inappropriate"><i aria-hidden=
+=3D"true" class=3D"icon icon-flag"></i></a></li></ul><div class=3D"avatar h=
+overcard"><a href=3D"https://disqus.com/by/iximiuz/" data-action=3D"profile=
+" data-tab=3D"" data-username=3D"iximiuz" target=3D"_blank" rel=3D"noopener=
+ noreferrer" class=3D"user user--refresh"><img data-role=3D"user-avatar" da=
+ta-user=3D"115205155" src=3D"https://a.disquscdn.com/1671639122/images/noav=
+atar92.png" alt=3D"Avatar" class=3D"image-refresh"></a></div><div class=3D"=
+post-body"><header class=3D"comment__header"><span class=3D"post-byline"><s=
+pan> <span class=3D"author publisher-anchor-color"><a href=3D"https://disqu=
+s.com/by/iximiuz/" data-action=3D"profile" data-tab=3D"" data-username=3D"i=
+ximiuz" target=3D"_blank" rel=3D"noopener noreferrer">Ivan Velichko</a></sp=
+an> <span class=3D"badge moderator"><span class=3D"badge-content">Mod</span=
+></span><a data-action=3D"follow" data-user=3D"115205155" class=3D"follow-u=
+ser-container" tabindex=3D"0"><span class=3D"follow-user" aria-label=3D"Fol=
+low" title=3D"Follow"></span></a></span><span class=3D"parent-link-containe=
+r"> <a href=3D"https://iximiuz.com/en/posts/oci-containers/#comment-6050287=
+005" class=3D"parent-link" data-role=3D"parent-link"><i aria-label=3D"in re=
+ply to" class=3D"icon-forward" title=3D"in reply to"></i> Dan</a></span></s=
+pan>  <span class=3D"post-meta" style=3D"display: block;"> <a href=3D"https=
+://iximiuz.com/en/posts/oci-containers/#comment-6050330915" data-role=3D"re=
+lative-time" class=3D"time-ago" title=3D"Saturday, November 26, 2022 10:41 =
+AM">4 months ago</a> </span> </header><div class=3D"post-body-inner"><div c=
+lass=3D"post-message-container" data-role=3D"message-container"><div class=
+=3D"publisher-anchor-color" data-role=3D"message-content"><div class=3D"pos=
+t-message " data-role=3D"message" dir=3D"auto"><div><p>Excellent question! =
+The emphasis in this sentence is on <i><b>Linux</b></i>. Linux containers a=
+re regular processes. But the OCI Runtime Spec doesn't limit you to only Li=
+nux containers, and alternative implementations of spec-compliant container=
+s exist.</p></div></div><span class=3D"post-media"><ul data-role=3D"post-me=
+dia-list"></ul></span></div></div><a class=3D"see-more hidden" title=3D"see=
+ more" data-action=3D"see-more">see more</a></div><footer class=3D"comment_=
+_footer"><menu class=3D"comment-footer__menu"><li class=3D"voting" data-rol=
+e=3D"voting"><div class=3D"post-votes"><a href=3D"https://disqus.com/embed/=
+comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-co=
+ntainers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containe=
+rs%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20t=
+he%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A=
+%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Sta=
+ndard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=
+=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-up  count-1" da=
+ta-action=3D"upvote" title=3D"" name=3D"Vote up"><span class=3D"control"></=
+span> <span class=3D"updatable count" data-role=3D"likes">1</span></a><a hr=
 ef=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&a=
 mp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.=
 com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20C=
@@ -8868,17 +8680,68 @@ ontainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20I=
 s%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spe=
 c&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%2=
 0OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" =
-data-action=3D"collapse" title=3D"Collapse" name=3D"Collapse"><span>=E2=88=
-=92</span></a></li><li class=3D"post-menu-item expand"><a href=3D"https://d=
-isqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%=
-2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fpost=
-s%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20D=
-iving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standar=
-d%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWha=
-t%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%=
-20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"=
-collapse" title=3D"Expand" name=3D"Collapse"><span>+</span></a></li><li cla=
-ss=3D" post-menu-item" role=3D"menuitem"><a class=3D"dropdown-toggle" href=
+class=3D"vote-down  count-0" data-action=3D"downvote" title=3D"Vote down" n=
+ame=3D"Vote down"><span class=3D"control"></span> <span class=3D"updatable =
+count" data-role=3D"dislikes">0</span></a></div></li><li class=3D"reply" da=
+ta-role=3D"reply-link"><a class=3D"comment-footer__action" href=3D"https://=
+disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen=
+%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fpos=
+ts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20=
+Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standa=
+rd%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWh=
+at%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime=
+%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D=
+"reply"><span class=3D"text">Reply</span></a></li><li class=3D"bullet" aria=
+-hidden=3D"true">=E2=80=A2</li><li id=3D"comment__share-6050330915" class=
+=3D"comment__share"><a class=3D"toggle" href=3D"https://disqus.com/embed/co=
+mments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-cont=
+ainers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers=
+%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the=
+%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%2=
+0Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Stand=
+ard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%=
+2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"expand-share"><spa=
+n class=3D"text">Share =E2=80=BA</span></a><ul class=3D"comment-share__butt=
+ons"><div class=3D"comment-share__social-share-buttons"><li class=3D"twitte=
+r share__button-container"><button class=3D"share__button icon icon-twitter=
+" data-action=3D"share:twitter" aria-label=3D"Share comment on Twitter"></b=
+utton></li><li class=3D"facebook share__button-container"><button class=3D"=
+share__button icon icon-facebook" data-action=3D"share:facebook" aria-label=
+=3D"Share comment on Facebook"></button></li></div><li class=3D"link share_=
+_button-container"><button class=3D"share__button icon icon-link" value=3D"=
+http://disq.us/p/2s27l7n" name=3D"Link" title=3D"Click to copy post link" d=
+ata-action=3D"copy-link" aria-label=3D"Copy link to comment"></button><inpu=
+t class=3D"share__button link_url" name=3D"Link" title=3D"Click to copy pos=
+t link" data-action=3D"copy-link" readonly=3D""></li></ul></li><li class=3D=
+"realtime" data-role=3D"realtime-notification:6050330915"><span class=3D"re=
+altime-replies realtime-replies--refresh icon icon-pencil" style=3D"display=
+: none;"></span><a href=3D"https://disqus.com/embed/comments/?base=3Ddefaul=
+t&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dh=
+ttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20=
+Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Sp=
+ec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%=
+20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20=
+Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3D=
+default&amp;l=3Den#" class=3D"realtime-button realtime-button--refresh" sty=
+le=3D"display: none;"></a></li></menu></footer></div><div class=3D"moderate=
+-form blacklist-form" data-role=3D"blacklist-form"></div><div class=3D"mode=
+rate-form flag-form" data-role=3D"flagging-form"></div><div class=3D"badges=
+-form" data-role=3D"badges-form"></div><div class=3D"reply-form-container" =
+data-role=3D"reply-form"></div></div><div class=3D"children"><ul data-role=
+=3D"children"><li class=3D"post" id=3D"post-6050930609"><div role=3D"alert"=
+></div><div data-role=3D"post-content" class=3D"post-content" tabindex=3D"0=
+"><div class=3D"indicator"></div><span class=3D"pinned-icon"></span><ul cla=
+ss=3D"post-menu dropdown post-menu--refresh" data-role=3D"menu" data-view-i=
+d=3D"post-menu" data-post-id=3D"6050930609"><li class=3D"post-menu-item col=
+lapse"><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=
+=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A=
+%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%=
+20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;=
+t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%2=
+0Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%=
+20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault=
+&amp;l=3Den#" data-action=3D"collapse" title=3D"Collapse" name=3D"Collapse"=
+><span>=E2=88=92</span></a></li><li class=3D"post-menu-item expand"><a href=
 =3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp=
 ;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.co=
 m%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Con=
@@ -8886,80 +8749,216 @@ tainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%=
 20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&=
 amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20O=
 CI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" da=
-ta-action=3D"flag" data-role=3D"flag" title=3D"Flag as inappropriate"><i ar=
-ia-hidden=3D"true" class=3D"icon icon-flag"></i></a></li></ul><div class=3D=
-"avatar hovercard"><a href=3D"https://disqus.com/by/iximiuz/" data-action=
-=3D"profile" data-tab=3D"" data-username=3D"iximiuz" target=3D"_blank" rel=
-=3D"noopener noreferrer" class=3D"user user--refresh"><img data-role=3D"use=
-r-avatar" data-user=3D"115205155" src=3D"https://a.disquscdn.com/1671639122=
-/images/noavatar92.png" alt=3D"Avatar" class=3D"image-refresh"></a></div><d=
-iv class=3D"post-body"><header class=3D"comment__header"><span class=3D"pos=
-t-byline"><span> <span class=3D"author publisher-anchor-color"><a href=3D"h=
-ttps://disqus.com/by/iximiuz/" data-action=3D"profile" data-tab=3D"" data-u=
-sername=3D"iximiuz" target=3D"_blank" rel=3D"noopener noreferrer">Ivan Veli=
-chko</a></span> <span class=3D"badge moderator"><span class=3D"badge-conten=
-t">Mod</span></span><a data-action=3D"follow" data-user=3D"115205155" class=
-=3D"follow-user-container" tabindex=3D"0"><span class=3D"follow-user" aria-=
-label=3D"Follow" title=3D"Follow"></span></a></span><span class=3D"parent-l=
-ink-container"> <a href=3D"https://iximiuz.com/en/posts/oci-containers/#com=
-ment-6050930609" class=3D"parent-link" data-role=3D"parent-link"><i aria-la=
-bel=3D"in reply to" class=3D"icon-forward" title=3D"in reply to"></i> Dan</=
-a></span></span>  <span class=3D"post-meta" style=3D"display: block;"> <a h=
-ref=3D"https://iximiuz.com/en/posts/oci-containers/#comment-6051072285" dat=
-a-role=3D"relative-time" class=3D"time-ago" title=3D"Sunday, November 27, 2=
-022 10:00 AM">3 months ago</a> </span> </header><div class=3D"post-body-inn=
-er"><div class=3D"post-message-container" data-role=3D"message-container"><=
-div class=3D"publisher-anchor-color" data-role=3D"message-content"><div cla=
-ss=3D"post-message " data-role=3D"message" dir=3D"auto"><div><p>Glad to hea=
-r it, Dan! :)</p></div></div><span class=3D"post-media"><ul data-role=3D"po=
-st-media-list"></ul></span></div></div><a class=3D"see-more hidden" title=
-=3D"see more" data-action=3D"see-more">see more</a></div><footer class=3D"c=
-omment__footer"><menu class=3D"comment-footer__menu"><li class=3D"voting" d=
-ata-role=3D"voting"><div class=3D"post-votes"><a href=3D"https://disqus.com=
-/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2=
-Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-c=
-ontainers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20I=
-nto%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Conta=
-iner%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20=
-a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&am=
-p;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-up  count-=
-0" data-action=3D"upvote" title=3D"Vote up" name=3D"Vote up"><span class=3D=
-"control"></span> <span class=3D"updatable count" data-role=3D"likes">0</sp=
-an></a><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=
-=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A=
-%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%=
-20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;=
-t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%2=
-0Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%=
-20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault=
-&amp;l=3Den#" class=3D"vote-down  count-0" data-action=3D"downvote" title=
-=3D"Vote down" name=3D"Vote down"><span class=3D"control"></span> <span cla=
-ss=3D"updatable count" data-role=3D"dislikes">0</span></a></div></li><li cl=
-ass=3D"reply" data-role=3D"reply-link"><a class=3D"comment-footer__action" =
-href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind=
-&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiu=
-z.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%2=
-0Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%2=
-0Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20S=
-pec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the=
-%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#=
-" data-action=3D"reply"><span class=3D"text">Reply</span></a></li><li class=
-=3D"bullet" aria-hidden=3D"true">=E2=80=A2</li><li id=3D"comment__share-605=
-1072285" class=3D"comment__share"><a class=3D"toggle" href=3D"https://disqu=
+ta-action=3D"collapse" title=3D"Expand" name=3D"Collapse"><span>+</span></a=
+></li><li class=3D" post-menu-item" role=3D"menuitem"><a class=3D"dropdown-=
+toggle" href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dm=
+icromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%=
+2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20St=
+andard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=
+=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
+ntime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20I=
+nto%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&am=
+p;l=3Den#" data-action=3D"flag" data-role=3D"flag" title=3D"Flag as inappro=
+priate"><i aria-hidden=3D"true" class=3D"icon icon-flag"></i></a></li></ul>=
+<div class=3D"avatar hovercard"><a href=3D"https://disqus.com/by/linhngduy/=
+" data-action=3D"profile" data-tab=3D"" data-username=3D"linhngduy" target=
+=3D"_blank" rel=3D"noopener noreferrer" class=3D"user user--refresh"><img d=
+ata-role=3D"user-avatar" data-user=3D"268269577" src=3D"https://a.disquscdn=
+.com/1671639122/images/noavatar92.png" alt=3D"Avatar" class=3D"image-refres=
+h"></a></div><div class=3D"post-body"><header class=3D"comment__header"><sp=
+an class=3D"post-byline"><span> <span class=3D"author publisher-anchor-colo=
+r"><a href=3D"https://disqus.com/by/linhngduy/" data-action=3D"profile" dat=
+a-tab=3D"" data-username=3D"linhngduy" target=3D"_blank" rel=3D"noopener no=
+referrer">Dan</a></span> <a data-action=3D"follow" data-user=3D"268269577" =
+class=3D"follow-user-container" tabindex=3D"0"><span class=3D"follow-user" =
+aria-label=3D"Follow" title=3D"Follow"></span></a></span><span class=3D"par=
+ent-link-container"> <a href=3D"https://iximiuz.com/en/posts/oci-containers=
+/#comment-6050330915" class=3D"parent-link" data-role=3D"parent-link"><i ar=
+ia-label=3D"in reply to" class=3D"icon-forward" title=3D"in reply to"></i> =
+Ivan Velichko</a></span></span>  <span class=3D"post-meta" style=3D"display=
+: block;"> <a href=3D"https://iximiuz.com/en/posts/oci-containers/#comment-=
+6050930609" data-role=3D"relative-time" class=3D"time-ago" title=3D"Sunday,=
+ November 27, 2022 3:27 AM">4 months ago</a> </span> </header><div class=3D=
+"post-body-inner"><div class=3D"post-message-container" data-role=3D"messag=
+e-container"><div class=3D"publisher-anchor-color" data-role=3D"message-con=
+tent"><div class=3D"post-message " data-role=3D"message" dir=3D"auto"><div>=
+<p><a data-dsq-mention=3D"iximiuz:disqus" href=3D"https://disqus.com/by/ixi=
+miuz/" rel=3D"nofollow noopener" title=3D"https://disqus.com/by/iximiuz/" d=
+ata-action=3D"profile" data-username=3D"iximiuz" class=3D"mention">Ivan Vel=
+ichko</a> Got it! Thank you for your efforts! I have leant a lot from your =
+blog!</p></div></div><span class=3D"post-media"><ul data-role=3D"post-media=
+-list"></ul></span></div></div><a class=3D"see-more hidden" title=3D"see mo=
+re" data-action=3D"see-more">see more</a></div><footer class=3D"comment__fo=
+oter"><menu class=3D"comment-footer__menu"><li class=3D"voting" data-role=
+=3D"voting"><div class=3D"post-votes"><a href=3D"https://disqus.com/embed/c=
+omments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-con=
+tainers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-container=
+s%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20th=
+e%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%=
+20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Stan=
+dard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D=
+%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-up  count-1" data-=
+action=3D"upvote" title=3D"" name=3D"Vote up"><span class=3D"control"></spa=
+n> <span class=3D"updatable count" data-role=3D"likes">1</span></a><a href=
+=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp=
+;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.co=
+m%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Con=
+tainer%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%=
+20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&=
+amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20O=
+CI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" cl=
+ass=3D"vote-down  count-0" data-action=3D"downvote" title=3D"Vote down" nam=
+e=3D"Vote down"><span class=3D"control"></span> <span class=3D"updatable co=
+unt" data-role=3D"dislikes">0</span></a></div></li><li class=3D"reply" data=
+-role=3D"reply-link"><a class=3D"comment-footer__action" href=3D"https://di=
+squs.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2=
+Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts=
+%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Di=
+ving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard=
+%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat=
+%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%2=
+0Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"r=
+eply"><span class=3D"text">Reply</span></a></li><li class=3D"bullet" aria-h=
+idden=3D"true">=E2=80=A2</li><li id=3D"comment__share-6050930609" class=3D"=
+comment__share"><a class=3D"toggle" href=3D"https://disqus.com/embed/commen=
+ts/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containe=
+rs%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&=
+amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20O=
+CI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Div=
+ing%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%=
+20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fpo=
+sts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"expand-share"><span cl=
+ass=3D"text">Share =E2=80=BA</span></a><ul class=3D"comment-share__buttons"=
+><div class=3D"comment-share__social-share-buttons"><li class=3D"twitter sh=
+are__button-container"><button class=3D"share__button icon icon-twitter" da=
+ta-action=3D"share:twitter" aria-label=3D"Share comment on Twitter"></butto=
+n></li><li class=3D"facebook share__button-container"><button class=3D"shar=
+e__button icon icon-facebook" data-action=3D"share:facebook" aria-label=3D"=
+Share comment on Facebook"></button></li></div><li class=3D"link share__but=
+ton-container"><button class=3D"share__button icon icon-link" value=3D"http=
+://disq.us/p/2s2kfxt" name=3D"Link" title=3D"Click to copy post link" data-=
+action=3D"copy-link" aria-label=3D"Copy link to comment"></button><input cl=
+ass=3D"share__button link_url" name=3D"Link" title=3D"Click to copy post li=
+nk" data-action=3D"copy-link" readonly=3D""></li></ul></li><li class=3D"rea=
+ltime" data-role=3D"realtime-notification:6050930609"><span class=3D"realti=
+me-replies realtime-replies--refresh icon icon-pencil" style=3D"display: no=
+ne;"></span><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&am=
+p;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps=
+%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%2=
+0a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&a=
+mp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OC=
+I%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Divi=
+ng%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefa=
+ult&amp;l=3Den#" class=3D"realtime-button realtime-button--refresh" style=
+=3D"display: none;"></a></li></menu></footer></div><div class=3D"moderate-f=
+orm blacklist-form" data-role=3D"blacklist-form"></div><div class=3D"modera=
+te-form flag-form" data-role=3D"flagging-form"></div><div class=3D"badges-f=
+orm" data-role=3D"badges-form"></div><div class=3D"reply-form-container" da=
+ta-role=3D"reply-form"></div></div><div class=3D"children"><ul data-role=3D=
+"children"><li class=3D"post" id=3D"post-6051072285"><div role=3D"alert"></=
+div><div data-role=3D"post-content" class=3D"post-content" tabindex=3D"0"><=
+div class=3D"indicator"></div><span class=3D"pinned-icon"></span><ul class=
+=3D"post-menu dropdown post-menu--refresh" data-role=3D"menu" data-view-id=
+=3D"post-menu" data-post-id=3D"6051072285"><li class=3D"post-menu-item coll=
+apse"><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3D=
+micromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F=
+%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20S=
+tandard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=
+=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Ru=
+ntime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20I=
+nto%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&am=
+p;l=3Den#" data-action=3D"collapse" title=3D"Collapse" name=3D"Collapse"><s=
+pan>=E2=88=92</span></a></li><li class=3D"post-menu-item expand"><a href=3D=
+"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_=
+i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2=
+Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Contai=
+ner%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a=
+%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp=
+;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%=
+20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-=
+action=3D"collapse" title=3D"Expand" name=3D"Collapse"><span>+</span></a></=
+li><li class=3D" post-menu-item" role=3D"menuitem"><a class=3D"dropdown-tog=
+gle" href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicr=
+omind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fi=
+ximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Stand=
+ard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DW=
+hat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtim=
+e%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%=
+20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=
+=3Den#" data-action=3D"flag" data-role=3D"flag" title=3D"Flag as inappropri=
+ate"><i aria-hidden=3D"true" class=3D"icon icon-flag"></i></a></li></ul><di=
+v class=3D"avatar hovercard"><a href=3D"https://disqus.com/by/iximiuz/" dat=
+a-action=3D"profile" data-tab=3D"" data-username=3D"iximiuz" target=3D"_bla=
+nk" rel=3D"noopener noreferrer" class=3D"user user--refresh"><img data-role=
+=3D"user-avatar" data-user=3D"115205155" src=3D"https://a.disquscdn.com/167=
+1639122/images/noavatar92.png" alt=3D"Avatar" class=3D"image-refresh"></a><=
+/div><div class=3D"post-body"><header class=3D"comment__header"><span class=
+=3D"post-byline"><span> <span class=3D"author publisher-anchor-color"><a hr=
+ef=3D"https://disqus.com/by/iximiuz/" data-action=3D"profile" data-tab=3D""=
+ data-username=3D"iximiuz" target=3D"_blank" rel=3D"noopener noreferrer">Iv=
+an Velichko</a></span> <span class=3D"badge moderator"><span class=3D"badge=
+-content">Mod</span></span><a data-action=3D"follow" data-user=3D"115205155=
+" class=3D"follow-user-container" tabindex=3D"0"><span class=3D"follow-user=
+" aria-label=3D"Follow" title=3D"Follow"></span></a></span><span class=3D"p=
+arent-link-container"> <a href=3D"https://iximiuz.com/en/posts/oci-containe=
+rs/#comment-6050930609" class=3D"parent-link" data-role=3D"parent-link"><i =
+aria-label=3D"in reply to" class=3D"icon-forward" title=3D"in reply to"></i=
+> Dan</a></span></span>  <span class=3D"post-meta" style=3D"display: block;=
+"> <a href=3D"https://iximiuz.com/en/posts/oci-containers/#comment-60510722=
+85" data-role=3D"relative-time" class=3D"time-ago" title=3D"Sunday, Novembe=
+r 27, 2022 10:00 AM">4 months ago</a> </span> </header><div class=3D"post-b=
+ody-inner"><div class=3D"post-message-container" data-role=3D"message-conta=
+iner"><div class=3D"publisher-anchor-color" data-role=3D"message-content"><=
+div class=3D"post-message " data-role=3D"message" dir=3D"auto"><div><p>Glad=
+ to hear it, Dan! :)</p></div></div><span class=3D"post-media"><ul data-rol=
+e=3D"post-media-list"></ul></span></div></div><a class=3D"see-more hidden" =
+title=3D"see more" data-action=3D"see-more">see more</a></div><footer class=
+=3D"comment__footer"><menu class=3D"comment-footer__menu"><li class=3D"voti=
+ng" data-role=3D"voting"><div class=3D"post-votes"><a href=3D"https://disqu=
 s.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fpo=
 sts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2F=
 oci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Divin=
 g%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%20=
 Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%20=
 Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Sp=
-ec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"expa=
-nd-share"><span class=3D"text">Share =E2=80=BA</span></a><ul class=3D"comme=
-nt-share__buttons"><div class=3D"comment-share__social-share-buttons"><li c=
-lass=3D"twitter share__button-container"><button class=3D"share__button ico=
-n icon-twitter" data-action=3D"share:twitter" aria-label=3D"Share comment o=
-n Twitter"></button></li><li class=3D"facebook share__button-container"><bu=
-tton class=3D"share__button icon icon-facebook" data-action=3D"share:facebo=
-ok" aria-label=3D"Share comment on Facebook"></button></li></div><li class=
+ec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" class=3D"vote-up  c=
+ount-0" data-action=3D"upvote" title=3D"Vote up" name=3D"Vote up"><span cla=
+ss=3D"control"></span> <span class=3D"updatable count" data-role=3D"likes">=
+0</span></a><a href=3D"https://disqus.com/embed/comments/?base=3Ddefault&am=
+p;f=3Dmicromind&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps=
+%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%2=
+0a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&a=
+mp;t_d=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OC=
+I%20Runtime%20Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Divi=
+ng%20Into%20the%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefa=
+ult&amp;l=3Den#" class=3D"vote-down  count-0" data-action=3D"downvote" titl=
+e=3D"Vote down" name=3D"Vote down"><span class=3D"control"></span> <span cl=
+ass=3D"updatable count" data-role=3D"dislikes">0</span></a></div></li><li c=
+lass=3D"reply" data-role=3D"reply-link"><a class=3D"comment-footer__action"=
+ href=3D"https://disqus.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromin=
+d&amp;t_i=3D%2Fen%2Fposts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximi=
+uz.com%2Fen%2Fposts%2Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%=
+20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%=
+20Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20=
+Spec&amp;t_t=3DWhat%20Is%20a%20Standard%20Container%3A%20Diving%20Into%20th=
+e%20OCI%20Runtime%20Spec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den=
+#" data-action=3D"reply"><span class=3D"text">Reply</span></a></li><li clas=
+s=3D"bullet" aria-hidden=3D"true">=E2=80=A2</li><li id=3D"comment__share-60=
+51072285" class=3D"comment__share"><a class=3D"toggle" href=3D"https://disq=
+us.com/embed/comments/?base=3Ddefault&amp;f=3Dmicromind&amp;t_i=3D%2Fen%2Fp=
+osts%2Foci-containers%2F&amp;t_u=3Dhttps%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2=
+Foci-containers%2F&amp;t_e=3DWhat%20Is%20a%20Standard%20Container%3A%20Divi=
+ng%20Into%20the%20OCI%20Runtime%20Spec&amp;t_d=3DWhat%20Is%20a%20Standard%2=
+0Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20Spec&amp;t_t=3DWhat%2=
+0Is%20a%20Standard%20Container%3A%20Diving%20Into%20the%20OCI%20Runtime%20S=
+pec&amp;t_c=3D%2Fposts%2F&amp;s_o=3Ddefault&amp;l=3Den#" data-action=3D"exp=
+and-share"><span class=3D"text">Share =E2=80=BA</span></a><ul class=3D"comm=
+ent-share__buttons"><div class=3D"comment-share__social-share-buttons"><li =
+class=3D"twitter share__button-container"><button class=3D"share__button ic=
+on icon-twitter" data-action=3D"share:twitter" aria-label=3D"Share comment =
+on Twitter"></button></li><li class=3D"facebook share__button-container"><b=
+utton class=3D"share__button icon icon-facebook" data-action=3D"share:faceb=
+ook" aria-label=3D"Share comment on Facebook"></button></li></div><li class=
 =3D"link share__button-container"><button class=3D"share__button icon icon-=
 link" value=3D"http://disq.us/p/2s2nh99" name=3D"Link" title=3D"Click to co=
 py post link" data-action=3D"copy-link" aria-label=3D"Copy link to comment"=
@@ -9055,7 +9054,7 @@ iv><div class=3D"post-body"><header class=3D"comment__header"><span class=
 =3D"post-byline"><span class=3D"author">fahed dorgaa</span></span>  <span c=
 lass=3D"post-meta" style=3D"display: block;"> <a href=3D"https://iximiuz.co=
 m/en/posts/oci-containers/#comment-6116078752" data-role=3D"relative-time" =
-class=3D"time-ago" title=3D"Wednesday, February 15, 2023 5:55 PM">19 days a=
+class=3D"time-ago" title=3D"Wednesday, February 15, 2023 5:55 PM">a month a=
 go</a> </span> </header><div class=3D"post-body-inner"><div class=3D"post-m=
 essage-container" data-role=3D"message-container"><div class=3D"publisher-a=
 nchor-color" data-role=3D"message-content"><div class=3D"post-message " dat=
@@ -9183,10 +9182,10 @@ r__logo"><a href=3D"https://disqus.com/" rel=3D"nofollow" title=3D"Powered =
 by Disqus" class=3D"disqus-footer__link disqus-footer__link--refresh">Power=
 ed by Disqus</a></span></div></div></footer></div></div></div></div></body>=
 </html>
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-bbe3959e-b89b-422e-94a4-0d0f97346c7d@mhtml.blink
+Content-Location: cid:css-d1107394-342f-46df-acfe-5e8ceb292197@mhtml.blink
 
 @charset "utf-8";
 
@@ -9197,10 +9196,10 @@ px; background-color: rgb(255, 224, 112); color: rgb(164, 119, 3); }
  rgb(164, 119, 3); font-weight: bold; }
 
 .alert--error p, .alert--warning p { margin-top: 5px; margin-bottom: 5px; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-637973e0-b26f-4c26-8294-beeb795b7007@mhtml.blink
+Content-Location: cid:css-4e6b4580-eda5-4189-8d9f-8944e00bc477@mhtml.blink
 
 @charset "utf-8";
 
@@ -9210,10 +9209,10 @@ html { overflow: hidden; }
 
 .clearfix::after { content: ""; display: block; height: 0px; clear: both; v=
 isibility: hidden; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-7d499d0e-d84d-4e6d-ae46-5c7dbcc2327c@mhtml.blink
+Content-Location: cid:css-0cf52e6a-1c12-4f5d-b67b-68663f0a3539@mhtml.blink
 
 @charset "utf-8";
 
@@ -9251,10 +9250,10 @@ portant; }
 
 .publisher-border-color-refresh { border-color: rgb(17, 17, 17) !important;=
  }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-0814f241-3de1-4791-862d-082e80ca0c49@mhtml.blink
+Content-Location: cid:css-1c50bc3f-3005-43ab-8b16-3f3e5db789d7@mhtml.blink
 
 @charset "utf-8";
 
@@ -9263,7 +9262,7 @@ Content-Location: cid:css-0814f241-3de1-4791-862d-082e80ca0c49@mhtml.blink
 
 body.roboto, body.roboto input, body.roboto select, body.roboto textarea { =
 font-family: Roboto, sans-serif; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap
@@ -9445,7 +9444,7 @@ t-display: swap; src: url("https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu=
 92Fr1MmWUlfBBc4.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+15=
 2-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122,=
  U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://c.disquscdn.com/next/embed/styles/lounge.2330dfe9833fc6fa82fa0ffee36e8c21.css
@@ -16060,7 +16059,7 @@ text-decoration: underline; }
 
 #tos__container #accept_tos { background-color: buttonface; margin: 10px au=
 to 0px; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/gif
 Content-Transfer-Encoding: base64
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/loader.ba7c86e8b4b6135bb668d05223f8f127.gif
@@ -16119,7 +16118,7 @@ q7myVmKZNMXGE7g/nkmPpAXithKQ2MDv3N0ddIbsNZiGMzWS/NoqGZICgF4dbaHqpMHVpY2zWnX6
 VEOXQkCbgBT71UiTMRgWZi1n8sHYgIcRtxMlDeB5sYoEkockRSJ5MWCZohe9oh1782KDxYAvJPUk
 9OZjgggAOw==
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/sprite.ad630a07080a45451f139a7487853ff8.png
@@ -16156,7 +16155,7 @@ hTYjR5t5xEMvluOw+F567La7rkhhNDUhBBlY3sTxKrqvJSbflgjygOktIHvgNfP5tFMYZhWy4Vl/
 n17IjMQN9AXPtqwj49TlV4mHxUdWH2YG10ey+kc5juXt4MG1HG0oFhHzLL0KuKKB4UtsMhbpwBeC
 aDb61meH1mzP+KVb0+ywGGx7n03UTLSLyHVeX+J3j/8AQv4wSl07fIgAAAAASUVORK5CYII=
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/privacy.8c96be6b50de1c3fab838c5f050e0be5.svg
@@ -16175,7 +16174,7 @@ Content-Location: https://c.disquscdn.com/next/embed/assets/img/privacy.8c96be6b
 96 5.81512 2.37497 7.12499 2.37497C8.43424 2.37497 9.49985 3.4396 9.49985 4=
 .75002V8.31254H9.49989Z" fill=3D"white"/>
 </svg>=0A
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/warning.3bc0b4bff6c268a4ceaf404014b9be42.svg
@@ -16190,7 +16189,7 @@ http://www.w3.org/2000/svg">
 7344 15.1562C1.29818 15.1562 0.914062 15.0163 0.621094 14.7363C0.334635 14.=
 4564 0.191406 14.1146 0.191406 13.7109Z" fill=3D"white"/>
 </svg>=0A
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/email.727e30eb9b6c1e85cb010b9c8eb04c7e.svg
@@ -16208,7 +16207,7 @@ Content-Location: https://c.disquscdn.com/next/embed/assets/img/email.727e30eb9b
 2C0.116296 1.23655 0 1.59614 0 1.98475V9.9233C0 10.2714 0.0974477 10.594 0.=
 254876 10.8779L5.26741 5.268L0.309162 0.930432Z" fill=3D"white"/>
 </svg>=0A
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/dislike.612d8ba98928c381e4c789c1b309cda1.svg
@@ -16240,7 +16239,7 @@ Content-Location: https://c.disquscdn.com/next/embed/assets/img/dislike.612d8ba9
 5149 1.50204C17.5149 2.05652 17.9709 2.50588 18.5334 2.50588Z" fill=3D"#D7D=
 9E4"/>
 </svg>=0A
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/like.855606fb4e3a7a6448e6c782f3f54e5a.svg
@@ -16270,7 +16269,7 @@ V24.4287C5.7959 24.9831 6.25195 25.4324 6.81448 25.4324H19.8816C19.8922 25.=
  7.83182 24.4296C7.83182 23.8751 7.37577 23.4258 6.81324 23.4258Z" fill=3D"=
 #D7D9E4"/>
 </svg>=0A
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/follow-v2.411b1215980cdde315e43cc006cfbea6.svg
@@ -16298,7 +16297,7 @@ Content-Location: https://c.disquscdn.com/next/embed/assets/img/follow-v2.411b12
 .1577 0.720645 27.439 0.43934C27.7203 0.158035 28.1019 8.34308e-08 28.4997 =
 8.34308e-08Z" fill=3D"#687a86"/>
 </svg>=0A
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://c.disquscdn.com/next/embed/assets/img/svg-sprite.4da5413f5086c5755b46094b813dbfcd.svg
@@ -16483,7 +16482,7 @@ g fill=3D"#747F87" fill-rule=3D"evenodd"><path d=3D"M2.507 0v7.496c0 1.535.=
 905 2.54 2.515 2.54 1.602 0 2.507-1.005 2.507-2.54V0h2.507v7.745c0 2.64-1.9=
 51 4.44-5.014 4.44-3.071 0-5.022-1.8-5.022-4.44V0h2.507zM0 14h10v2H0z"/></g=
 ></svg></svg>
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://c.disquscdn.com/next/current/publisher-admin/assets/img/emoji/upvote-512x512.png
@@ -16633,7 +16632,7 @@ hzslwKYmsMwQY1k4lOR0cM8ZNG/5frrf68Pzq0DVpCzQVIS+e//T6Z6vv16DqpIUQGvsMpR5pS+n
 zDJLaA+etcdfMHZgzOHrQ1VSwnYqOPFWp5bdOCa9rC8npKg7IJxIPeUW6TdSCAAAAAAAAAAgWAva
 BlVO/NaadgAAAABJRU5ErkJggg==
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://c.disquscdn.com/next/current/publisher-admin/assets/img/emoji/funny-512x512.png
@@ -16795,7 +16794,7 @@ khwrv7emKT3TAmPv70Cj9se4oClu9g3AKE/icn40Bu7pQG2VO1r2cZJj6A/LOE+oYAc9MEpLD1qZ
 g+SZoEmO0/0BGxdLkgnGv5vgjLL6Svb2J/w5ZyIjaYHkX8jbpEgTQrNYsPVqtWp03ZKybumm/WHN
 RJxRkqTFBFc5AAAAAAAAAAAAAAAAAAAAYMA+AcrjjpBKUpB7AAAAAElFTkSuQmCC
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://c.disquscdn.com/next/current/publisher-admin/assets/img/emoji/love-512x512.png
@@ -17010,7 +17009,7 @@ D3BJQefD6XTjls9x+mp+PoyXzK73cD+DYNndrCGx6zuLSwril914CYm5fzbXoZoumyuWHZ1/Wl2K
 pstjE4taTKz5GnBxNUh5rKhIqI6h35bOjdG0vFh5tTg62r5h3ZBqMNHyv7qLhZoGKv9Grr1LY41h
 MhFVLU/+8eTLk6qK2BRiHZPrCXkAAAAAAAAAAAAAAKBh348k9Tm8bvw6AAAAAElFTkSuQmCC
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://c.disquscdn.com/next/current/publisher-admin/assets/img/emoji/surprised-512x512.png
@@ -17145,7 +17144,7 @@ mXuv9n6da8ZOsrdxWki0vWSvNwOfKjTeTDMyvgmKQz8vB9XVVpsXk9e27hTT/YwdKhmE1dE8/sFE
 bUWQFcnvyFehZBd60VjvdRvNk3s8OfMUW+29bUQfOqkKmjwAAAAAAAAAAAAAAJCxH4Pc4CvZz0C9
 AAAAAElFTkSuQmCC
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://c.disquscdn.com/next/current/publisher-admin/assets/img/emoji/angry-512x512.png
@@ -17514,7 +17513,7 @@ Ai2Tf8kSYO13fELQkn7OCUk/J4Us/SgBzvuZCd7b+0l/yRJg6i96SsBp/7cVA4HeX7oN1Ax+VgMM
 FYyBT/LfxAu+WQaBM713lEH77zoIjPr318ErQpiIJ/MXU8IohbodxRCQHh6H25H1uiHvBEEQBEEQ
 BEEQBEEQBEEQBEEQBEEQBEG8M74AUxOy6zvYHcAAAAAASUVORK5CYII=
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://c.disquscdn.com/next/current/publisher-admin/assets/img/emoji/sad-512x512.png
@@ -17678,139 +17677,7 @@ w9892d1t0i0DTZZrvlLcbFK3XcZpspz7pfnqhyiv083ejHR+sRprzqsCicay5qvAbQxPPx/b9s8w
 cujXpRmHFNW9dnEa00D0NWs6G1JUcX/KXTSmYDuS/0fubWeHYNIUvVeR2b39hP02i6j3cUomDLZr
 GfIAAAAAAAAAAAAAAEDFvgHLz6VGuGipowAAAABJRU5ErkJggg==
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
-Content-Type: image/jpeg
-Content-Transfer-Encoding: base64
-Content-Location: https://c.disquscdn.com/uploads/users/11520/5155/avatar92.jpg?1677191483
-
-/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEP
-ERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4e
-Hh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABcAFwDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5EWN1
-USbTszjdjilAwpr6Bb4U+GbfwjP/AGl4guPt0cIeLFs3kpnqPc+9eXaB4RvL7xydBtIE1BYWLysD
-hfKHJY/hVqomdKZxm0jkimnOK6Hxfp9na+JLix02Qzx+ZhAoOB7DvVG/sHtXjldBhmKbSeQw9fSr
-UrjMoVJFFLJny42bHXAzirIsZApkkxGM4VT1P/1q2NOmEdodOhZF3thnUHLt6etTKdthqNygulXO
-MrCZD/CP6n/Cqd3BPE/75cHp/wDWrcu49Xso/wB9YTxWxPEjxkB/xpn2u1kt9s1uSO/QVKm9ynEw
-Ixgtmh8g4HQVpy2SOAYSuD93LdqzrpRHO6Bg2DjI6GtFJMi1iKjj1FHTikz7CqA/RS+gsb/wOl1a
-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
-otx+E//Z
-
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
-Content-Type: image/jpeg
-Content-Transfer-Encoding: base64
-Content-Location: https://c.disquscdn.com/uploads/users/26826/9577/avatar92.jpg?1669516982
-
-/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEP
-ERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4e
-Hh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABcAFwDASIA
-AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
-AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
-ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
-p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
-AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
-BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
-U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
-uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7KUAq
-CQOlG1fQflQv3R9KWgBNq+g/KjavoPyrlfiJ8RPBvgCzjuPFWu21g0wJt7fl55yO0ca5ZuSBwMci
-vMhqnxV+Kk8n2b7d8NfCBRZY5hDu1jUIyW4Qn5bdjt+7y4yOoNAHpXiv4lfD7wpqDad4i8YaHpl6
-iCRra4u0WUKehKdee3FZ2l/Gf4TalKsVp8QfDRkc4VZL5IyT/wADxUKeGdLeK0nm0ax1DU/siJZ6
-hq1gZZkRIY/+P5yctKTux0/nlur+C/B2qgQ6l4L02909rnCQ3Gml7hZ/PfMjkn/j36EDpj/ZwAAd
-9YXljqFstzYXNvdQOMrJDIrq30I4qxtX0H5V5d4N8F+HfAtxqGp+F/Ddppd7JbBdU+wWs5ivGEW9
-TaRGTaQGbkAZ7Z71zc0/xh8KeKft92NT+Id9d2bQWtrpywaZo9md4+aYuxdpcjr2BIGc8AHuu1fQ
-flRtX0H5VDp73UlhbvfRRw3TRKZo433oj4G4KxAyAc4OBmp6AE2r6D8qZISpwOBipKim+8PpQBIv
-3R9KWkX7o+lLQB4Dr1+nj349C8sb+PTPDngFCl5rcSw5k1CUqBa7mB3RqCdwH8Z552mvSpvstudk
-9pY2i27faXsHe3C6aPNnP9obiOrcnr1z33V574Dsz4Y+O3ifwR4bDafp9noNreaTpzySmyzLMxuJ
-pMElpC2AGYk4GBwKyLXSNR+KPxY1nwb46vNTsfDeiH7daaAkj/8AEyhaeRUmupid5UshKw4AClMH
-A5AN7wt4v1Lx34kkj8HeHbXWPBVqsia7rN7AkY1+4WIIot02gOQyKC5wnboFpuh+Ffit471b+3PF
-usSeBtMEpEOn6YsJ1SeASF0juLlRhUGcbEBzk55yT7Vp9nZ6fZQ2NhbQWtrAgjihhQIkajgKqjgA
-egqegDwTxjJ8UtM1vUtbsdD+x+HdEkNh4c0fTdMt7q9u3ePyllD4K20G4hueQAQRjArq7AanfaHB
-4f19dL0bxRqdrJNPpGmTw/uHafDajCzDeXQsr9fvD15r1DivGv2gYU0nx/8AC7xqTLGln4gGl3Tx
-OUJiu0KjcR1QOi5HTn3oA1f2bvGl34q8Dyabrl4lz4j8PXLaZqkgOfPZP9XcA91kTDbu53V6hXi3
-hIXNr+1lrsEwgjnvfBllc6iLcERyXCXDRhhnk4TgZ5xXtNABUU33h9KlqKb7w+lAEi/dH0paRfuj
-6UtAHhvxXij0X9onwfrNxpa6lZeI9JuPD89uSoVpI5FuYcliBnIbGfTisDSvG2heHvi18WPE/iPx
-ZFawWw07QrO/W285vPMc0u1Y4w24qTjHfyznvVv4qeGZfH/7Rdv4V1nxPr2hwWWgx6v4dbT5VRFv
-EmZZJSCDudQV44OM8iqnxU8IWXw3bwr4z1HUdR1Vj4u0+/8AEuqSQbseVaSQCbyo1+RSTkgZOX6n
-igDlm8d+IkVZtL+MPxHu5QAQ8nw+WSBz7rsUgH2OcV7V4I+M/hXXLDUYJZdTj1XR9PW7vbe60uSz
-lnUKcvDE5y2SpwoJPIHvXAfFj4o/A3x/p2j2dz8U7/SV0zVIdRDWNpdI0pjBGwny+M7uCOQaf4W8
-L+FvjT8X/EfjnWPCU2o+Fv7Ms7TSrjVbOSEXEis5keJWw20ZAJI5zQBV8UfE74kePNJ0bVvAfhvx
-n4f0a5Lsl1bx6dI9+G4j2+c/yY2scAEnPtXP/GLxv4ivfhWvw88Q+BPG8ev3Vu1xpWp3YtpJZ7i0
-Kzs5WEjGFH8IPB6Hk1H4QjstO8L6L4U8VfCn4maxN4L8SXd1ps2laaTb/LcO8XzF13rgqfTpzgmu
-08S634s+IHj3wBd2Xws8W6JZ6Trnn3F9qkcUOy3eJ45QUVyy5DA59vpQBB8EfE2hax+0dr/k3enW
-1yPC2mWtvYxzIWjZVMk8KgHBMbHDAdMe1fRteAr4Y8Oad+0Z4A8H+EdJtdPsfCOj32q3SwLyPPAg
-jV3PzMxJZjuJJzmvfqACopvvD6VLUU33h9KAJF+6PpS0i/dH0paAPKv2g/DetyW2jfELwfbm48Te
-EZ2uobZet9auMXFtx1LIMjvkccmsz4M/Giw+IXxQ8QaFY6hbXGmjTLTUNLjERSeEEbLmKbPV1kK9
-OMHvXtFeEftMyWfgHUfCPxU0uCJNR0vVDZz2cMQD6nbXIxLGMD5nG3epPcGgD2XW9V0PRYFuNa1H
-TtOhY4WS7nSJSRzwWIFeMfELxnp1x4hOreEP2kPCehRSwLFLp141re2+Vz+8Q7wyMc89c4rovHPg
-n4eftB+B9J1b7a1zCitNpeo2knzQM+3cChyp5RQyOOxHFcZD8JviZoii107TPgx4hhXgXOp+GjaT
-tjoWEIKE/SgDt/hz8SPAVjo9joOofGPQvE+sFm33s15bxPO7MTgKhCgDOAPQDrWn+0O8b/AbxrMk
-g2nQrl0dW6/uyQQR+FeYan8DfG3ji3OmeNbvwD4c0YkebbeFtCUzTAHP+umXMfPdRUnxFl0XX9V0
-L9mnwdeQwWFtBCdfla5Be3sYdpFspJy80mFzjJAOSME4AOv/AGYvBuo6J4ObxZ4nvE1HxT4nSG7v
-roc7IRGBBCOBwiY/EnrgV65TII44YUhiRUjRQqqowFA4AFPoAKim+8PpUtRTfeH0oAkX7o+lcb8R
-fih4H8AqieJdegt7yUfubGIGa6mJ6bYkyxyeMkAe9Z3xZh+Jur3Fh4b8CPZ6LYXkZOpeIZZA8tom
-ceXDD1MhHRjwPUHmp/hn8JPBngIteabYvfa1NzdaxqL/AGi9nbHJMjcrn0XAoA5KPxH8aviCpfwp
-oNl8P9Dk/wBXqOvxGbUJF7Olqp2p16SGuQ+I3wttPBOseDfiDqureIPEtzpGtC+17W9RneY29qkb
-uSsK/KiBwuAqkjjk19M1U1rTbPWNHvNJ1CET2d7A9vPGejxupVh+IJoA8j1L4RLFet4z+DviqXwh
-qGoAXUtvGnnaXf7gCGktzwpIP3l6Z6ZrY8FeKvilbX1xp3xC8BWyQ21pJcf2zod4J4JygzsEDfvQ
-zdhzk8Vl/s867caE998HPE1yf7d8MfLp8kvB1DTM/uJk9dq4RgOm0e9ex0AeHX/i74r/ABKKaR4I
-8Kar4D0mcn7V4g1+FUuUi9ILbJO89mbgex5rA+EnwS0CTSvF/gbxv4Zuru40/XZLvTvEEyGO5uop
-kVo5o7lcEyKVO4A4BxkV9IcDmvItF13V/Fn7S+r2Njq9xF4d8HaYkFxbQSfurq+uck+ZjhvLRcYP
-KsPc0AU/7L+Nnw7VW0fVLf4maDFx9i1Era6rGg/uTj5JSBn74BNanhr48eB77UhoviNr/wAFa3wD
-YeIrc2jMemUkPyMM9Pm59K9VrJ8UeGvD/ijTW07xFo1hqto2f3V3Asij3GRwfcYNAGpFJHLGskTq
-6OAyspyGB6EHvTJvvD6V49afCHxF4G1aG7+EvjCTTNKMym58O6wXurApu+bym5kiOPTOT3Ar2GX7
-34UASL90fSlqPeRwMcUbz6CgCSio959BRvPoKAOK+K3w10vx5FY3f2670TxBpbmTS9asTtuLVj1H
-+2h7oeD7VyEOs/tEeGk+w3vgzw346WMYTULHVBp0kg7GSKQEBvXbxXsm8+go3n0FAHit9qP7QnjK
-D+x7fwno/wAOrefKXOrTaqmoXEaHr5McYAD+hbp6g816J8LvAehfDzwtHoWhxysC5murqdt893O3
-35ZG/iY/oMAV028+go3n0FAElFR7z6CjefQUASVFN94fSl3n0FAG8ZNAH//Z
-
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://a.disquscdn.com/1671639122/images/noavatar92.png
@@ -17845,9 +17712,9 @@ sRrPq16iNBrNwmywz60b11DAU8JsGk+kJD+MR5pcDvvquzdgcH4BJX6U+RKODld+GcjU6PW/rSz9
 hHdiCpTHSmdOd2NxBcpjHSbT0GUUKI+1s3cA3lWB8kDdXm8rvHN7wFiB8r/Amty+KU2BcicwdTev
 qFGgPFB079q5KFAeqMbX05msAuWx4omj/wQYAEX20ILU+JvIAAAAAElFTkSuQmCC
 
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/html
-Content-ID: <frame-4F69987CCFE87BE5FEC3B47D72FD6340@mhtml.blink>
+Content-ID: <frame-7639B16C0E99981F23F3A3F39660CA7F@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://platform.twitter.com/widgets/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html?origin=https%3A%2F%2Fiximiuz.com
 
@@ -17858,16 +17725,16 @@ t/html; charset=3DUTF-8"><meta chartset=3D"utf-8">
 
 
 </body></html>
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/html
-Content-ID: <frame-3161ABEE81C52D668A3278B6E16D795F@mhtml.blink>
+Content-ID: <frame-7A868F9E126198421E22A2E871A72691@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
-Content-Location: https://platform.twitter.com/widgets/tweet_button.2b2d73daf636805223fb11d48f3e94f7.en.html#dnt=true&hashtags=docker%2Coci%2Clinux%2Cvm&id=twitter-widget-0&lang=en&original_referer=https%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&size=l&text=Containers%20Aren%27t%20Linux%20Processes&time=1678122514433&type=share&url=https%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&via=iximiuz
+Content-Location: https://platform.twitter.com/widgets/tweet_button.2b2d73daf636805223fb11d48f3e94f7.en.html#dnt=true&hashtags=docker%2Coci%2Clinux%2Cvm&id=twitter-widget-0&lang=en&original_referer=https%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&size=l&text=Containers%20Aren%27t%20Linux%20Processes&time=1679748673632&type=share&url=https%3A%2F%2Fiximiuz.com%2Fen%2Fposts%2Foci-containers%2F&via=iximiuz
 
 <!DOCTYPE html><html data-scribe=3D"page:button" lang=3D"en"><head><meta ht=
 tp-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=
-=3D"stylesheet" type=3D"text/css" href=3D"cid:css-556281de-ee2a-40b2-a54a-3=
-b463bdb4e85@mhtml.blink" />
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-4643e35e-4e89-445c-a4d3-5=
+90cb89393d0@mhtml.blink" />
  =20
   <link rel=3D"dns-prefetch" href=3D"https://twitter.com/">
   <title>Tweet Button</title>
@@ -17888,10 +17755,10 @@ z.com%2Fen%2Fposts%2Foci-containers%2F&amp;via=3Diximiuz" class=3D"btn" id=
 
 
 </body></html>
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-556281de-ee2a-40b2-a54a-3b463bdb4e85@mhtml.blink
+Content-Location: cid:css-4643e35e-4e89-445c-a4d3-590cb89393d0@mhtml.blink
 
 @charset "utf-8";
 
@@ -18022,21 +17889,21 @@ x 0px; border-width: 5px 0px 5px 5px; }
 .xl.rtl.hcount .count-o u { margin-right: -4px; }
 
 .xl #count { padding: 0px 8px; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/html
-Content-ID: <frame-12657B908FE5707D296E5750A47AA6B2@mhtml.blink>
+Content-ID: <frame-224CE008D3F1EF0645A238638AF50C1E@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
 
 <html class=3D"SandboxRoot"><head><meta http-equiv=3D"Content-Type" content=
 =3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" =
-href=3D"cid:css-3de78e3d-8ccd-40a6-b4fb-ca38d2d9bca1@mhtml.blink" /><base t=
+href=3D"cid:css-c364e4e2-5dac-4673-9580-cd02cd2493fc@mhtml.blink" /><base t=
 arget=3D"_blank"></head><body></body></html>
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU----
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
-Content-Location: cid:css-3de78e3d-8ccd-40a6-b4fb-ca38d2d9bca1@mhtml.blink
+Content-Location: cid:css-c364e4e2-5dac-4673-9580-cd02cd2493fc@mhtml.blink
 
 @charset "utf-8";
 
 .SandboxRoot { display: none; }
-------MultipartBoundary--GpPojoz15YTiGHyrCfr2ltsGT4edxrrCBL9YLbvAVU------
+------MultipartBoundary--RkKi7hmg9JCDzuw8wo46F9dLu3LkcKqUHK0JsM4C3C------

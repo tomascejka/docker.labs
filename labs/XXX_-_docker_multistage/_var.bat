@@ -13,7 +13,7 @@ REM https://docs.docker.com/engine/reference/commandline/build/
 REM docker build -f Dockerfile -t %imgName% .
 
 REM https://docs.docker.com/engine/reference/run/
-REM docker run --rm --name toce-%appName% %imgName%
+REM docker run --rm --name %appName% %imgName%
 
 echo -------------------------------------------------------------------------
 echo image:    %imgName%

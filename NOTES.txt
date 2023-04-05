@@ -25,3 +25,15 @@ Ruzne poznamky ze sveta kontejneru
 	2013	Docker project was announced by DotCloud
 	2014	Rocket. (rkt) announced by CoreOS
 	2016	Windows container preview as released as part of Windows server 2016
+
+
+## Docker basics
+	- zdroj - https://atmamani.github.io/cheatsheets/docker-1/
+	Images and Containers, Registries and Repositories¶
+	Images are read-only templates composed by stacking up other images. They are hosted on docker registry.
+
+	Containers is an instance of an image.
+
+	Registry is where we store our images. You can host this yourself or use Docker’s public registry called DockerHub. Repositories are repos within the registry where images of a particular type are stored.
+
+	Docker Hub - is a public registry. Official repos are encouraged to be used as they are vetted by Docker and ensure they get security updates frequently. Generally, user created repos have a prefixing username/repo_name/image_name. Usually, tags are used to specify docker versions.

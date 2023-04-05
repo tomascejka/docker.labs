@@ -1,0 +1,681 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://petermalmgren.com/signal-handling-docker/
+Subject: PID 1 Signal Handling in Docker - Peter Malmgren
+Date: Sat, 1 Apr 2023 09:42:33 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--3FvQBN95PHlU11GPjJ88K83ykpta0RXSTi1NZeYYce----"
+
+
+------MultipartBoundary--3FvQBN95PHlU11GPjJ88K83ykpta0RXSTi1NZeYYce----
+Content-Type: text/html
+Content-ID: <frame-A5015AC6B3C9054481CC6AA68206D2C0@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://petermalmgren.com/signal-handling-docker/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><base href=3D"https://petermalmgren.com/"><title>P=
+ID 1 Signal Handling in Docker - Peter Malmgren</title><link rel=3D"canonic=
+al" href=3D"https://petermalmgren.com/signal-handling-docker/"><meta conten=
+t=3D"width=3Ddevice-width,initial-scale=3D1" name=3D"viewport"><meta name=
+=3D"description" content=3D"If your container process runs with PID 1, surp=
+rising things can happen!"><meta name=3D"robots" content=3D"index"><link re=
+l=3D"preconnect" href=3D"https://fonts.gstatic.com/"><link rel=3D"preconnec=
+t" href=3D"https://fonts.googleapis.com/"><link href=3D"https://fonts.googl=
+eapis.com/css2?family=3DLato:ital,wght@0,700;1,300&amp;family=3DSource+Seri=
+f+Pro:wght@300;400;700&amp;display=3Dswap" rel=3D"stylesheet"><link rel=3D"=
+stylesheet" href=3D"https://petermalmgren.com/style.css"><link rel=3D"style=
+sheet" href=3D"https://petermalmgren.com/syntax.css"><meta name=3D"google-s=
+ite-verification" content=3D"qyhck-Lnvl6ztjZc1T2PSmy_7azdftpI4__b1FY4B0U"><=
+/head><body><article><header><div class=3D"item header me"><a href=3D"https=
+://petermalmgren.com/"><h2>=F0=9F=96=A5=EF=B8=8F Peter Malmgren</h2></a></d=
+iv><div class=3D"item navigation nav"><nav id=3D"navigation"><a href=3D"htt=
+ps://petermalmgren.com/about">About</a></nav></div></header><main><div id=
+=3D"content"><div class=3D"post-meta"><h1>PID 1 Signal Handling in Docker</=
+h1><h2><em>If your container process runs with PID 1, surprising things can=
+ happen!</em></h2><time datetime=3D"2020-10-19T07:46:19-0400" class=3D"date=
+">Published: Mon, Oct 19, 2020</time></div><div class=3D"post-content"><h2 =
+id=3D"tldr">tl;dr</h2><p>Running Docker containers spawns processes with th=
+e PID of 1. If you run your container process wrapped in a shell script, th=
+is shell script will be PID 1 and will not pass along any signals to your c=
+hild process. This means that <code>SIGTERM</code>, the signal used for gra=
+ceful shutdown, will be ignored by your process.</p><p>To avoid this proble=
+m, you can use the <a href=3D"https://www.man7.org/linux/man-pages/man1/bas=
+h.1.html"><code>exec</code></a> from within your wrapper shell script along=
+ with a custom signal handler.</p><p>Alternatively, you can use an init-lik=
+e process such as <a href=3D"https://github.com/Yelp/dumb-init">dumb-init</=
+a> with signal-proxying capabilities.</p><h2 id=3D"background">Background</=
+h2><p>Recently I encountered some unexpected behavior when working on an ap=
+plication deployed in Kubernetes. When pods were rotated during deployments=
+ they were being abruptly stopped with a <code>SIGKILL</code> and ignoring =
+the <code>SIGTERM</code> signal sent at the start of the <a href=3D"https:/=
+/kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination"=
+>pod termination process</a>.</p><p>After looking at the logs it was clear =
+that the issue wasn=E2=80=99t with our signal handling code, which looked s=
+omething like this:</p><div class=3D"highlight"><pre tabindex=3D"0" class=
+=3D"chroma"><code class=3D"language-python" data-lang=3D"python"><span clas=
+s=3D"line"><span class=3D"cl"><span class=3D"kn">import</span> <span class=
+=3D"nn">sys</span>
+</span></span><span class=3D"line"><span class=3D"cl"><span class=3D"kn">im=
+port</span> <span class=3D"nn">signal</span>
+</span></span><span class=3D"line"><span class=3D"cl">
+</span></span><span class=3D"line"><span class=3D"cl"><span class=3D"kn">im=
+port</span> <span class=3D"nn">time</span>
+</span></span><span class=3D"line"><span class=3D"cl">
+</span></span><span class=3D"line"><span class=3D"cl">
+</span></span><span class=3D"line"><span class=3D"cl"><span class=3D"k">def=
+</span> <span class=3D"nf">signal_handler</span><span class=3D"p">(</span><=
+span class=3D"n">signum</span><span class=3D"p">,</span> <span class=3D"n">=
+frame</span><span class=3D"p">):</span>
+</span></span><span class=3D"line"><span class=3D"cl">    <span class=3D"nb=
+">print</span><span class=3D"p">(</span><span class=3D"sa">f</span><span cl=
+ass=3D"s2">"Gracefully shutting down after receiving signal </span><span cl=
+ass=3D"si">{</span><span class=3D"n">signum</span><span class=3D"si">}</spa=
+n><span class=3D"s2">"</span><span class=3D"p">)</span>
+</span></span><span class=3D"line"><span class=3D"cl">    <span class=3D"n"=
+>sys</span><span class=3D"o">.</span><span class=3D"n">exit</span><span cla=
+ss=3D"p">(</span><span class=3D"mi">0</span><span class=3D"p">)</span>
+</span></span><span class=3D"line"><span class=3D"cl">
+</span></span><span class=3D"line"><span class=3D"cl">
+</span></span><span class=3D"line"><span class=3D"cl"><span class=3D"k">if<=
+/span> <span class=3D"vm">__name__</span> <span class=3D"o">=3D=3D</span> <=
+span class=3D"s2">"__main__"</span><span class=3D"p">:</span>
+</span></span><span class=3D"line"><span class=3D"cl">    <span class=3D"n"=
+>signal</span><span class=3D"o">.</span><span class=3D"n">signal</span><spa=
+n class=3D"p">(</span><span class=3D"n">signal</span><span class=3D"o">.</s=
+pan><span class=3D"n">SIGTERM</span><span class=3D"p">,</span> <span class=
+=3D"n">signal_handler</span><span class=3D"p">)</span>
+</span></span><span class=3D"line"><span class=3D"cl">    <span class=3D"n"=
+>signal</span><span class=3D"o">.</span><span class=3D"n">signal</span><spa=
+n class=3D"p">(</span><span class=3D"n">signal</span><span class=3D"o">.</s=
+pan><span class=3D"n">SIGINT</span><span class=3D"p">,</span> <span class=
+=3D"n">signal_handler</span><span class=3D"p">)</span>
+</span></span><span class=3D"line"><span class=3D"cl">    <span class=3D"k"=
+>while</span> <span class=3D"kc">True</span><span class=3D"p">:</span>
+</span></span><span class=3D"line"><span class=3D"cl">        <span class=
+=3D"n">time</span><span class=3D"o">.</span><span class=3D"n">sleep</span><=
+span class=3D"p">(</span><span class=3D"mf">0.5</span><span class=3D"p">)</=
+span>  <span class=3D"c1"># simulate work</span>
+</span></span><span class=3D"line"><span class=3D"cl">	<span class=3D"nb">p=
+rint</span><span class=3D"p">(</span><span class=3D"s2">"Interrupt me"</spa=
+n><span class=3D"p">)</span>
+</span></span></code></pre></div><p>Based on our logs, we weren=E2=80=99t h=
+itting the signal handler function at all.</p><p>We were running the applic=
+ation from a shell script that looked like this:</p><div class=3D"highlight=
+"><pre tabindex=3D"0" class=3D"chroma"><code class=3D"language-bash" data-l=
+ang=3D"bash"><span class=3D"line"><span class=3D"cl"><span class=3D"cp">#!/=
+bin/sh
+</span></span></span><span class=3D"line"><span class=3D"cl"><span class=3D=
+"cp"></span>
+</span></span><span class=3D"line"><span class=3D"cl">./main.py
+</span></span></code></pre></div><p>This script was being run from a Docker=
+ container that looked something like this:</p><div class=3D"highlight"><pr=
+e tabindex=3D"0" class=3D"chroma"><code class=3D"language-docker" data-lang=
+=3D"docker"><span class=3D"line"><span class=3D"cl"><span class=3D"k">FROM<=
+/span><span class=3D"s"> python:3.9-alpine3.12</span><span class=3D"err">
+</span></span></span><span class=3D"line"><span class=3D"cl"><span class=3D=
+"err">
+</span></span></span><span class=3D"line"><span class=3D"cl"><span class=3D=
+"err"></span><span class=3D"k">COPY</span> main.py .<span class=3D"err">
+</span></span></span><span class=3D"line"><span class=3D"cl"><span class=3D=
+"err"></span><span class=3D"k">COPY</span> main .<span class=3D"err">
+</span></span></span><span class=3D"line"><span class=3D"cl"><span class=3D=
+"err">
+</span></span></span><span class=3D"line"><span class=3D"cl"><span class=3D=
+"err"></span><span class=3D"k">CMD</span> <span class=3D"p">[</span><span c=
+lass=3D"s2">"./main"</span><span class=3D"p">]</span><span class=3D"err">
+</span></span></span></code></pre></div><h2 id=3D"the-problem">The Problem<=
+/h2><p>If we take a look at the running processes in our container, we=E2=
+=80=99ll see what the <code>main</code> shell script has PID 1, and our <co=
+de>main.py</code> Python program will have another PID:</p><div class=3D"hi=
+ghlight"><pre tabindex=3D"0" class=3D"chroma"><code class=3D"language-bash"=
+ data-lang=3D"bash"><span class=3D"line"><span class=3D"cl">$ docker <span =
+class=3D"nb">exec</span> pedantic_matsumoto ps aux
+</span></span><span class=3D"line"><span class=3D"cl">PID   USER     TIME  =
+COMMAND
+</span></span><span class=3D"line"><span class=3D"cl">    <span class=3D"m"=
+>1</span> root      0:00 <span class=3D"o">{</span>main<span class=3D"o">}<=
+/span> /bin/sh ./main <span class=3D"p">&amp;</span>
+</span></span><span class=3D"line"><span class=3D"cl">    <span class=3D"m"=
+>6</span> root      0:00 python ./main.py
+</span></span><span class=3D"line"><span class=3D"cl">   <span class=3D"m">=
+12</span> root      0:00 ps aux
+</span></span><span class=3D"line"><span class=3D"cl">
+</span></span><span class=3D"line"><span class=3D"cl">$ docker <span class=
+=3D"nb">exec</span> pedantic_matsumoto pstree -p
+</span></span><span class=3D"line"><span class=3D"cl">main<span class=3D"o"=
+>(</span>1<span class=3D"o">)</span>---python<span class=3D"o">(</span>6<sp=
+an class=3D"o">)</span>
+</span></span></code></pre></div><p>PID 1 processes in Linux do not have <a=
+ href=3D"https://docs.docker.com/engine/reference/run/#foreground">any defa=
+ult signal handlers</a> and as a result will not receive and propogate sign=
+als. They are also expected to take on certain responsibilities, such as ad=
+opting orphaned processes, and reaping zombie processes.</p><h2 id=3D"poten=
+tial-solutions">Potential Solutions</h2><h3 id=3D"diy-signal-handling-and-e=
+xec">DIY Signal Handling and <code>exec</code></h3><p>The first way to get =
+around this issue is to install custom signal handlers for <code>SIGTERM</c=
+ode> and other signals you need directly in your application code, and then=
+ run <code>exec</code> in your wrapper shell script. This replaces the runn=
+ing process with your application.</p><p>For the application I gave as an e=
+xample above, using <code>exec</code> means doing this:</p><div class=3D"hi=
+ghlight"><pre tabindex=3D"0" class=3D"chroma"><code class=3D"language-bash"=
+ data-lang=3D"bash"><span class=3D"line"><span class=3D"cl"><span class=3D"=
+cp">#!/bin/sh
+</span></span></span><span class=3D"line"><span class=3D"cl"><span class=3D=
+"cp"></span>
+</span></span><span class=3D"line"><span class=3D"cl"><span class=3D"nb">ex=
+ec</span> ./main.py
+</span></span></code></pre></div><p>Your application still wouldn=E2=80=99t=
+ be able to reap zombie processes or adopt orphaned processes, but it would=
+ be able to catch signals and handle them gracefully.</p><h3 id=3D"dumb-ini=
+t">dumb-init</h3><p><a href=3D"https://github.com/Yelp/dumb-init">dumb-init=
+</a> is a simple init process which does everything an <code>init</code> pr=
+ocess is supposed to do. If you install it in your Docker container and use=
+ it as your entrypoint, you=E2=80=99ll be able to handle signals just fine.=
+</p><h2 id=3D"tini">tini</h2><p>If you run your Docker container with <code=
+>--init</code>, Docker will automatically start its own init process as PID=
+ 1. The problem with using <code>tini</code> is that container orchestrator=
+s, such as Kubernetes, can=E2=80=99t start your Docker container with the <=
+code>--init</code> flag.</p><p>If you want to use <code>tini</code>, you=E2=
+=80=99ll have to download and install it in your <code>Dockerfile</code> an=
+d pass along the <code>-g</code> option for signal forwarding.</p></div><di=
+v class=3D"fin">EOF</div></div></main><footer><div class=3D"social"><a href=
+=3D"https://github.com/pmalmgren" class=3D"fa fa-github"></a>
+<a href=3D"https://twitter.com/ptmalmgren" class=3D"fa fa-twitter"></a></di=
+v><div class=3D"copyright"><p>=E2=98=95 =E2=9D=A4=EF=B8=8F =E2=9C=A8 | Buil=
+t with <a href=3D"https://gohugo.io/">Hugo</a></p></div></footer></article>=
+</body></html>
+------MultipartBoundary--3FvQBN95PHlU11GPjJ88K83ykpta0RXSTi1NZeYYce----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,300&family=Source+Serif+Pro:wght@300;400;700&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: Lato; font-style: italic; font-weight: 300; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/lato/v23/S6u_w4BMUTPHj=
+xsI9w2_FQft1dw.woff2") format("woff2"); unicode-range: U+100-2AF, U+1E00-1E=
+FF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Lato; font-style: italic; font-weight: 300; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/lato/v23/S6u_w4BMUTPHj=
+xsI9w2_Gwft.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-15=
+3, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2=
+191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Lato; font-style: normal; font-weight: 700; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh=
+6UVSwaPGR_p.woff2") format("woff2"); unicode-range: U+100-2AF, U+1E00-1EFF,=
+ U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Lato; font-style: normal; font-weight: 700; font-=
+display: swap; src: url("https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh=
+6UVSwiPGQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153,=
+ U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+219=
+1, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasd8ctSGqxLUv.woff2") format("woff2")=
+; unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, =
+U+FE2E-FE2F; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasd8ctSiqxLUv.woff2") format("woff2")=
+; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasd8ctS-qxLUv.woff2") format("woff2")=
+; unicode-range: U+370-3FF; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasd8ctSOqxLUv.woff2") format("woff2")=
+; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1=
+AF-1B0, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasd8ctSKqxLUv.woff2") format("woff2")=
+; unicode-range: U+100-2AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, =
+U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 300; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasd8ctSyqxA.woff2") format("woff2"); =
+unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+=
+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, =
+U+FFFD; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIQzD-0qpwxpaWvjeD0X88SAOeauXk-oBOL.woff2") format("woff2"); un=
+icode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE=
+2E-FE2F; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIQzD-0qpwxpaWvjeD0X88SAOeauXA-oBOL.woff2") format("woff2"); un=
+icode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIQzD-0qpwxpaWvjeD0X88SAOeauXc-oBOL.woff2") format("woff2"); un=
+icode-range: U+370-3FF; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIQzD-0qpwxpaWvjeD0X88SAOeauXs-oBOL.woff2") format("woff2"); un=
+icode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1=
+B0, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIQzD-0qpwxpaWvjeD0X88SAOeauXo-oBOL.woff2") format("woff2"); un=
+icode-range: U+100-2AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+21=
+13, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIQzD-0qpwxpaWvjeD0X88SAOeauXQ-oA.woff2") format("woff2"); unic=
+ode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000=
+-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FF=
+FD; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasc8btSGqxLUv.woff2") format("woff2")=
+; unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, =
+U+FE2E-FE2F; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasc8btSiqxLUv.woff2") format("woff2")=
+; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasc8btS-qxLUv.woff2") format("woff2")=
+; unicode-range: U+370-3FF; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasc8btSOqxLUv.woff2") format("woff2")=
+; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1=
+AF-1B0, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasc8btSKqxLUv.woff2") format("woff2")=
+; unicode-range: U+100-2AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, =
+U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Source Serif Pro"; font-style: normal; font-weig=
+ht: 700; font-display: swap; src: url("https://fonts.gstatic.com/s/sourcese=
+rifpro/v15/neIXzD-0qpwxpaWvjeD0X88SAOeasc8btSyqxA.woff2") format("woff2"); =
+unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+=
+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, =
+U+FFFD; }
+------MultipartBoundary--3FvQBN95PHlU11GPjJ88K83ykpta0RXSTi1NZeYYce----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://petermalmgren.com/style.css
+
+@charset "utf-8";
+
+html, body { height: 100vh; margin-top: 0px; margin-bottom: 0px; }
+
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, =
+Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe=
+ UI Symbol", serif; overflow-wrap: break-word; }
+
+article { color: rgb(68, 68, 68); margin-right: 40px; margin-left: 40px; di=
+splay: grid; grid-template: "header" auto "content" 1fr "footer" auto / 1fr=
+; min-height: 100vh; margin-top: 0px !important; margin-bottom: 0px !import=
+ant; }
+
+footer { margin-left: 40px; margin-right: 40px; grid-area: footer / footer =
+/ footer / footer; color: rgba(44, 44, 44, 0.4); overflow: hidden; }
+
+footer p { margin-bottom: 0px; padding-bottom: 0px; }
+
+footer .social a { text-decoration: none; font-size: 2em; margin-right: 5px=
+; margin-bottom: 0px; padding-bottom: 0px; }
+
+.fa-twitter { color: rgb(56, 161, 243); }
+
+.fa-github { color: rgb(68, 68, 68); }
+
+.me h2 { padding-top: 0px; margin-top: 0px; }
+
+@media (max-width: 475px) {
+  .intro { display: block !important; }
+  .intro .photo { text-align: center; padding-bottom: 20px; }
+  .me { font-size: 1em !important; }
+  article { width: 100%; margin: 0px !important; padding: 0px !important; }
+  h2 { font-size: 1.2em !important; }
+  .post-header { padding-top: 0px !important; }
+  main { margin-left: 20px !important; margin-right: 20px !important; }
+}
+
+@media (max-width: 750px) {
+  .intro { display: block !important; }
+  .intro .photo { text-align: center; padding-bottom: 20px; }
+}
+
+@media (max-width: 600px) {
+  .intro { display: block !important; }
+  .intro .photo { text-align: center; padding-bottom: 20px; }
+  article { width: 100%; margin: 0px !important; padding: 0px !important; }
+  .me { font-size: 0.75em; }
+  nav { padding-top: 0px; text-align: right; display: grid; gap: 20px; grid=
+-template-columns: [col] auto; }
+  .navigation a { font-size: 1em; }
+  .post-list { grid-template-columns: [col] 50px; margin-top: 0px !importan=
+t; }
+  .post-list { padding-top: 0px; }
+  .post-list li:last-child { margin-bottom: 60px; }
+  .post { margin-bottom: 20px; }
+  .post h2 { text-align: center; }
+  .post p { text-align: center; }
+  footer p { text-align: center; }
+  footer .social { margin-top: 20px; text-align: center; }
+  footer { display: grid; grid-template-areas: "social" "copyright"; }
+  main { border-bottom: 1px solid rgba(44, 44, 44, 0.2); }
+}
+
+main { grid-area: content / content / content / content; margin-left: 10%; =
+margin-right: 10%; }
+
+header { margin-left: 10%; margin-right: 10%; margin-top: 40px; padding-bot=
+tom: 20px; grid-area: header / header / header / header; display: grid; gri=
+d-template-areas: "me nav"; }
+
+.me { grid-area: me / me / me / me; margin-bottom: 0px; }
+
+.navigation { grid-area: nav / nav / nav / nav; text-align: right; padding-=
+top: 8px; }
+
+.me h3 { margin: 0px; font-weight: 400; font-size: 1.4em; }
+
+.me a { text-decoration: none; color: rgb(68, 68, 68); }
+
+.navigation a { margin-top: 0px; margin-right: 25px; text-decoration: none;=
+ }
+
+.content { margin-top: 10px; }
+
+.post-list { list-style: none; margin-left: 0px; padding-left: 0px; }
+
+.post-list li { display: grid; gap: 0px; grid-template-columns: [col] auto;=
+ grid-template-rows: [row] auto [row]; text-align: left; margin-left: 0px; =
+}
+
+.post-list li a .date { grid-area: 1 row / 1 col / auto / span 2; color: rg=
+b(51, 51, 51); opacity: 0.4; margin-top: 0.2em; }
+
+.post-list li a .date p { text-align: left; }
+
+.post-list li a .title { grid-area: 1 row / 2 col / auto / span 2; font-siz=
+e: 1.3em; }
+
+.post-list li .date p { font-size: 1.2em; margin-top: 0px; }
+
+.post-list li .title h3 { margin-bottom: 0px; font-size: 1em; }
+
+.post-list li .title p { margin-bottom: 10px; margin-top: 10px; font-size: =
+1em; }
+
+.post-list a { text-decoration: none; color: rgb(68, 68, 68); }
+
+.intro { padding-top: 40px; display: grid; column-gap: 20px; grid-template-=
+columns: [col] auto [col]; grid-template-rows: [row] auto [row]; }
+
+.intro .text { grid-area: 1 row / 1 col / auto / span 1; }
+
+.intro .text h2 { font-weight: bold; }
+
+.intro .photo { grid-area: 1 row / 2 col / auto / span 1; }
+
+.intro .photo img { border: 3px solid black; border-radius: 5px; }
+
+.post-header { padding: 20px 0px 0px; margin: 0px; border-bottom: 3px solid=
+ black; }
+
+.theme-selector { grid-area: 3 row / 4 col / auto / span 1; }
+
+.post-meta { text-align: center; margin-bottom: 40px; }
+
+.post-meta h1 { margin-bottom: 5px; font-size: 2em; }
+
+.post-meta h2 { margin-top: 0px; margin-bottom: 15px; font-size: 1.25em; }
+
+.post-meta .date { opacity: 0.4; font-size: 1em; }
+
+.post-content { margin: 0px auto; max-width: 70ch; }
+
+.post-content p img { max-width: 100%; height: auto; margin-left: auto; mar=
+gin-right: auto; }
+
+p { line-height: calc(3.125ex); }
+
+.post-content ol { line-height: calc(3.125ex); }
+
+.post-content ul { line-height: calc(3.125ex); }
+
+.post-content p { line-height: calc(3.125ex); }
+
+.post-content h2 { padding-top: 0.8em; font-size: 1.4em; margin-bottom: 0px=
+; }
+
+.post-content h3 { padding-top: 1.1em; font-size: 1.2em; margin-bottom: 0px=
+; }
+
+.post-content h4 { font-size: 1.1em; padding-top: 1em; margin-bottom: 0px; =
+}
+
+.post-content h5 { font-size: 105%; padding-top: 1em; margin-bottom: 0px; }
+
+.highlight { line-height: 1em; }
+
+.chroma { padding: 10px 0px 10px 10px; overflow: scroll; margin: 0px auto; =
+max-width: 100%; width: auto; }
+
+code, pre, samp { white-space: pre-wrap; overflow: scroll; }
+
+code { overflow-wrap: break-word; word-break: break-word; overflow: scroll;=
+ }
+
+pre > code { word-break: break-all; overflow: scroll; }
+
+.headline-image img { display: block; margin: auto; padding-bottom: 40px; }
+
+.image-credit img { display: block; margin: auto; max-width: 75%; }
+
+.image-credit p { font-size: 0.8em; color: rgb(68, 68, 68); opacity: 0.4; t=
+ext-align: center; font-variant-ligatures: normal; }
+
+span.filename { font-size: 0.8em; margin-bottom: 0px; padding-bottom: 0px; =
+}
+
+.fin { text-align: center; margin-bottom: 20px; margin-top: 80px; opacity: =
+0.4; }
+------MultipartBoundary--3FvQBN95PHlU11GPjJ88K83ykpta0RXSTi1NZeYYce----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://petermalmgren.com/syntax.css
+
+@charset "utf-8";
+
+.chroma { color: rgb(39, 40, 34); background-color: rgb(250, 250, 250); }
+
+.chroma .x { }
+
+.chroma .err { color: rgb(150, 0, 80); background-color: rgb(30, 0, 16); }
+
+.chroma .lntd { vertical-align: top; padding: 0px; margin: 0px; border: 0px=
+; }
+
+.chroma .lntable { border-spacing: 0px; padding: 0px; margin: 0px; border: =
+0px; width: auto; overflow: auto; display: block; }
+
+.chroma .hl { display: block; width: 100%; background-color: rgb(255, 255, =
+204); }
+
+.chroma .lnt { margin-right: 0.4em; padding: 0px 0.4em; color: rgb(127, 127=
+, 127); }
+
+.chroma .ln { margin-right: 0.4em; padding: 0px 0.4em; color: rgb(127, 127,=
+ 127); }
+
+.chroma .k { color: rgb(0, 168, 200); }
+
+.chroma .kc { color: rgb(0, 168, 200); }
+
+.chroma .kd { color: rgb(0, 168, 200); }
+
+.chroma .kn { color: rgb(249, 38, 114); }
+
+.chroma .kp { color: rgb(0, 168, 200); }
+
+.chroma .kr { color: rgb(0, 168, 200); }
+
+.chroma .kt { color: rgb(0, 168, 200); }
+
+.chroma .n { color: rgb(17, 17, 17); }
+
+.chroma .na { color: rgb(117, 175, 0); }
+
+.chroma .nb { color: rgb(17, 17, 17); }
+
+.chroma .bp { color: rgb(17, 17, 17); }
+
+.chroma .nc { color: rgb(117, 175, 0); }
+
+.chroma .no { color: rgb(0, 168, 200); }
+
+.chroma .nd { color: rgb(117, 175, 0); }
+
+.chroma .ni { color: rgb(17, 17, 17); }
+
+.chroma .ne { color: rgb(117, 175, 0); }
+
+.chroma .nf { color: rgb(117, 175, 0); }
+
+.chroma .fm { color: rgb(17, 17, 17); }
+
+.chroma .nl { color: rgb(17, 17, 17); }
+
+.chroma .nn { color: rgb(17, 17, 17); }
+
+.chroma .nx { color: rgb(117, 175, 0); }
+
+.chroma .py { color: rgb(17, 17, 17); }
+
+.chroma .nt { color: rgb(249, 38, 114); }
+
+.chroma .nv { color: rgb(17, 17, 17); }
+
+.chroma .vc { color: rgb(17, 17, 17); }
+
+.chroma .vg { color: rgb(17, 17, 17); }
+
+.chroma .vi { color: rgb(17, 17, 17); }
+
+.chroma .vm { color: rgb(17, 17, 17); }
+
+.chroma .l { color: rgb(174, 129, 255); }
+
+.chroma .ld { color: rgb(216, 130, 0); }
+
+.chroma .s { color: rgb(216, 130, 0); }
+
+.chroma .sa { color: rgb(216, 130, 0); }
+
+.chroma .sb { color: rgb(216, 130, 0); }
+
+.chroma .sc { color: rgb(216, 130, 0); }
+
+.chroma .dl { color: rgb(216, 130, 0); }
+
+.chroma .sd { color: rgb(216, 130, 0); }
+
+.chroma .s2 { color: rgb(216, 130, 0); }
+
+.chroma .se { color: rgb(128, 69, 255); }
+
+.chroma .sh { color: rgb(216, 130, 0); }
+
+.chroma .si { color: rgb(216, 130, 0); }
+
+.chroma .sx { color: rgb(216, 130, 0); }
+
+.chroma .sr { color: rgb(216, 130, 0); }
+
+.chroma .s1 { color: rgb(216, 130, 0); }
+
+.chroma .ss { color: rgb(216, 130, 0); }
+
+.chroma .m { color: rgb(174, 129, 255); }
+
+.chroma .mb { color: rgb(174, 129, 255); }
+
+.chroma .mf { color: rgb(174, 129, 255); }
+
+.chroma .mh { color: rgb(174, 129, 255); }
+
+.chroma .mi { color: rgb(174, 129, 255); }
+
+.chroma .il { color: rgb(174, 129, 255); }
+
+.chroma .mo { color: rgb(174, 129, 255); }
+
+.chroma .o { color: rgb(249, 38, 114); }
+
+.chroma .ow { color: rgb(249, 38, 114); }
+
+.chroma .p { color: rgb(17, 17, 17); }
+
+.chroma .c { color: rgb(117, 113, 94); }
+
+.chroma .ch { color: rgb(117, 113, 94); }
+
+.chroma .cm { color: rgb(117, 113, 94); }
+
+.chroma .c1 { color: rgb(117, 113, 94); }
+
+.chroma .cs { color: rgb(117, 113, 94); }
+
+.chroma .cp { color: rgb(117, 113, 94); }
+
+.chroma .cpf { color: rgb(117, 113, 94); }
+
+.chroma .g { }
+
+.chroma .gd { }
+
+.chroma .ge { font-style: italic; }
+
+.chroma .gr { }
+
+.chroma .gh { }
+
+.chroma .gi { }
+
+.chroma .go { }
+
+.chroma .gp { }
+
+.chroma .gs { font-weight: bold; }
+
+.chroma .gu { }
+
+.chroma .gt { }
+
+.chroma .gl { }
+
+.chroma .w { }
+------MultipartBoundary--3FvQBN95PHlU11GPjJ88K83ykpta0RXSTi1NZeYYce------
