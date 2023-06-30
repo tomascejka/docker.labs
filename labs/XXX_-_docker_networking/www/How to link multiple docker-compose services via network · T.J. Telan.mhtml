@@ -1,0 +1,1135 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://tjtelan.com/blog/how-to-link-multiple-docker-compose-via-network/
+Subject: =?utf-8?Q?How=20to=20link=20multiple=20docker-compose=20services=20via=20?=
+ =?utf-8?Q?network=20=C2=B7=20T.J.=20Telan?=
+Date: Thu, 15 Jun 2023 15:50:41 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----"
+
+
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: text/html
+Content-ID: <frame-E4D935EF3B56A243F6B4E69003A579F5@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/blog/how-to-link-multiple-docker-compose-via-network/
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+ =20
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0, maximum-scale=3D1">
+
+  <title>
+How to link multiple docker-compose services via network =C2=B7 T.J. Telan
+</title>
+
+  <!-- CSS -->
+  <link rel=3D"stylesheet" href=3D"https://tjtelan.com/print.css" media=3D"=
+print">
+  <link rel=3D"stylesheet" href=3D"https://tjtelan.com/tj.css">
+  <!--<link rel=3D"stylesheet" href=3D"https://tjtelan.com/newsletter.css">=
+-->
+  <link rel=3D"stylesheet" href=3D"https://tjtelan.com/hyde.css">
+  <link rel=3D"stylesheet" href=3D"https://fonts.googleapis.com/css?family=
+=3DPT+Sans:400,400italic,700|Abril+Fatface">
+  <link href=3D"https://fonts.googleapis.com/css2?family=3DPress+Start+2P&a=
+mp;display=3Dswap" rel=3D"stylesheet">
+
+ =20
+ =20
+  <link rel=3D"alternate" type=3D"application/atom+xml" title=3D"Atom" href=
+=3D"https://tjtelan.com/atom.xml">
+ =20
+ =20
+ =20
+  <!-- Facebook open graph tags-->
+  <meta property=3D"og:type" content=3D"website">
+  <meta property=3D"og:url" content=3D"https://tjtelan.com/blog/how-to-link=
+-multiple-docker-compose-via-network/">
+  =20
+  <meta property=3D"og:title" content=3D"How to link multiple docker-compos=
+e services via network">
+ =20
+ =20
+  <meta property=3D"og:description" content=3D"Walkthrough of how to link n=
+etworks of docker-compose services defined in multiple files">
+ =20
+  <!-- Twitter card tags -->
+  <meta name=3D"twitter:card" content=3D"summary">
+  <meta name=3D"twitter:url" content=3D"https://tjtelan.com/blog/how-to-lin=
+k-multiple-docker-compose-via-network/">
+  =20
+  <meta name=3D"twitter:title" content=3D"How to link multiple docker-compo=
+se services via network">
+ =20
+ =20
+  <meta name=3D"twitter:description" content=3D"Walkthrough of how to link =
+networks of docker-compose services defined in multiple files">
+ =20
+  <meta name=3D"twitter:creator" content=3D"@ThatTJTelan">
+  <meta name=3D"twitter:site" content=3D"@ThatTJTelan">
+
+ =20
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+</head>
+
+<body class=3D" ">
+ =20
+  <div id=3D"sidebar" class=3D"sidebar">
+    <div class=3D"container sidebar-sticky">
+      <div class=3D"sidebar-about">
+       =20
+        <a href=3D"https://tjtelan.com/">
+          <h1>T.J. Telan</h1>
+        </a>
+       =20
+        <p class=3D"lede">Practical DevOps &amp; Developer Experience</p>
+       =20
+       =20
+      </div>
+
+      <ul class=3D"sidebar-nav">
+       =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://tjtelan.com/now/">Now</a>
+            </li>
+           =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://tjtelan.com/about/">About</a>
+            </li>
+           =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://github.com/tjtelan">Github<img src=3D"http=
+s://tjtelan.com/nav-icons/github.svg" alt=3D"Github"></a>
+            </li>
+           =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://dev.to/tjtelan">Dev.to<img src=3D"https://=
+tjtelan.com/nav-icons/dev-dot-to.svg" alt=3D"Dev.to"></a>
+            </li>
+           =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://medium.com/@tjtelan">Medium<img src=3D"htt=
+ps://tjtelan.com/nav-icons/medium.svg" alt=3D"Medium"></a>
+            </li>
+           =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://twitter.com/ThatTJTelan">Twitter<img src=
+=3D"https://tjtelan.com/nav-icons/twitter.svg" alt=3D"Twitter"></a>
+            </li>
+           =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://www.twitch.tv/tjtelan">Twitch<img src=3D"h=
+ttps://tjtelan.com/nav-icons/twitch.svg" alt=3D"Twitch"></a>
+            </li>
+           =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://www.youtube.com/channel/UCiwV2NFMF26A5nfak=
+QbuZ-g">YouTube<img src=3D"https://tjtelan.com/nav-icons/youtube.svg" alt=
+=3D"YouTube"></a>
+            </li>
+           =20
+         =20
+           =20
+            <li class=3D"sidebar-nav-item">
+              <a href=3D"https://tjtelan.com/atom.xml">RSS<img src=3D"https=
+://tjtelan.com/nav-icons/rss.svg" alt=3D"RSS"></a>
+            </li>
+           =20
+         =20
+       =20
+      </ul>
+    </div>
+  </div>
+ =20
+
+  <div class=3D"content container">
+   =20
+<div class=3D"post">
+    <h1 class=3D"post-title">How to link multiple docker-compose services v=
+ia network</h1>
+   =20
+    <span class=3D"post-meta">
+        4 min read
+        &nbsp;=E2=80=A2&nbsp;
+        2020-06-11
+       =20
+          &nbsp;=E2=80=A2
+         =20
+          &nbsp;
+          <a href=3D"https://tjtelan.com/categories/how-to/">
+              how-to
+            </a>
+         =20
+          &nbsp;
+          <a href=3D"https://tjtelan.com/categories/devops/">
+              devops
+            </a>
+         =20
+       =20
+       =20
+          &nbsp;=E2=80=A2
+         =20
+          &nbsp;
+          <a href=3D"https://tjtelan.com/tags/docker/">
+              #docker
+            </a>
+         =20
+          &nbsp;
+          <a href=3D"https://tjtelan.com/tags/networking/">
+              #networking
+            </a>
+         =20
+       =20
+      </span>
+
+    <p>This scenario came from a question I was asked docker-compose and ne=
+twork connectivity between services defined in different docker-compose.yml=
+ files.</p>
+<p>The desired result was to be able to define a docker-compose.yml in one =
+file, and in a second docker-compose.yml have the ability to reach the firs=
+t service via service or container name for development purposes.</p>
+<h2 id=3D"default-scenario-two-separate-docker-compose-yml-and-two-separate=
+-default-networks">Default scenario: Two separate docker-compose.yml and tw=
+o separate default networks<a class=3D"zola-anchor" href=3D"https://tjtelan=
+.com/blog/how-to-link-multiple-docker-compose-via-network/#default-scenario=
+-two-separate-docker-compose-yml-and-two-separate-default-networks" aria-la=
+bel=3D"Anchor link for: default-scenario-two-separate-docker-compose-yml-an=
+d-two-separate-default-networks">=F0=9F=94=97</a></h2>
+<p>Let=E2=80=99s take a simple docker compose file.</p>
+<pre data-lang=3D"yaml" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-yaml "><code class=3D"language-yaml" data-lang=3D"yaml"><s=
+pan style=3D"background-color:#282828;color:#569cd6;">version</span><span>:=
+ </span><span style=3D"color:#d69d85;">'3'=20
+</span><span style=3D"background-color:#282828;color:#569cd6;">services</sp=
+an><span>:=20
+</span><span>  </span><span style=3D"background-color:#282828;color:#569cd6=
+;">service1</span><span>:=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">image</span><span>: </span><span style=3D"background-color:#282828;col=
+or:#d69d85;">busybox</span><span>=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">command</span><span>: </span><span style=3D"background-color:#282828;c=
+olor:#d69d85;">sleep infinity</span><span>
+</span></code></pre>
+<p>When it starts up, a default network is created. Its name is based on th=
+e service name and the directory name of the docker-compose.yml file.</p>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan>$ pwd
+</span><span>/tmp/docker-example/compose1
+</span><span>
+</span><span>$ docker-compose up -d
+</span><span>Creating network </span><span style=3D"color:#d69d85;">"compos=
+e1_default"</span><span> with the default driver
+</span><span>Creating compose1_service1_1 ... done
+</span></code></pre>
+<h3 id=3D"second-docker-compose-file">Second docker compose file<a class=3D=
+"zola-anchor" href=3D"https://tjtelan.com/blog/how-to-link-multiple-docker-=
+compose-via-network/#second-docker-compose-file" aria-label=3D"Anchor link =
+for: second-docker-compose-file">=F0=9F=94=97</a></h3>
+<pre data-lang=3D"yaml" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-yaml "><code class=3D"language-yaml" data-lang=3D"yaml"><s=
+pan style=3D"background-color:#282828;color:#569cd6;">version</span><span>:=
+ </span><span style=3D"color:#d69d85;">'3'=20
+</span><span style=3D"background-color:#282828;color:#569cd6;">services</sp=
+an><span>:=20
+</span><span>  </span><span style=3D"background-color:#282828;color:#569cd6=
+;">service2</span><span>:=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">image</span><span>: </span><span style=3D"background-color:#282828;col=
+or:#d69d85;">busybox</span><span>=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">command</span><span>: </span><span style=3D"background-color:#282828;c=
+olor:#d69d85;">sleep infinity</span><span>
+</span></code></pre>
+<p>Starting services in a second docker compose file, we see the same behav=
+ior. A new default network is created and used.</p>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan>$ pwd
+</span><span>/tmp/docker-example/compose2
+</span><span>
+</span><span>$ docker-compose up -d
+</span><span>Creating network </span><span style=3D"color:#d69d85;">"compos=
+e2_default"</span><span> with the default driver
+</span><span>Creating compose2_service2_1 ... done
+</span></code></pre>
+<p>A side-effect of these isolated networks are that the containers are una=
+ble to ping one another by service name or container name.</p>
+<h3 id=3D"test-from-service-1-ping-service-2">Test: From Service 1 ping Ser=
+vice 2<a class=3D"zola-anchor" href=3D"https://tjtelan.com/blog/how-to-link=
+-multiple-docker-compose-via-network/#test-from-service-1-ping-service-2" a=
+ria-label=3D"Anchor link for: test-from-service-1-ping-service-2">=F0=9F=94=
+=97</a></h3>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan style=3D"color:#608b4e;"># By service name
+</span><span>$ docker exec -it compose1_service1_1 ping service2
+</span><span>ping: bad address </span><span style=3D"color:#d69d85;">'servi=
+ce2'
+</span><span>
+</span><span style=3D"color:#608b4e;"># By container name
+</span><span>$ docker exec -it compose1_service1_1 ping compose2_service2_1=
+=20
+</span><span>ping: bad address </span><span style=3D"color:#d69d85;">'compo=
+se2_service2_1'
+</span></code></pre>
+<h3 id=3D"test-service-2-ping-service-1">Test: Service 2 ping Service 1<a c=
+lass=3D"zola-anchor" href=3D"https://tjtelan.com/blog/how-to-link-multiple-=
+docker-compose-via-network/#test-service-2-ping-service-1" aria-label=3D"An=
+chor link for: test-service-2-ping-service-1">=F0=9F=94=97</a></h3>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan style=3D"color:#608b4e;"># By service name
+</span><span>$ docker exec -it compose2_service2_1 ping service1
+</span><span>ping: bad address </span><span style=3D"color:#d69d85;">'servi=
+ce1'
+</span><span>
+</span><span style=3D"color:#608b4e;"># By container name
+</span><span>$ docker exec -it compose2_service2_1 ping compose1_service1_1=
+=20
+</span><span>ping: bad address </span><span style=3D"color:#d69d85;">'compo=
+se1_service1_1'
+</span></code></pre>
+<h2 id=3D"new-scenario-sharing-a-network-between-services">New scenario: Sh=
+aring a network between services<a class=3D"zola-anchor" href=3D"https://tj=
+telan.com/blog/how-to-link-multiple-docker-compose-via-network/#new-scenari=
+o-sharing-a-network-between-services" aria-label=3D"Anchor link for: new-sc=
+enario-sharing-a-network-between-services">=F0=9F=94=97</a></h2>
+<p>If you want define services in multiple docker-compose.yml files, and al=
+so have network connectivity between the services, you need to configure yo=
+ur services to use the same network.</p>
+<p>To create an external network, you can run <code>docker network create &=
+lt;name&gt;</code>. -- where <code>&lt;name&gt;</code> can be a single stri=
+ng without spaces.</p>
+<h3 id=3D"creating-the-network">Creating the network<a class=3D"zola-anchor=
+" href=3D"https://tjtelan.com/blog/how-to-link-multiple-docker-compose-via-=
+network/#creating-the-network" aria-label=3D"Anchor link for: creating-the-=
+network">=F0=9F=94=97</a></h3>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan>$ docker network create external-example
+</span><span>2af4d92c2054e9deb86edaea8bb55ecb74f84a62aec7614c9f09fee386f248=
+a6
+</span></code></pre>
+<h3 id=3D"modified-first-docker-compose-file-with-network-configured">Modif=
+ied first docker-compose file with network configured<a class=3D"zola-ancho=
+r" href=3D"https://tjtelan.com/blog/how-to-link-multiple-docker-compose-via=
+-network/#modified-first-docker-compose-file-with-network-configured" aria-=
+label=3D"Anchor link for: modified-first-docker-compose-file-with-network-c=
+onfigured">=F0=9F=94=97</a></h3>
+<pre data-lang=3D"yaml" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-yaml "><code class=3D"language-yaml" data-lang=3D"yaml"><s=
+pan style=3D"background-color:#282828;color:#569cd6;">version</span><span>:=
+ </span><span style=3D"color:#d69d85;">'3'=20
+</span><span style=3D"background-color:#282828;color:#569cd6;">services</sp=
+an><span>:=20
+</span><span>  </span><span style=3D"background-color:#282828;color:#569cd6=
+;">service1</span><span>:=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">image</span><span>: </span><span style=3D"background-color:#282828;col=
+or:#d69d85;">busybox</span><span>=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">command</span><span>: </span><span style=3D"background-color:#282828;c=
+olor:#d69d85;">sleep infinity</span><span>=20
+</span><span>
+</span><span style=3D"background-color:#282828;color:#569cd6;">networks</sp=
+an><span>:=20
+</span><span>  </span><span style=3D"background-color:#282828;color:#569cd6=
+;">default</span><span>:=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">external</span><span>:=20
+</span><span>      </span><span style=3D"background-color:#282828;color:#56=
+9cd6;">name</span><span>: </span><span style=3D"background-color:#282828;co=
+lor:#d69d85;">external-example</span><span>=20
+</span></code></pre>
+<p>Restarting the services</p>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan>$ pwd
+</span><span>/tmp/docker-example/compose1
+</span><span>
+</span><span>$ docker-compose up -d
+</span><span>Creating compose1_service1_1 ... done
+</span></code></pre>
+<h3 id=3D"modified-second-docker-compose-file-with-network-configured">Modi=
+fied second docker-compose file with network configured<a class=3D"zola-anc=
+hor" href=3D"https://tjtelan.com/blog/how-to-link-multiple-docker-compose-v=
+ia-network/#modified-second-docker-compose-file-with-network-configured" ar=
+ia-label=3D"Anchor link for: modified-second-docker-compose-file-with-netwo=
+rk-configured">=F0=9F=94=97</a></h3>
+<pre data-lang=3D"yaml" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-yaml "><code class=3D"language-yaml" data-lang=3D"yaml"><s=
+pan style=3D"background-color:#282828;color:#569cd6;">version</span><span>:=
+ </span><span style=3D"color:#d69d85;">'3'=20
+</span><span style=3D"background-color:#282828;color:#569cd6;">services</sp=
+an><span>:=20
+</span><span>  </span><span style=3D"background-color:#282828;color:#569cd6=
+;">service2</span><span>:=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">image</span><span>: </span><span style=3D"background-color:#282828;col=
+or:#d69d85;">busybox</span><span>=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">command</span><span>: </span><span style=3D"background-color:#282828;c=
+olor:#d69d85;">sleep infinity</span><span>=20
+</span><span>
+</span><span style=3D"background-color:#282828;color:#569cd6;">networks</sp=
+an><span>:=20
+</span><span>  </span><span style=3D"background-color:#282828;color:#569cd6=
+;">default</span><span>:=20
+</span><span>    </span><span style=3D"background-color:#282828;color:#569c=
+d6;">external</span><span>:=20
+</span><span>      </span><span style=3D"background-color:#282828;color:#56=
+9cd6;">name</span><span>: </span><span style=3D"background-color:#282828;co=
+lor:#d69d85;">external-example</span><span>=20
+</span></code></pre>
+<p>Restarting the services</p>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan>$ pwd
+</span><span>/tmp/docker-example/compose2
+</span><span>
+</span><span>$ docker-compose up -d
+</span><span>Creating compose2_service2_1 ... done
+</span></code></pre>
+<p>After running <code>docker-compose up -d</code> on both docker-compose.y=
+ml files, we see that no new networks were created.</p>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan>$ docker network ls
+</span><span>NETWORK ID          NAME                DRIVER              SC=
+OPE
+</span><span>25e0c599d5e5        bridge              bridge              lo=
+cal
+</span><span>2af4d92c2054        external-example    bridge              lo=
+cal
+</span><span>7df4631e9cff        host                host                lo=
+cal
+</span><span>194d4156d7ab        none                null                lo=
+cal
+</span></code></pre>
+<p>With the containers using the <code>external-example</code> network, the=
+y are able to ping one another.</p>
+<h3 id=3D"test-service-1-ping-service-2">Test: Service 1 ping Service 2<a c=
+lass=3D"zola-anchor" href=3D"https://tjtelan.com/blog/how-to-link-multiple-=
+docker-compose-via-network/#test-service-1-ping-service-2" aria-label=3D"An=
+chor link for: test-service-1-ping-service-2">=F0=9F=94=97</a></h3>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan style=3D"color:#608b4e;"># By service name
+</span><span>$ docker exec -it compose1_service1_1 ping service2
+</span><span>PING service2 (172.24.0.3): 56 data bytes
+</span><span>64 bytes from 172.24.0.3: seq=3D0 ttl=3D64 time=3D0.054 ms
+</span><span>^C
+</span><span>--- service2 ping statistics ---
+</span><span>1 packets transmitted, 1 packets received, 0% packet loss
+</span><span>round-trip min/avg/max =3D 0.054/0.054/0.054 ms
+</span><span>
+</span><span style=3D"color:#608b4e;"># By container name
+</span><span>$ docker exec -it compose1_service1_1 ping compose2_service2_1
+</span><span>PING compose2_service2_1 (172.24.0.2): 56 data bytes
+</span><span>64 bytes from 172.24.0.2: seq=3D0 ttl=3D64 time=3D0.042 ms
+</span><span>^C
+</span><span>--- compose2_service2_1 ping statistics ---
+</span><span>1 packets transmitted, 1 packets received, 0% packet loss
+</span><span>round-trip min/avg/max =3D 0.042/0.042/0.042 ms
+</span></code></pre>
+<h3 id=3D"test-service-2-ping-service-1-1">Test: Service 2 ping Service 1<a=
+ class=3D"zola-anchor" href=3D"https://tjtelan.com/blog/how-to-link-multipl=
+e-docker-compose-via-network/#test-service-2-ping-service-1-1" aria-label=
+=3D"Anchor link for: test-service-2-ping-service-1-1">=F0=9F=94=97</a></h3>
+<pre data-lang=3D"bash" style=3D"background-color:#1e1e1e;color:#dcdcdc;" c=
+lass=3D"language-bash "><code class=3D"language-bash" data-lang=3D"bash"><s=
+pan style=3D"color:#608b4e;"># By service name
+</span><span>$ docker exec -it compose2_service2_1 ping service1
+</span><span>PING service1 (172.24.0.2): 56 data bytes
+</span><span>64 bytes from 172.24.0.2: seq=3D0 ttl=3D64 time=3D0.041 ms
+</span><span>^C
+</span><span>--- service1 ping statistics ---
+</span><span>1 packets transmitted, 1 packets received, 0% packet loss
+</span><span>round-trip min/avg/max =3D 0.041/0.041/0.041 ms
+</span><span>
+</span><span style=3D"color:#608b4e;"># By container name
+</span><span>$ docker exec -it compose2_service2_1 ping compose1_service1_1
+</span><span>PING compose1_service1_1 (172.24.0.3): 56 data bytes
+</span><span>64 bytes from 172.24.0.3: seq=3D0 ttl=3D64 time=3D0.042 ms
+</span><span>^C
+</span><span>--- compose1_service1_1 ping statistics ---
+</span><span>1 packets transmitted, 1 packets received, 0% packet loss
+</span><span>round-trip min/avg/max =3D 0.042/0.042/0.042 ms
+</span></code></pre>
+<blockquote>
+<p>As a note, you can configure your services to use a custom container nam=
+e by declaring the <code>container_name</code> key under each service (i.e.=
+, at the same level as <code>image</code>).</p>
+<p><a rel=3D"noopener nofollow" target=3D"_blank" href=3D"https://docs.dock=
+er.com/compose/compose-file/#container_name">Link to Docker-compose docs - =
+container_name</a></p>
+</blockquote>
+<h2 id=3D"takeaway">Takeaway<a class=3D"zola-anchor" href=3D"https://tjtela=
+n.com/blog/how-to-link-multiple-docker-compose-via-network/#takeaway" aria-=
+label=3D"Anchor link for: takeaway">=F0=9F=94=97</a></h2>
+<p>You can connect services defined across multiple docker-compose.yml file=
+s.</p>
+<p>In order to do this you=E2=80=99ll need to:</p>
+<ol>
+<li>Create an external network with <code>docker network create &lt;network=
+ name&gt;</code></li>
+<li>In each of your docker-compose.yml  configure the default network to us=
+e your externally created network with the <code>networks</code> top-level =
+key.</li>
+<li>You can use either the service name or container name to connect betwee=
+n containers.</li>
+</ol>
+
+</div>
+
+<div class=3D"blog-nav-footer">
+    <hr>
+   =20
+   =20
+</div>
+
+  </div>
+
+
+
+</body></html>
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/print.css
+
+@charset "utf-8";
+
+.sidebar { display: none !important; }
+
+.content { margin: 0px auto; width: 100%; float: none; display: initial; }
+
+.container { width: 100%; float: none; display: initial; padding-left: 1rem=
+; padding-right: 1rem; margin: 0px auto; }
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/tj.css
+
+@charset "utf-8";
+
+.post-meta, .section .post-summary { font-size: 0.8rem; }
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0px; padding: 0px; }
+
+html { font-family: "Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-se=
+rif; font-size: 16px; line-height: 1.5; }
+
+@media (min-width: 38em) {
+  html { font-size: 20px; }
+}
+
+body { color: rgb(81, 81, 81); background-color: rgb(255, 255, 255); text-s=
+ize-adjust: 100%; }
+
+a { color: rgb(49, 49, 49); text-decoration: none; border-bottom: 1px solid=
+ rgb(201, 81, 66); }
+
+a:hover, a:focus { border-bottom: 2px solid rgb(201, 81, 66); color: rgb(20=
+1, 81, 66); }
+
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5rem; font-weight: bold; line-hei=
+ght: 1.25; color: rgb(49, 49, 49); text-rendering: optimizelegibility; }
+
+h1 { font-size: 2rem; }
+
+h2 { margin-top: 1rem; font-size: 1.5rem; }
+
+h3 { margin-top: 1.5rem; font-size: 1.25rem; }
+
+h4, h5, h6 { margin-top: 1rem; font-size: 1rem; }
+
+p { margin-top: 0px; margin-bottom: 1rem; }
+
+strong { font-weight: bold; }
+
+ul, ol, dl { margin-top: 0px; margin-bottom: 1rem; }
+
+dt { font-weight: bold; }
+
+dd { margin-bottom: 0.5rem; }
+
+hr { position: relative; margin: 1.5rem 0px; border-width: 1px 0px; border-=
+right-style: initial; border-left-style: initial; border-right-color: initi=
+al; border-left-color: initial; border-image: initial; border-top-style: so=
+lid; border-top-color: rgb(238, 238, 238); border-bottom-style: solid; bord=
+er-bottom-color: rgb(255, 255, 255); }
+
+abbr { font-size: 85%; font-weight: bold; color: rgb(49, 49, 49); text-tran=
+sform: uppercase; }
+
+abbr[title] { cursor: help; border-bottom: 1px dotted rgb(154, 154, 154); }
+
+code, pre { font-family: Menlo, Monaco, "Courier New", monospace; border-ra=
+dius: 5px; background-color: rgb(248, 248, 248); box-shadow: rgba(0, 0, 0, =
+0.1) 0px 1px 3px, rgba(0, 0, 0, 0.1) 0px 1px 1px, rgba(0, 0, 0, 0.12) 0px 2=
+px 1px -1px; }
+
+code { padding: 0.25em 0.5em; margin-right: 0.25em; font-size: 85%; color: =
+rgb(191, 97, 106); }
+
+pre { display: block; margin-top: 0px; margin-bottom: 1rem; padding: 1rem; =
+font-size: 0.8rem; line-height: 1.4; overflow-x: scroll; }
+
+pre code { padding: 0px; font-size: 100%; color: inherit; background-color:=
+ transparent; }
+
+.highlight { margin-bottom: 1rem; border-radius: 4px; }
+
+.highlight pre { margin-bottom: 0px; }
+
+blockquote { padding: 0.5rem 1rem; margin: 0.8rem 0px; color: rgb(154, 154,=
+ 154); border-left: 0.25rem solid rgb(229, 229, 229); }
+
+blockquote p:last-child { margin-bottom: 0px; }
+
+@media (min-width: 30em) {
+  blockquote { padding-right: 5rem; padding-left: 1.25rem; }
+}
+
+img { display: block; margin: 0px 0px 1rem; border-radius: 5px; max-width: =
+100%; }
+
+table { margin-bottom: 1rem; width: 100%; border: 1px solid rgb(229, 229, 2=
+29); border-collapse: collapse; }
+
+td, th { padding: 0.25rem 0.5rem; border: 1px solid rgb(229, 229, 229); }
+
+tbody tr:nth-child(2n+1) td, tbody tr:nth-child(2n+1) th { background-color=
+: rgb(249, 249, 249); }
+
+.lede { font-size: 1.25rem; font-weight: 300; }
+
+.message { margin-bottom: 1rem; padding: 1rem; color: rgb(81, 81, 81); back=
+ground-color: rgb(248, 248, 248); border: 1px solid rgb(229, 229, 229); }
+
+.container { max-width: 38rem; padding-left: 1rem; padding-right: 1rem; mar=
+gin-left: auto; margin-right: auto; margin-bottom: 2rem; }
+
+.masthead { padding-top: 1rem; padding-bottom: 1rem; margin-bottom: 3rem; }
+
+.masthead-title { margin-top: 0px; margin-bottom: 0px; color: rgb(80, 80, 8=
+0); }
+
+.masthead-title a { color: rgb(80, 80, 80); }
+
+.masthead-title small { font-size: 75%; font-weight: 400; color: rgb(192, 1=
+92, 192); letter-spacing: 0px; }
+
+.page, .post { margin-bottom: 4em; }
+
+.page-title, .post-title, .post-title a { color: rgb(49, 49, 49); }
+
+.page-title, .post-title { margin-top: 0px; }
+
+.post-date { display: block; margin-top: -0.5rem; margin-bottom: 1rem; colo=
+r: rgb(154, 154, 154); }
+
+.related { padding-top: 2rem; padding-bottom: 2rem; border-top: 1px solid r=
+gb(238, 238, 238); }
+
+.related-posts { padding-left: 0px; list-style: none; }
+
+.related-posts h3 { margin-top: 0px; }
+
+.related-posts li small { font-size: 75%; color: rgb(153, 153, 153); }
+
+.related-posts li a:hover { color: rgb(201, 81, 66); text-decoration: none;=
+ }
+
+.related-posts li a:hover small { color: inherit; }
+
+.footnote-definition:first-of-type { border-top: 1px solid; padding-top: 1r=
+em; }
+
+.footnote-definition { margin-top: 1rem; }
+
+.footnote-definition sup { margin-left: -1rem; float: left; }
+
+.pagination { overflow: hidden; margin-left: -1rem; margin-right: -1rem; fo=
+nt-family: "PT Sans", Helvetica, Arial, sans-serif; color: rgb(204, 204, 20=
+4); text-align: center; }
+
+.pagination-item { display: block; padding: 1rem; border: 1px solid rgb(238=
+, 238, 238); }
+
+.pagination-item:first-child { margin-bottom: -1px; }
+
+a.pagination-item:hover { background-color: rgb(245, 245, 245); }
+
+@media (min-width: 30em) {
+  .pagination { margin: 3rem 0px; }
+  .pagination-item { float: left; width: 50%; }
+  .pagination-item:first-child { margin-bottom: 0px; border-top-left-radius=
+: 4px; border-bottom-left-radius: 4px; }
+  .pagination-item:last-child { margin-left: -1px; border-top-right-radius:=
+ 4px; border-bottom-right-radius: 4px; }
+}
+
+::selection { color: rgb(255, 255, 255); background: rgba(201, 81, 66, 0.8)=
+; }
+
+#sidebar h1 { color: rgb(255, 255, 255); margin-top: 0px; font-family: "Pre=
+ss Start 2P", serif; font-size: 2rem; }
+
+#sidebar .sidebar-nav-item { line-height: 1.8rem; }
+
+#sidebar .sidebar-nav-item img { height: 0.8rem; display: inline-block; mar=
+gin-bottom: 0px; padding-left: 0.5rem; }
+
+@media (max-width: 48em) {
+  #sidebar li { display: inline-block; padding-right: 1rem; }
+  .container, .sidebar-nav { margin-bottom: 0px; }
+}
+
+.section { border-radius: 4px; margin-bottom: 1.5rem; padding: 0.5rem 1rem;=
+ }
+
+.section.work li span { font-size: 1rem; padding-top: 0.5rem; }
+
+.section.work li a { font-weight: 700; }
+
+.section .post-summary { color: rgb(49, 49, 49); line-height: 1rem; padding=
+-top: 5px; }
+
+.section ul { padding-inline-start: 0rem; }
+
+.section li { list-style: none; margin: 1rem 0px; background: rgb(250, 250,=
+ 250); padding: 0.75rem 1rem; }
+
+.section li span { display: block; }
+
+.section li span .work-meta { font-size: 1rem; }
+
+.section li.draft { background: rgb(246, 232, 234); }
+
+.post-meta { color: rgb(154, 154, 154); }
+
+.post-meta a { opacity: 0.8; border-bottom: none; color: rgb(154, 154, 154)=
+; }
+
+.post-meta a:hover { border-bottom: 1px solid rgb(201, 81, 66); color: rgb(=
+201, 81, 66); }
+
+a.more { text-align: right; width: 100%; margin-left: 1.5rem; }
+
+.blog-nav-footer { padding-bottom: 4rem; }
+
+.blog-nav-footer hr { border-top: 2px solid rgb(238, 238, 238); border-bott=
+om: 1px solid rgb(255, 255, 255); }
+
+.blog-nav-footer div { width: 30%; }
+
+.blog-nav-footer p { margin: 0px; }
+
+.blog-nav-footer span { color: rgb(154, 154, 154); display: block; font-siz=
+e: 0.8rem; }
+
+.blog-nav-footer .next-post { float: left; }
+
+.blog-nav-footer .next-post p::before { content: "=E2=86=90=C2=A0"; }
+
+.blog-nav-footer .previous-post { float: right; text-align: right; }
+
+.blog-nav-footer .previous-post p::after { content: "=C2=A0=E2=86=92"; }
+
+.blog-image { display: block; text-align: center; font-size: 75%; }
+
+.blog-image img { margin-left: auto; margin-right: auto; }
+
+.zola-anchor { display: none; }
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/hyde.css
+
+@charset "utf-8";
+
+html { font-family: "PT Sans", Helvetica, Arial, sans-serif; }
+
+@media (min-width: 48em) {
+  html { font-size: 16px; }
+}
+
+@media (min-width: 58em) {
+  html { font-size: 20px; }
+}
+
+.sidebar { text-align: center; padding: 2rem 1rem; color: rgba(255, 255, 25=
+5, 0.5); background-color: rgb(32, 32, 32); }
+
+@media (min-width: 48em) {
+  .sidebar { position: fixed; top: 0px; left: 0px; bottom: 0px; width: 18re=
+m; text-align: left; }
+}
+
+.sidebar a { color: rgb(255, 255, 255); }
+
+.sidebar-about h1 { color: rgb(255, 255, 255); margin-top: 0px; font-family=
+: "Abril Fatface", serif; font-size: 3.25rem; }
+
+.sidebar-nav { padding-left: 0px; list-style: none; }
+
+.sidebar-nav-item { display: block; }
+
+a.sidebar-nav-item:hover, a.sidebar-nav-item:focus { text-decoration: under=
+line; }
+
+.sidebar-nav-item.active { font-weight: bold; }
+
+@media (min-width: 48em) {
+  .sidebar-sticky { position: absolute; right: 1rem; bottom: 1rem; left: 1r=
+em; }
+  @supports (padding: max(0px)) {
+  body:not(.layout-reverse) .sidebar-sticky { padding-left: max(1rem, env(s=
+afe-area-inset-left)); }
+  .layout-reverse .sidebar-sticky { padding-right: max(1rem, env(safe-area-=
+inset-right)); }
+}
+}
+
+.content { padding-top: 4rem; padding-bottom: 4rem; }
+
+@supports (padding: max(0px)) {
+  body:not(.layout-reverse) .content { padding-right: max(1rem, env(safe-ar=
+ea-inset-right)); }
+  .layout-reverse .content { padding-left: max(1rem, env(safe-area-inset-le=
+ft)); }
+}
+
+@media (min-width: 48em) {
+  .content { max-width: 38rem; margin-left: 20rem; margin-right: 2rem; }
+}
+
+@media (min-width: 64em) {
+  .content { margin-left: 22rem; margin-right: 4rem; }
+}
+
+@media (min-width: 48em) {
+  .layout-reverse .sidebar { left: auto; right: 0px; }
+  .layout-reverse .content { margin-left: 2rem; margin-right: 20rem; }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content { margin-left: 4rem; margin-right: 22rem; }
+}
+
+.theme-base-08 .sidebar { background-color: rgb(172, 65, 66); }
+
+.theme-base-08 .content a, .theme-base-08 .related-posts li a:hover { color=
+: rgb(172, 65, 66); }
+
+.theme-base-09 .sidebar { background-color: rgb(210, 132, 69); }
+
+.theme-base-09 .content a, .theme-base-09 .related-posts li a:hover { color=
+: rgb(210, 132, 69); }
+
+.theme-base-0a .sidebar { background-color: rgb(244, 191, 117); }
+
+.theme-base-0a .content a, .theme-base-0a .related-posts li a:hover { color=
+: rgb(244, 191, 117); }
+
+.theme-base-0b .sidebar { background-color: rgb(144, 169, 89); }
+
+.theme-base-0b .content a, .theme-base-0b .related-posts li a:hover { color=
+: rgb(144, 169, 89); }
+
+.theme-base-0c .sidebar { background-color: rgb(117, 181, 170); }
+
+.theme-base-0c .content a, .theme-base-0c .related-posts li a:hover { color=
+: rgb(117, 181, 170); }
+
+.theme-base-0d .sidebar { background-color: rgb(106, 159, 181); }
+
+.theme-base-0d .content a, .theme-base-0d .related-posts li a:hover { color=
+: rgb(106, 159, 181); }
+
+.theme-base-0e .sidebar { background-color: rgb(170, 117, 159); }
+
+.theme-base-0e .content a, .theme-base-0e .related-posts li a:hover { color=
+: rgb(170, 117, 159); }
+
+.theme-base-0f .sidebar { background-color: rgb(143, 85, 54); }
+
+.theme-base-0f .content a, .theme-base-0f .related-posts li a:hover { color=
+: rgb(143, 85, 54); }
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface
+
+@charset "utf-8";
+
+@font-face { font-family: "Abril Fatface"; font-style: normal; font-weight:=
+ 400; src: url("https://fonts.gstatic.com/s/abrilfatface/v19/zOL64pLDlL1D99=
+S8g8PtiKchq-lmjdLh.woff2") format("woff2"); unicode-range: U+100-2AF, U+304=
+, U+308, U+329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF,=
+ U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Abril Fatface"; font-style: normal; font-weight:=
+ 400; src: url("https://fonts.gstatic.com/s/abrilfatface/v19/zOL64pLDlL1D99=
+S8g8PtiKchq-dmjQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+1=
+52-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U=
++2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "PT Sans"; font-style: italic; font-weight: 400; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0e0ysmIED=
+Q.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U=
++2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "PT Sans"; font-style: italic; font-weight: 400; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0e0w8mIED=
+Q.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B=
+0-4B1, U+2116; }
+
+@font-face { font-family: "PT Sans"; font-style: italic; font-weight: 400; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0e0ycmIED=
+Q.woff2") format("woff2"); unicode-range: U+100-2AF, U+304, U+308, U+329, U=
++1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2=
+C7F, U+A720-A7FF; }
+
+@font-face { font-family: "PT Sans"; font-style: italic; font-weight: 400; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizYRExUiTo99u79D0e0x8mI.w=
+off2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC,=
+ U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2=
+122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: 400; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0-ExdGM.w=
+off2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2D=
+E0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: 400; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0aExdGM.w=
+off2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4=
+B1, U+2116; }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: 400; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0yExdGM.w=
+off2") format("woff2"); unicode-range: U+100-2AF, U+304, U+308, U+329, U+1E=
+00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F=
+, U+A720-A7FF; }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: 400; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0KExQ.wof=
+f2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U=
++2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+212=
+2, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: 700; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0OOtLQ=
+0Z.woff2") format("woff2"); unicode-range: U+460-52F, U+1C80-1C88, U+20B4, =
+U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: 700; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0OqtLQ=
+0Z.woff2") format("woff2"); unicode-range: U+301, U+400-45F, U+490-491, U+4=
+B0-4B1, U+2116; }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: 700; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0OCtLQ=
+0Z.woff2") format("woff2"); unicode-range: U+100-2AF, U+304, U+308, U+329, =
+U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-=
+2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "PT Sans"; font-style: normal; font-weight: 700; =
+src: url("https://fonts.gstatic.com/s/ptsans/v17/jizfRExUiTo99u79B_mh0O6tLQ=
+.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2B=
+C, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U=
++2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nYivN04w.woff2") format("woff2"); unicode-=
+range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2=
+F; }
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nRivN04w.woff2") format("woff2"); unicode-=
+range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nWivN04w.woff2") format("woff2"); unicode-=
+range: U+370-3FF; }
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nbivN04w.woff2") format("woff2"); unicode-=
+range: U+100-2AF, U+304, U+308, U+329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+=
+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Press Start 2P"; font-style: normal; font-weight=
+: 400; font-display: swap; src: url("https://fonts.gstatic.com/s/pressstart=
+2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2") format("woff2"); unicode-ran=
+ge: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308,=
+ U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215=
+, U+FEFF, U+FFFD; }
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/nav-icons/github.svg
+
+<svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" fill=3D"none" xmlns=
+=3D"http://www.w3.org/2000/svg">
+<path d=3D"M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8=
+.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065=
+ 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 =
+3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207=
+ 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9=
+ 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579=
+ 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.5=
+04C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6=
+.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.38=
+9 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.=
+144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.7=
+06 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24=
+ 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997" fill=3D"white"/>
+</svg>=0A
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/nav-icons/dev-dot-to.svg
+
+<svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" fill=3D"none" xmlns=
+=3D"http://www.w3.org/2000/svg">
+<path d=3D"M7.42 10.05C7.24 9.89 6.96 9.82 6.58 9.82H6L6.02 12.26L6.06 14.7=
+1L6.62 14.69C7.03 14.69 7.25 14.62 7.45 14.43C7.69 14.19 7.71 14.07 7.71 12=
+.23C7.71 10.32 7.69 10.27 7.42 10.05V10.05ZM0 4.94V19.06H24V4.94H0ZM8.56 15=
+.3C8.12 15.88 7.5 16.07 6.03 16.07H4.71V8.53H6.11C7.78 8.53 8.27 8.71 8.71 =
+9.43C8.98 9.86 9 10.03 9.03 12C9.08 14.23 9.01 14.73 8.56 15.3V15.3ZM13.65 =
+9.83H11.18V11.6H12.7V12.88L11.98 12.92L11.23 12.95V14.72L12.45 14.75L13.65 =
+14.79V16.07H12.05C10.52 16.07 10.45 16.06 10.18 15.77L9.88 15.49V12.33C9.88=
+ 9.31 9.89 9.15 10.13 8.85C10.36 8.54 10.38 8.54 12.01 8.54H13.65V9.84V9.83=
+ZM18.33 15.28C18.16 15.71 17.69 16.07 17.33 16.07C17.15 16.07 16.88 15.92 1=
+6.66 15.68C16.34 15.36 16.21 15.05 15.84 13.6L14.94 10.21L14.49 8.54H15.25C=
+15.65 8.54 16 8.56 16 8.59C16 8.65 17.16 13.13 17.26 13.42C17.3 13.57 17.58=
+ 12.72 17.99 11.12L18.65 8.6L19.39 8.56C19.79 8.54 20.12 8.56 20.12 8.6C20.=
+12 8.74 18.45 14.98 18.32 15.28H18.33Z" fill=3D"white"/>
+</svg>=0A
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/nav-icons/medium.svg
+
+<svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" fill=3D"none" xmlns=
+=3D"http://www.w3.org/2000/svg">
+<path d=3D"M0 0V24H24V0H0ZM19.938 5.686L18.651 6.92C18.5964 6.96155 18.5542=
+ 7.01725 18.529 7.08106C18.5038 7.14487 18.4965 7.21436 18.508 7.282V16.349=
+C18.4967 16.4165 18.5041 16.4858 18.5293 16.5494C18.5545 16.613 18.5966 16.=
+6685 18.651 16.71L19.908 17.944V18.215H13.586V17.945L14.888 16.68C15.016 16=
+.552 15.016 16.515 15.016 16.32V8.99L11.396 18.185H10.906L6.69 8.99V15.153C=
+6.67266 15.2808 6.68462 15.4109 6.72499 15.5334C6.76536 15.6559 6.83307 15.=
+7676 6.923 15.86L8.617 17.914V18.185H3.815V17.915L5.51 15.86C5.5992 15.7675=
+ 5.6654 15.6553 5.70327 15.5325C5.74114 15.4097 5.74961 15.2797 5.728 15.15=
+3V8.027C5.73798 7.92938 5.7248 7.83079 5.68953 7.73922C5.65426 7.64765 5.59=
+789 7.56569 5.525 7.5L4.019 5.686V5.416H8.693L12.306 13.339L15.482 5.415H19=
+.938V5.686V5.686Z" fill=3D"white"/>
+</svg>=0A
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/nav-icons/twitter.svg
+
+<svg width=3D"24" height=3D"20" viewBox=3D"0 0 24 20" fill=3D"none" xmlns=
+=3D"http://www.w3.org/2000/svg">
+<path d=3D"M23.954 2.569C23.069 2.958 22.124 3.223 21.129 3.344C22.143 2.73=
+3 22.923 1.77 23.292 0.621002C22.341 1.176 21.287 1.58 20.165 1.805C19.269 =
+0.846002 17.992 0.246002 16.574 0.246002C13.857 0.246002 11.654 2.449 11.65=
+4 5.163C11.654 5.553 11.699 5.928 11.781 6.287C7.691 6.094 4.066 4.13 1.64 =
+1.161C1.213 1.883 0.974 2.722 0.974 3.636C0.974 5.346 1.844 6.849 3.162 7.7=
+32C2.355 7.706 1.596 7.484 0.934 7.116V7.177C0.934 9.562 2.627 11.551 4.88 =
+12.004C4.467 12.115 4.031 12.175 3.584 12.175C3.27 12.175 2.969 12.145 2.66=
+8 12.089C3.299 14.042 5.113 15.466 7.272 15.506C5.592 16.825 3.463 17.611 1=
+.17 17.611C0.78 17.611 0.391 17.588 0 17.544C2.189 18.938 4.768 19.753 7.55=
+7 19.753C16.611 19.753 21.556 12.257 21.556 5.767C21.556 5.558 21.556 5.347=
+ 21.541 5.137C22.502 4.448 23.341 3.577 24.001 2.589L23.954 2.569Z" fill=3D=
+"white"/>
+</svg>=0A
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/nav-icons/twitch.svg
+
+<svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" fill=3D"none" xmlns=
+=3D"http://www.w3.org/2000/svg">
+<path d=3D"M11.571 4.714H13.286V9.857H11.57L11.571 4.714ZM16.286 4.714H18V9=
+.857H16.286V4.714ZM5.99999 0L1.71399 4.286V19.714H6.85699V24L11.143 19.714H=
+14.571L22.286 12V0H5.99999ZM20.571 11.143L17.143 14.571H13.714L10.714 17.57=
+1V14.571H6.85699V1.714H20.571V11.143Z" fill=3D"white"/>
+</svg>=0A
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/nav-icons/youtube.svg
+
+<svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" fill=3D"none" xmlns=
+=3D"http://www.w3.org/2000/svg">
+<path d=3D"M23.495 6.20498C23.356 5.70674 23.0907 5.2528 22.725 4.88703C22.=
+3592 4.52126 21.9052 4.25603 21.407 4.11698C19.537 3.61598 12.011 3.61598 1=
+2.011 3.61598C12.011 3.61598 4.50401 3.60598 2.61501 4.11698C2.11677 4.2560=
+3 1.66283 4.52126 1.29706 4.88703C0.931287 5.2528 0.666058 5.70674 0.527007=
+ 6.20498C0.172528 8.11949 -0.0022322 10.0629 0.00500725 12.01C-0.000863617 =
+13.9497 0.173891 15.8857 0.527007 17.793C0.666058 18.2912 0.931287 18.7452 =
+1.29706 19.1109C1.66283 19.4767 2.11677 19.7419 2.61501 19.881C4.48301 20.3=
+83 12.011 20.383 12.011 20.383C12.011 20.383 19.517 20.383 21.407 19.881C21=
+.9052 19.7419 22.3592 19.4767 22.725 19.1109C23.0907 18.7452 23.356 18.2912=
+ 23.495 17.793C23.8407 15.885 24.0081 13.949 23.995 12.01C24.0095 10.0636 2=
+3.8421 8.12018 23.495 6.20498V6.20498ZM9.60901 15.601V8.40798L15.873 12.01L=
+9.60901 15.601Z" fill=3D"white"/>
+</svg>=0A
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://tjtelan.com/nav-icons/rss.svg
+
+<svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" fill=3D"none" xmlns=
+=3D"http://www.w3.org/2000/svg">
+<path d=3D"M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0C13.165 0 24 10.835 2=
+4 24H19.199ZM3.291 17.415C5.105 17.415 6.584 18.894 6.584 20.71C6.584 22.52=
+3 5.099 24 3.283 24C1.47 24 0 22.526 0 20.71C0 18.894 1.475 17.416 3.291 17=
+.415ZM15.909 24H11.244C11.244 17.831 6.169 12.755 0 12.755V8.09C8.727 8.09 =
+15.909 15.274 15.909 24Z" fill=3D"white"/>
+</svg>=0A
+------MultipartBoundary--gyPEpOKDNPVrfn6qiaOuirsgpCxCRyfTg62a6HHtwn------
