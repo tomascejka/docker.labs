@@ -1,6 +1,7 @@
 From: <Saved by Blink>
 Snapshot-Content-Location: https://www.tutorialworks.com/python-develop-container/
 Subject: How I Created a Python Development Environment with Docker - Tutorial Works
+<<<<<<< HEAD
 Date: Sat, 11 Mar 2023 13:53:45 -0000
 MIME-Version: 1.0
 Content-Type: multipart/related;
@@ -9,6 +10,16 @@ Content-Type: multipart/related;
 
 
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+Date: Sat, 11 Mar 2023 11:47:07 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----"
+
+
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/html
 Content-ID: <frame-B519E71C9818D8737CC8E453C42F4712@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
@@ -16,6 +27,7 @@ Content-Location: https://www.tutorialworks.com/python-develop-container/
 
 <!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
 ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+<<<<<<< HEAD
 css" href=3D"cid:css-8d9dd19b-124b-40da-909d-e05273d586b6@mhtml.blink" /><l=
 ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-ca3532b2-dfd2-41d4=
 -b942-a6f3aff3e3bb@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css=
@@ -26,6 +38,18 @@ ref=3D"cid:css-354da320-d08c-4536-ae7d-1fc6b9154733@mhtml.blink" /><link re=
 l=3D"stylesheet" type=3D"text/css" href=3D"cid:css-25131511-3689-49a0-8c17-=
 c80673c3c2e5@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
 =3D"cid:css-c4bf4bab-235e-404f-a470-b29ddf2cdc2a@mhtml.blink" />
+=======
+css" href=3D"cid:css-6b056b36-bb0a-469e-b89b-d533da24d047@mhtml.blink" /><l=
+ink rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-828fee4e-5b79-4627=
+-b425-d72079e0fd94@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css=
+" href=3D"cid:css-cac18c8a-b9f0-4395-92ed-11d8591f61d0@mhtml.blink" /><link=
+ rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-1442a8ce-db36-4513-a0=
+f7-680a60afb07a@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" h=
+ref=3D"cid:css-8994c6cc-7073-43de-b278-c80bcf578809@mhtml.blink" /><link re=
+l=3D"stylesheet" type=3D"text/css" href=3D"cid:css-5996fab4-2056-419b-8f9f-=
+878f5a93d7b9@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-b179fd49-667d-49a5-b645-4c82934656ec@mhtml.blink" />
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 <link rel=3D"preconnect" href=3D"https://www.googletagmanager.com/" crossor=
 igin=3D""><link rel=3D"preconnect" href=3D"https://www.tutorialworks.com/" =
 crossorigin=3D""><link rel=3D"preconnect" href=3D"https://static.mailerlite=
@@ -479,6 +503,7 @@ Quit the server with CONTROL-C.
 </code></pre></div></div><p>And I will now be able to access the Django hom=
 epage on my host, using <strong>http://localhost:8000</strong></p><figure c=
 lass=3D"medium" vocab=3D"http://schema.org/" typeof=3D"ImageObject"><img sr=
+<<<<<<< HEAD
 c=3D"https://www.tutorialworks.com/ezoimgfmt/ik.imagekit.io/w8aolfcwcnd/tw/=
 django-welcome_qFzNYNdG7Mio.png?ezimgfmt=3Drs:408x272/rscb6/ng:webp/ngcb6" =
 width=3D"1125" height=3D"751" loading=3D"lazy" property=3D"contentUrl" alt=
@@ -512,6 +537,40 @@ s.com/assets/images/me-sc.jpg?ezimgfmt=3Drs:55x55/rscb6/ng:webp/ngcb6" alt=
 b6" class=3D" ezlazyloaded" data-ezsrc=3D"/assets/images/me-sc.jpg?ezimgfmt=
 =3Drs:55x55/rscb6/ng:webp/ngcb6" ezoid=3D"0.8649106438728178"><div><p><span=
  class=3D"author">By <strong>Tom Donohue, Editor</strong></span>
+=======
+c=3D"data:image/svg+xml,%3Csvg%20xmlns=3D%22http://www.w3.org/2000/svg%22%2=
+0width=3D%221125%22%20height=3D%22751%22%3E%3C/svg%3E" width=3D"1125" heigh=
+t=3D"751" loading=3D"lazy" property=3D"contentUrl" alt=3D"The Django welcom=
+e page" ezimgfmt=3D"rs rscb6 src ng ngcb6" class=3D"ezlazyload" data-ezsrc=
+=3D"https://www.tutorialworks.com/ezoimgfmt/ik.imagekit.io/w8aolfcwcnd/tw/d=
+jango-welcome_qFzNYNdG7Mio.png"><figcaption><p>Django contained!</p></figca=
+ption></figure><p>Mission accomplished!</p><h2 id=3D"tidying-up"><span id=
+=3D"ezoic-pub-ad-placeholder-115" class=3D"ezoic-adpicker-ad"></span><span =
+class=3D"ezoic-ad ezoic-at-0 large-mobile-banner-2 large-mobile-banner-2115=
+ adtester-container adtester-container-115" data-ez-name=3D"tutorialworks_c=
+om-large-mobile-banner-2" style=3D""><span class=3D"ezoic-ad-disclosure" st=
+yle=3D"font-size:12px;padding-bottom:2px;display:block;text-align:center;li=
+ne-height:15px">Advertisements</span><span id=3D"div-gpt-ad-tutorialworks_c=
+om-large-mobile-banner-2-0" ezaw=3D"336" ezah=3D"280" style=3D"position: re=
+lative; z-index: 0; display: inline-block; padding: 0px; width: 100%; max-w=
+idth: 1200px; min-height: 400px; min-width: 580px; margin-left: auto !impor=
+tant; margin-right: auto !important;" class=3D"ezoic-ad"><div id=3D"google_=
+ads_iframe_/1254144,22693708668/tutorialworks_com-large-mobile-banner-2_0__=
+container__" style=3D"border: 0pt none; width: 336px; height: 0px;"></div><=
+/span></span>Tidying up</h2><p>When I=E2=80=99m done with the container, I =
+just press <em>Ctrl+C</em> to terminate the Python process, and then <em>Ct=
+rl+D</em> to exit the container entirely.<span id=3D"ezoic-pub-ad-placehold=
+er-132" class=3D"ezoic-adpicker-ad"></span></p><p>When I want to restart th=
+e development environment again, I can just use the same <code class=3D"lan=
+guage-plaintext highlighter-rouge">docker run</code> command above.</p><p>H=
+ope this has been helpful for you! Happy Pythoning :)</p><footer><div class=
+=3D"author-profile"><img src=3D"data:image/svg+xml,%3Csvg%20xmlns=3D%22http=
+://www.w3.org/2000/svg%22%20width=3D%22438%22%20height=3D%22437%22%3E%3C/sv=
+g%3E" alt=3D"Tom Donohue" width=3D"70" height=3D"70" ezimgfmt=3D"rs rscb6 s=
+rc ng ngcb6" class=3D"ezlazyload" data-ezsrc=3D"/assets/images/me-sc.jpg"><=
+div><p><span class=3D"author">By <strong>Tom Donohue, Editor</strong></span=
+>
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 | <a href=3D"https://twitter.com/monodot" target=3D"_blank">Twitter</a>
 | <a href=3D"https://uk.linkedin.com/in/tomint" target=3D"_blank">LinkedIn<=
 /a></p><p>Tom is the founder of <em>Tutorial Works</em>.
@@ -1098,10 +1157,17 @@ pbox"></div></div><div class=3D"textads banner-ads banner_ads ad-unit ad-zo=
 ne ad-space adsbox" style=3D"height: 1px;"></div><iframe src=3D"cid:frame-9=
 7BF729C5534D7D040B972DC05A6FF1E@mhtml.blink" style=3D"visibility: hidden; d=
 isplay: none;"></iframe></body></html>
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-8d9dd19b-124b-40da-909d-e05273d586b6@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-6b056b36-bb0a-469e-b89b-d533da24d047@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -1369,10 +1435,17 @@ div.ad-container { background-color: var(--ad-container-background-colour);=
 @media (min-width: 1400px) {
   body, input, button { font-size: var(--font-xlarge); }
 }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-ca3532b2-dfd2-41d4-b942-a6f3aff3e3bb@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-828fee4e-5b79-4627-b425-d72079e0fd94@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -1471,18 +1544,32 @@ er; cursor: pointer; }
 
 .ez-sidebar-wall-ad { width: 160px; height: 600px; position: fixed; backgro=
 und-color: initial; top: calc(50vh - 300px); margin: 0px; }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-a6fa1317-ddef-486d-bf97-095f2ad9fd88@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-cac18c8a-b9f0-4395-92ed-11d8591f61d0@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
 body > #ezmobfooter { bottom: 0px; visibility: visible; }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-fceee7d4-f8fb-4b23-b5c1-7883747fd752@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-1442a8ce-db36-4513-a0f7-680a60afb07a@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -1490,10 +1577,17 @@ Content-Location: cid:css-fceee7d4-f8fb-4b23-b5c1-7883747fd752@mhtml.blink
 50px; padding: 0px; border: none !important; display: block !important; flo=
 at: none !important; margin: 15px auto !important; max-width: 100% !importa=
 nt; text-align: center !important; }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-354da320-d08c-4536-ae7d-1fc6b9154733@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-8994c6cc-7073-43de-b278-c80bcf578809@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -1501,10 +1595,17 @@ Content-Location: cid:css-354da320-d08c-4536-ae7d-1fc6b9154733@mhtml.blink
 padding: 0px; border: none !important; display: block !important; float: no=
 ne !important; margin: 15px auto !important; max-width: 100% !important; te=
 xt-align: center !important; }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-25131511-3689-49a0-8c17-c80673c3c2e5@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-5996fab4-2056-419b-8f9f-878f5a93d7b9@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -1512,10 +1613,17 @@ Content-Location: cid:css-25131511-3689-49a0-8c17-c80673c3c2e5@mhtml.blink
 ding: 0px; border: none !important; display: block !important; float: none =
 !important; margin: 3px auto !important; max-width: 100% !important; text-a=
 lign: center !important; }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-c4bf4bab-235e-404f-a470-b29ddf2cdc2a@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b179fd49-667d-49a5-b645-4c82934656ec@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -1523,7 +1631,11 @@ Content-Location: cid:css-c4bf4bab-235e-404f-a470-b29ddf2cdc2a@mhtml.blink
 00px; padding: 0px; border: none !important; display: block !important; flo=
 at: none !important; margin: 15px auto !important; max-width: 100% !importa=
 nt; text-align: center !important; }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://www.tutorialworks.com/assets/css/style.css
@@ -2688,7 +2800,11 @@ ition: 1rem center; padding-left: 3rem; }
 @media (min-width: 1400px) {
   body, input, button { font-size: var(--font-xlarge); }
 }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/jpeg
 Content-Transfer-Encoding: base64
 Content-Location: https://www.tutorialworks.com/assets/images/cloud1.jpg
@@ -2822,7 +2938,11 @@ iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
 KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
 oAKKKKACiiigAooooAKKKKACiiigD//Z
 
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://www.tutorialworks.com/assets/images/external-link.svg
@@ -2833,7 +2953,11 @@ ke-linecap=3D"round" stroke-linejoin=3D"round" stroke-width=3D"2">
     <path d=3D"M14 9 L3 9 3 29 23 29 23 18 M18 4 L28 4 28 14 M28 4 L14 18" =
 />
 </svg>
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://www.tutorialworks.com/assets/css/github-dark.css
@@ -2966,7 +3090,11 @@ body .highlight .vg { color: rgb(36, 255, 255); }
 body .highlight .vi { color: rgb(36, 255, 255); }
 
 body .highlight .il { color: rgb(51, 255, 255); }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://comments.tutorialworks.com/css/isso.css
@@ -3123,7 +3251,11 @@ fade; }
   .isso-input-wrapper input { width: 100%; }
   .isso-post-action { margin-top: 0px; }
 }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/webp
 Content-Transfer-Encoding: base64
 Content-Location: https://www.tutorialworks.com/assets/images/logo4.png?ezimgfmt=rs:305x38/rscb6/ngcb6/notWebP
@@ -3457,7 +3589,11 @@ WK+VSCIjjhjExFjPkVCIANpb98X/QWHinGta1sYEybX4Zd4T3wE+bYwSjQyDCKmsydLif3aR8OBV
 sdlkvEWTqK1cWDvh6sxPqNWwkcXsJuLcQRE7932pFjsjEBpAg72W7XOVmD8yTiJBS01g5qTn2cdY
 NZf59ojoBgAA
 
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://www.tutorialworks.com/assets/images/twitter.svg
@@ -3526,6 +3662,7 @@ lns:xlink=3D"http://www.w3.org/1999/xlink" x=3D"0px" y=3D"0px"
 </g>
 </svg>
 
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: image/webp
 Content-Transfer-Encoding: base64
@@ -3928,20 +4065,31 @@ dobT4X0uT2xV5y/hgi0ZTiBgW0ZWoLZ6hmPoftyce+U7lw0YuFeOQ7P+rLdRsCnzsEyAD7gLaUAA
 AAA=
 
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/gif
 Content-Transfer-Encoding: base64
 Content-Location: https://track.mailerlite.com/webforms/o/5728437/d2o1i3?v1658133381
 
 R0lGODlhAQABAPAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
 
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/html
 Content-ID: <frame-42543477AD44846DF431F75C9322451F@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
 
 <html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
 =3DUTF-8"></head><body></body></html>
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/html
 Content-ID: <frame-97BF729C5534D7D040B972DC05A6FF1E@mhtml.blink>
 Content-Transfer-Encoding: quoted-printable
@@ -3949,11 +4097,19 @@ Content-Location: chrome-error://chromewebdata/
 
 <!DOCTYPE html><html dir=3D"ltr" lang=3D"cs" subframe=3D""><head><meta http=
 -equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=3D=
+<<<<<<< HEAD
 "stylesheet" type=3D"text/css" href=3D"cid:css-8bd9f4c3-ea50-4bdc-9b41-1dd8=
 483c5bab@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"=
 cid:css-16bbf33f-6324-4f12-9b8f-6c43b89866a7@mhtml.blink" /><link rel=3D"st=
 ylesheet" type=3D"text/css" href=3D"cid:css-f0ed0a74-df98-4998-9cb2-a5d1c5a=
 d32f0@mhtml.blink" />
+=======
+"stylesheet" type=3D"text/css" href=3D"cid:css-191c0618-2d84-4f0e-aa30-c465=
+a3661e0c@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"=
+cid:css-1ff3f41a-a82f-4cf4-a50c-1d9b4b03fc79@mhtml.blink" /><link rel=3D"st=
+ylesheet" type=3D"text/css" href=3D"cid:css-8bc7719b-d403-4f70-acce-1d25980=
+c0215@mhtml.blink" />
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
  =20
   <meta name=3D"color-scheme" content=3D"light dark">
   <meta name=3D"theme-color" content=3D"#fff">
@@ -4628,10 +4784,17 @@ rNlcXmDhIP5Ku1+qt60Kb2baYbE7u7IWTSczWp/EG1geirEAIBKkMgDeZfz3LF+aAG6gy/jvWb4=
 
 
 </body></html>
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-8bd9f4c3-ea50-4bdc-9b41-1dd8483c5bab@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-191c0618-2d84-4f0e-aa30-c465a3661e0c@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -4679,10 +4842,17 @@ condary-button-fill-color: var(--google-gray-900); --secondary-button-hover=
 lue-300); --small-link-color: var(--google-blue-300); --text-color: var(--g=
 oogle-gray-500); }
 }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-16bbf33f-6324-4f12-9b8f-6c43b89866a7@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-1ff3f41a-a82f-4cf4-a50c-1d9b4b03fc79@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -4898,10 +5068,17 @@ tom: 0px; }
 @media (max-width: 239px) and (orientation: portrait) {
   .nav-wrapper { padding-inline: 0px; }
 }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-f0ed0a74-df98-4998-9cb2-a5d1c5ad32f0@mhtml.blink
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-8bc7719b-d403-4f70-acce-1d25980c0215@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -5474,4 +5651,8 @@ rgb(189, 193, 198); }
 r, .slow-speed-option [type=3D"checkbox"]:checked + .slow-speed-toggle::bef=
 ore { background: var(--google-blue-300); }
 }
+<<<<<<< HEAD
 ------MultipartBoundary--EI0TGo9dg7T1fOWGXgojngqL7lBoEO7rovgVTitOOo------
+=======
+------MultipartBoundary--jgqMAqqUdcKN8mWW07hMgDV0EuttPS69h2VrUOgWi5------
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda

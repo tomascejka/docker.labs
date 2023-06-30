@@ -1,6 +1,7 @@
 From: <Saved by Blink>
 Snapshot-Content-Location: https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
 Subject: What even is a container: namespaces and cgroups
+<<<<<<< HEAD
 Date: Sat, 25 Mar 2023 12:51:40 -0000
 MIME-Version: 1.0
 Content-Type: multipart/related;
@@ -11,15 +12,34 @@ Content-Type: multipart/related;
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
 Content-Type: text/html
 Content-ID: <frame-79CCE3D7953021187AF1D024FECFA61C@mhtml.blink>
+=======
+Date: Sat, 11 Mar 2023 12:06:48 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----"
+
+
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+Content-Type: text/html
+Content-ID: <frame-E61405A122EAC69CC7F16CB0525E15C6@mhtml.blink>
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
 
 <!DOCTYPE html><html class=3D"no-js" lang=3D"en"><head><meta http-equiv=3D"=
 Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=3D"styleshee=
+<<<<<<< HEAD
 t" type=3D"text/css" href=3D"cid:css-438f5ceb-2421-4430-85b8-dfbf243ab8c7@m=
 html.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-79=
 addf9b-4f62-440a-8fab-94f37f183660@mhtml.blink" /><link rel=3D"stylesheet" =
 type=3D"text/css" href=3D"cid:css-f76ef00e-b910-4c7d-867d-380c24853784@mhtm=
+=======
+t" type=3D"text/css" href=3D"cid:css-11a4c910-113b-4b05-a168-3fed2502d2c6@m=
+html.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"cid:css-87=
+90263f-7922-4b58-84f0-c91db08e116d@mhtml.blink" /><link rel=3D"stylesheet" =
+type=3D"text/css" href=3D"cid:css-ca6d9b5e-1f29-45e8-a407-918c1dda6eb6@mhtm=
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 l.blink" />
 
 <title>What even is a container: namespaces and cgroups</title>
@@ -341,10 +361,17 @@ ories/hackerschool/">(my posts about it)</a></p>
 
 
 </body></html>
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-438f5ceb-2421-4430-85b8-dfbf243ab8c7@mhtml.blink
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-11a4c910-113b-4b05-a168-3fed2502d2c6@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -355,10 +382,17 @@ Helvetica, Arial, sans-serif; display: inline; }
 
 #mc_embed_signup input.button { background: rgb(255, 94, 0); display: inlin=
 e; color: white; padding: 6px 12px; }
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-79addf9b-4f62-440a-8fab-94f37f183660@mhtml.blink
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-8790263f-7922-4b58-84f0-c91db08e116d@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -378,10 +412,17 @@ border-radius: 5px; color: white; padding: 5px 10px; }
   .form-inline input { margin: 10px 0px; max-width: 100% !important; }
   .form-inline { flex-direction: column; align-items: stretch; }
 }
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: cid:css-f76ef00e-b910-4c7d-867d-380c24853784@mhtml.blink
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-ca6d9b5e-1f29-45e8-a407-918c1dda6eb6@mhtml.blink
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 
 @charset "utf-8";
 
@@ -428,7 +469,11 @@ Frect%3E%3Crect%20x%3D%229%22%20y%3D%2212%22%20width%3D%221%22%20height%3D%=
 xt-decoration: underline; }
 
 .rc-scout__link:hover, .rc-scout__link:active { color: rgb(78, 139, 29); }
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://jvns.ca/stylesheets/screen.css
@@ -1062,7 +1107,11 @@ s: 10px; }
 .sharing { text-align: center; margin: 0em auto 0.5em; }
 
 img { max-width: 100%; }
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://jvns.ca/stylesheets/noise.png
@@ -1309,7 +1358,11 @@ lFu0WOP3PtUV8erba/GoJPKNYGqjAgxOnlcVRnGfDbCyG6PCWluKnoSj5zQKjmIcaU/QKg9YWeqh
 NErhR+Jos05ivwD53iiz9NX4kVfasMkQPX1gx7T2zhwZ1dUXcnELfzjU2w4B0/aIwSrHIasKtq9A
 AIm0s+3k3/O/1PmWPSEU/Er/BRgAwz8gp8tYur8AAAAASUVORK5CYII=
 
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://jvns.ca/stylesheets/stripes.png
@@ -1371,7 +1424,11 @@ dGmf7vD9xTcFA3V2+KpFue4d/Sv+QCn/MmfxfLw8bOH6THF0PFxcY/+DsmAeqqM8BdfHYavphLp3
 1B2VJV9GDBavhpBx+RSv6vvZXabvhLp4NRxRjNHoLF5cfquzPfIU46CvACHTgnBpYb2MBE/h4bXN
 D1BHGYn+trrIfgcAsWpjalYhYREAAAAASUVORK5CYII=
 
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/svg+xml
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://jvns.ca/stylesheets/star.svg
@@ -1389,7 +1446,11 @@ lns:xlink=3D"http://www.w3.org/1999/xlink" x=3D"0px" y=3D"0px"
 11.097 15.274,17.955 9.44,13.717 3.606,17.955=20
 	5.834,11.098 0,6.858 7.212,6.858 "/>
 </svg>=0A
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://jvns.ca/stylesheets/print.css
@@ -1404,7 +1465,11 @@ ext-decoration: underline; text-align: left; }
   .mono, pre, code, tt, p code, li code { font-family: Menlo, Monaco, "Anda=
 le Mono", "lucida console", "Courier New", monospace; }
 }
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: text/css
 Content-Transfer-Encoding: quoted-printable
 Content-Location: https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css
@@ -2131,7 +2196,11 @@ px; }
 .katex-display.fleqn > .katex { padding-left: 2em; text-align: left; }
 
 body { counter-reset: katexEqnNo 0 mmlEqnNo 0; }
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/jpeg
 Content-Transfer-Encoding: base64
 Content-Location: https://jvns.ca/images/containers-cover.jpg
@@ -6320,7 +6389,11 @@ c2I4HCzuHlxXWS4jhcLH704oDpyaloQloQntHrVUoE1NQpE1cZ9IKSU4IWk9UqSeSknxSQQfEai+
 NsgwuCi9jZBZwUg7m2bx5w/RrfrSv1hauGBKV9oo/pdR+tUe78igctIvJBr7Te8efj0pN3w6+0O8
 efj0qOVOl1GjTXKdVoT0SSycLadQUqHkfeD1B6Eaex7XjE03Cc1weLtOS//Z
 
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to----
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3----
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Location: https://jvns.ca/images/containers-toc.png
@@ -10497,4 +10570,8 @@ EInIjjAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDQtMjRUMTU6MzU6MjktMDQ6MDCUlH6UAAAA
 JXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA0LTI0VDE1OjM1OjI5LTA0OjAw5cnGKAAAABl0RVh0U29m
 dHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=
 
+<<<<<<< HEAD
 ------MultipartBoundary--wuvUQUWr8Wtqj2cIaU6mt0b55rvTS4VSuMTg5bY5to------
+=======
+------MultipartBoundary--xrqk3MyTQeXnoWsc6dvnFDL5jqZygvNpD4dHYvpCG3------
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda

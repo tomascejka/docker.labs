@@ -1,8 +1,11 @@
 **/target
 **/.idea
 **/.vscode
+<<<<<<< HEAD
 **/videos
 **/videos/*.mp4
+=======
+>>>>>>> fddc48d0a7d588eda0dccb61184590d4e17d9cda
 **/console_V1.bat
 **/ide_V1.bat
 
